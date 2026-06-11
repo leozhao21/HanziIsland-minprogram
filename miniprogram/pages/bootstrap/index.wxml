@@ -1,0 +1,12 @@
+<view class="bootstrap-page">
+  <view class="emoji">🏝️</view>
+  <view class="title">识字岛</view>
+  <view class="status">{{loadStatus}}</view>
+  <view wx:if="{{loadError}}" class="error">
+    <text>{{loadError}}</text>
+    <button class="retry-btn" bindtap="onRetry">重试</button>
+  </view>
+  <view wx:else class="loading">
+    <view class="spinner"></view>
+  </view>
+</view>

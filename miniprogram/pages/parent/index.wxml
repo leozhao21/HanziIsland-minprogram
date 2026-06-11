@@ -1,0 +1,137 @@
+<view class="parent-page">
+  <view wx:if="{{!gatePassed}}" class="gate">
+    <view class="gate-header">
+      <text class="gate-title">家长验证</text>
+      <text class="gate-close" bindtap="onClose">关闭</text>
+    </view>
+    <text class="gate-sub">请输入答案（仅家长操作）</text>
+    <text class="gate-question">{{gateLeft}} + {{gateRight}} = ?</text>
+    <input class="gate-input" type="number" value="{{gateAnswer}}" bindinput="onGateInput" placeholder="答案" />
+    <text wx:if="{{gateWrong}}" class="gate-error">答案不对，请再试一次</text>
+    <button class="gate-btn" bindtap="onGateSubmit" disabled="{{!gateAnswer}}">进入家长中心</button>
+  </view>
+
+  <view wx:else class="hub">
+    <view class="hub-header">
+      <text class="hub-title">家长中心</text>
+      <text class="hub-close" bindtap="onClose">完成</text>
+    </view>
+
+    <view class="tabs">
+      <view class="tab {{parentTab === 0 ? 'active' : ''}}" data-tab="0" bindtap="onTabChange">任务</view>
+      <view class="tab {{parentTab === 1 ? 'active' : ''}}" data-tab="1" bindtap="onTabChange">设置</view>
+      <view class="tab {{parentTab === 2 ? 'active' : ''}}" data-tab="2" bindtap="onTabChange">数据</view>
+    </view>
+
+    <!-- 任务 Tab -->
+    <scroll-view wx:if="{{parentTab === 0}}" scroll-y class="tab-content">
+      <view class="goal-card">
+        <view class="goal-header">
+          <text class="goal-title">今日学习目标</text>
+          <text wx:if="{{isGoalMet}}" class="goal-done">✅ 已完成</text>
+        </view>
+        <view class="goal-progress">
+          <text class="goal-count">{{todayProgress.charactersStudied}} / {{dailyGoal.targetCount}}</text>
+          <progress percent="{{progressPercent}}" activeColor="#4CAF50" stroke-width="8" />
+          <text class="goal-detail">已答题 {{todayProgress.questionsAnswered}} · 正确 {{todayProgress.correctCount}}</text>
+        </view>
+        <view class="presets">
+          <view wx:for="{{goalPresets}}" wx:key="value" class="preset {{dailyGoal.targetCount === item.value && !dailyGoal.followStudyMode ? 'active' : ''}}" data-value="{{item.value}}" bindtap="onPresetGoal">
+            {{item.label}} {{item.value}}
+          </view>
+        </view>
+        <view class="adjust-row">
+          <text data-delta="{{-5}}" bindtap="onAdjustGoal">➖</text>
+          <text class="adjust-value">{{dailyGoal.targetCount}} 字</text>
+          <text data-delta="{{5}}" bindtap="onAdjustGoal">➕</text>
+        </view>
+        <view class="switch-row">
+          <text>跟随学习模式</text>
+          <switch checked="{{dailyGoal.followStudyMode}}" bindchange="onFollowModeChange" color="#4CAF50" />
+        </view>
+        <text wx:if="{{!dailyGoal.followStudyMode}}" class="link" bindtap="onApplyRecommended">使用模式推荐（{{recommendedGoal}} 字）</text>
+      </view>
+
+      <view class="section">
+        <text class="section-label">学习模式</text>
+        <picker mode="selector" range="{{studyModes}}" range-key="label" value="{{studyModeIndex}}" bindchange="onModeChange">
+          <view class="picker-value">{{studyModes[studyModeIndex].label}}</view>
+        </picker>
+      </view>
+
+      <view class="task-section blue">
+        <text class="task-title">新字 · {{planNewCount}}</text>
+        <text class="task-chars">{{planNewChars}}</text>
+      </view>
+      <view class="task-section orange">
+        <text class="task-title">复习 · {{planReviewCount}}</text>
+        <text class="task-chars">{{planReviewChars}}</text>
+      </view>
+      <view class="task-section purple">
+        <text class="task-title">随机检查 · {{planRandomCount}}</text>
+        <text class="task-chars">{{planRandomChars}}</text>
+      </view>
+    </scroll-view>
+
+    <!-- 设置 Tab -->
+    <scroll-view wx:if="{{parentTab === 1}}" scroll-y class="tab-content">
+      <view class="settings-card">
+        <text class="settings-title">语音朗读</text>
+        <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读</text>
+        <text wx:else class="settings-desc warn">朗读插件未授权。登录 mp.weixin.qq.com → 设置 → 第三方设置 → 插件管理 → 添加「微信同声传译」，并在 app.json 中声明插件后重新发布。</text>
+        <view class="switch-row">
+          <text>启用朗读</text>
+          <switch checked="{{speechEnabled}}" disabled="{{!speechAvailable}}" bindchange="onToggleSpeech" color="#4CAF50" />
+        </view>
+        <button class="preview-btn" bindtap="onPreviewVoice" disabled="{{!speechAvailable}}">🔊 试听</button>
+      </view>
+    </scroll-view>
+
+    <!-- 数据 Tab -->
+    <scroll-view wx:if="{{parentTab === 2}}" scroll-y class="tab-content">
+      <view class="stats-grid">
+        <view class="stat-card blue"><text class="stat-label">累计学习</text><text class="stat-value">{{stats.totalLearned}} 字</text></view>
+        <view class="stat-card green"><text class="stat-label">真正掌握</text><text class="stat-value">{{stats.trulyMastered}} 字</text></view>
+        <view class="stat-card orange"><text class="stat-label">复习中</text><text class="stat-value">{{stats.inReview}} 字</text></view>
+        <view class="stat-card red"><text class="stat-label">容易遗忘</text><text class="stat-value">{{stats.easyToForget}} 字</text></view>
+      </view>
+
+      <view class="chart-card">
+        <text class="chart-title">每日学习量（近14日）</text>
+        <view class="mini-chart">
+          <view wx:for="{{trendData}}" wx:key="label" class="bar-col">
+            <view class="bar" style="height: {{item.questions * 4}}rpx;"></view>
+            <text class="bar-label">{{item.label}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="chart-card">
+        <text class="chart-title">掌握增长曲线</text>
+        <view class="line-chart">
+          <text wx:for="{{trendData}}" wx:key="label" class="line-point">{{item.mastered}}</text>
+        </view>
+      </view>
+
+      <view class="report-card">
+        <text class="chart-title">本周报告</text>
+        <text class="report-sub">本周新增掌握</text>
+        <view wx:if="{{weeklyChars.length === 0}}" class="empty-text">暂无新掌握汉字</view>
+        <view wx:else class="weekly-chars">
+          <text wx:for="{{weeklyChars}}" wx:key="*this" class="weekly-char">{{item}}</text>
+        </view>
+        <text class="report-total">共增加：{{stats.weeklyMasteredCount}} 个汉字</text>
+      </view>
+
+      <view class="report-card">
+        <text class="chart-title">重点复习库</text>
+        <view wx:if="{{intensiveList.length === 0}}" class="empty-text">暂无 — 继续保持！</view>
+        <view wx:for="{{intensiveList}}" wx:key="character" class="intensive-row">
+          <text class="intensive-char">{{item.character}}</text>
+          <text class="intensive-sent">{{item.sentence}}</text>
+          <text class="intensive-rate">{{item.rate}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

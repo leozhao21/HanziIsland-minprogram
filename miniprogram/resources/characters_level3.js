@@ -1,0 +1,8002 @@
+module.exports = [
+  {
+    "id": "l3_0000_7684",
+    "character": "的",
+    "pinyin": "de",
+    "meaning": "常用汉字「的」",
+    "sentence": "我喜欢的。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "白",
+      "勺"
+    ],
+    "decomposeHint": "小谜语：白遇到「勺」，变魔术一样——拼成了「的」！你也来认认看～"
+  },
+  {
+    "id": "l3_0001_4e00",
+    "character": "一",
+    "pinyin": "yī",
+    "meaning": "常用汉字「一」",
+    "sentence": "我喜欢一。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "一横——数字「一」！",
+    "evolutionType": "象形",
+    "evolutionHint": "一横——数字「一」，也像一根线！"
+  },
+  {
+    "id": "l3_0002_4e0d",
+    "character": "不",
+    "pinyin": "bù",
+    "meaning": "常用汉字「不」",
+    "sentence": "我喜欢不。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一"
+    ],
+    "decomposeHint": "像花萼——表示「不」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像花萼——表示「不」！"
+  },
+  {
+    "id": "l3_0003_4e86",
+    "character": "了",
+    "pinyin": "le",
+    "meaning": "常用汉字「了」",
+    "sentence": "我喜欢了。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "乛",
+      "亅"
+    ],
+    "decomposeHint": "小谜语：「乛」遇到「亅」，变魔术一样——拼成了「了」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「跟」、「子」、「很」组合而成——慢慢写成今天的「了」。"
+  },
+  {
+    "id": "l3_0004_6709",
+    "character": "有",
+    "pinyin": "yǒu",
+    "meaning": "常用汉字「有」",
+    "sentence": "我喜欢有。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "月"
+    ],
+    "decomposeHint": "手加肉——「有」东西啦！",
+    "evolutionType": "形声",
+    "evolutionHint": "手加肉——「有」东西啦！"
+  },
+  {
+    "id": "l3_0005_548c",
+    "character": "和",
+    "pinyin": "hé",
+    "meaning": "常用汉字「和」",
+    "sentence": "我喜欢和。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "口"
+    ],
+    "decomposeHint": "小谜语：禾苗遇到嘴巴，变魔术一样——拼成了「和」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边嘴巴表示意思，右边「禾」帮助读音——合在一起就是「和」，这是形声字！"
+  },
+  {
+    "id": "l3_0006_8fd9",
+    "character": "这",
+    "pinyin": "zhè",
+    "meaning": "常用汉字「这」",
+    "sentence": "我喜欢这。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "文"
+    ],
+    "decomposeHint": "小谜语：走之底遇到文，变魔术一样——拼成了「这」！你也来认认看～"
+  },
+  {
+    "id": "l3_0007_4e3a",
+    "character": "为",
+    "pinyin": "wèi",
+    "meaning": "常用汉字「为」",
+    "sentence": "我喜欢为。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丶",
+      "力"
+    ],
+    "decomposeHint": "小谜语：「丶」遇到力气，变魔术一样——拼成了「为」！你也来认认看～"
+  },
+  {
+    "id": "l3_0008_4e2a",
+    "character": "个",
+    "pinyin": "gè",
+    "meaning": "常用汉字「个」",
+    "sentence": "我喜欢个。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人",
+      "丨"
+    ],
+    "decomposeHint": "人加竖——一个两个的「个」！",
+    "evolutionType": "会意",
+    "evolutionHint": "人加竖——一个两个的「个」！"
+  },
+  {
+    "id": "l3_0009_4ee5",
+    "character": "以",
+    "pinyin": "yǐ",
+    "meaning": "常用汉字「以」",
+    "sentence": "我喜欢以。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0010_65f6",
+    "character": "时",
+    "pinyin": "shí",
+    "meaning": "常用汉字「时」",
+    "sentence": "我喜欢时。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "寸"
+    ],
+    "decomposeHint": "太阳照一照，加上寸——是「时」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边太阳表示意思，右边「寸」帮助读音——合在一起就是「时」，这是形声字！"
+  },
+  {
+    "id": "l3_0011_4eec",
+    "character": "们",
+    "pinyin": "men",
+    "meaning": "常用汉字「们」",
+    "sentence": "我喜欢们。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "门"
+    ],
+    "decomposeHint": "人字旁加「门」——一群人从门里出来，是「们」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「门」帮助读音——合在一起就是「们」，这是形声字！"
+  },
+  {
+    "id": "l3_0012_6210",
+    "character": "成",
+    "pinyin": "chéng",
+    "meaning": "常用汉字「成」",
+    "sentence": "我喜欢成。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丁",
+      "戈"
+    ],
+    "decomposeHint": "小谜语：「丁」遇到戈，变魔术一样——拼成了「成」！你也来认认看～"
+  },
+  {
+    "id": "l3_0013_4f1a",
+    "character": "会",
+    "pinyin": "huì",
+    "meaning": "常用汉字「会」",
+    "sentence": "我喜欢会。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人",
+      "云"
+    ],
+    "decomposeHint": "人字旁加上「云」——是「会」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「云」组合而成——慢慢写成今天的「会」。"
+  },
+  {
+    "id": "l3_0014_53ef",
+    "character": "可",
+    "pinyin": "kě",
+    "meaning": "常用汉字「可」",
+    "sentence": "我喜欢可。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丁",
+      "口"
+    ],
+    "decomposeHint": "小谜语：「丁」遇到嘴巴，变魔术一样——拼成了「可」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「丁」表示意思，右边「口」帮助读音——合在一起就是「可」，这是形声字！"
+  },
+  {
+    "id": "l3_0015_4e3b",
+    "character": "主",
+    "pinyin": "zhǔ",
+    "meaning": "常用汉字「主」",
+    "sentence": "我喜欢主。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丶",
+      "王"
+    ],
+    "decomposeHint": "小谜语：「丶」遇到王，变魔术一样——拼成了「主」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「灯」、「王」、「火」组合而成——慢慢写成今天的「主」。"
+  },
+  {
+    "id": "l3_0016_80fd",
+    "character": "能",
+    "pinyin": "néng",
+    "meaning": "常用汉字「能」",
+    "sentence": "我喜欢能。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厶",
+      "匕"
+    ],
+    "decomposeHint": "像熊——有力气就「能」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像熊——有力气就「能」！"
+  },
+  {
+    "id": "l3_0017_8bf4",
+    "character": "说",
+    "pinyin": "shuō",
+    "meaning": "常用汉字「说」",
+    "sentence": "有问题要大胆说。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "兑"
+    ],
+    "decomposeHint": "言字旁加「兑」——用嘴巴「说」话！",
+    "evolutionType": "形声",
+    "evolutionHint": "言字旁加「兑」——用嘴巴「说」话！"
+  },
+  {
+    "id": "l3_0018_4ea7",
+    "character": "产",
+    "pinyin": "chǎn",
+    "meaning": "常用汉字「产」",
+    "sentence": "我喜欢产。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "丷",
+      "厂"
+    ],
+    "decomposeHint": "三个小伙伴「亠」、「丷」、厂手拉手——组成了「产」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「亠」表示意思，右边「厂」帮助读音——合在一起就是「产」，这是形声字！"
+  },
+  {
+    "id": "l3_0019_9762",
+    "character": "面",
+    "pinyin": "miàn",
+    "meaning": "常用汉字「面」",
+    "sentence": "我喜欢面。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「人」组合而成——慢慢写成今天的「面」。"
+  },
+  {
+    "id": "l3_0020_800c",
+    "character": "而",
+    "pinyin": "ér",
+    "meaning": "常用汉字「而」",
+    "sentence": "我喜欢而。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0021_65b9",
+    "character": "方",
+    "pinyin": "fāng",
+    "meaning": "常用汉字「方」",
+    "sentence": "我喜欢方。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0022_5b9a",
+    "character": "定",
+    "pinyin": "dìng",
+    "meaning": "常用汉字「定」",
+    "sentence": "我喜欢定。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "宀",
+      "疋"
+    ],
+    "decomposeHint": "屋字头像房顶，下面「疋」——跟家有关的「定」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「疋」、「房」组合而成——慢慢写成今天的「定」。"
+  },
+  {
+    "id": "l3_0023_884c",
+    "character": "行",
+    "pinyin": "xíng",
+    "meaning": "常用汉字「行」",
+    "sentence": "我喜欢行。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "彳",
+      "亍"
+    ],
+    "decomposeHint": "小谜语：「彳」遇到「亍」，变魔术一样——拼成了「行」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「亍」、「彳」组合而成——慢慢写成今天的「行」。"
+  },
+  {
+    "id": "l3_0024_6cd5",
+    "character": "法",
+    "pinyin": "fǎ",
+    "meaning": "常用汉字「法」",
+    "sentence": "我喜欢法。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "去"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「去」——是「法」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「去」、「氵」组合而成——慢慢写成今天的「法」。"
+  },
+  {
+    "id": "l3_0025_6240",
+    "character": "所",
+    "pinyin": "suǒ",
+    "meaning": "常用汉字「所」",
+    "sentence": "我喜欢所。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "户",
+      "斤"
+    ],
+    "decomposeHint": "小谜语：户遇到斤，变魔术一样——拼成了「所」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「斤」、「户」组合而成——慢慢写成今天的「所」。"
+  },
+  {
+    "id": "l3_0026_5f97",
+    "character": "得",
+    "pinyin": "dé",
+    "meaning": "常用汉字「得」",
+    "sentence": "我喜欢得。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "彳",
+      "旦"
+    ],
+    "decomposeHint": "小谜语：「彳」遇到「旦」，变魔术一样——拼成了「得」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「寸」、「旦」组合而成——慢慢写成今天的「得」。"
+  },
+  {
+    "id": "l3_0027_5341",
+    "character": "十",
+    "pinyin": "shí",
+    "meaning": "常用汉字「十」",
+    "sentence": "我喜欢十。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "丨"
+    ],
+    "decomposeHint": "一横一竖——数字「十」！",
+    "evolutionType": "形声",
+    "evolutionHint": "一横一竖——数字「十」！"
+  },
+  {
+    "id": "l3_0028_4e09",
+    "character": "三",
+    "pinyin": "sān",
+    "meaning": "常用汉字「三」",
+    "sentence": "我喜欢三。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "三横——数字「三」！",
+    "evolutionType": "象形",
+    "evolutionHint": "三横——数字「三」！"
+  },
+  {
+    "id": "l3_0029_4e4b",
+    "character": "之",
+    "pinyin": "zhī",
+    "meaning": "常用汉字「之」",
+    "sentence": "我喜欢之。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「脚」、「止」组合而成——慢慢写成今天的「之」。"
+  },
+  {
+    "id": "l3_0030_7740",
+    "character": "着",
+    "pinyin": "zhe",
+    "meaning": "常用汉字「着」",
+    "sentence": "我喜欢着。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "羊",
+      "目"
+    ],
+    "decomposeHint": "小谜语：羊遇到眼睛，变魔术一样——拼成了「着」！你也来认认看～"
+  },
+  {
+    "id": "l3_0031_90e8",
+    "character": "部",
+    "pinyin": "bù",
+    "meaning": "常用汉字「部」",
+    "sentence": "我喜欢部。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "咅",
+      "阝"
+    ],
+    "decomposeHint": "小谜语：「咅」遇到「阝」，变魔术一样——拼成了「部」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「阝」表示意思，右边「咅」帮助读音——合在一起就是「部」，这是形声字！"
+  },
+  {
+    "id": "l3_0032_5ea6",
+    "character": "度",
+    "pinyin": "dù",
+    "meaning": "常用汉字「度」",
+    "sentence": "我喜欢度。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "广",
+      "廿"
+    ],
+    "decomposeHint": "小谜语：广遇到「廿」，变魔术一样——拼成了「度」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Twenty 廿 people 又 meeting inside a building 广 to deliberate，后来写成「度」。"
+  },
+  {
+    "id": "l3_0033_529b",
+    "character": "力",
+    "pinyin": "lì",
+    "meaning": "常用汉字「力」",
+    "sentence": "我喜欢力。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A plow's head representing strength，后来写成「力」。"
+  },
+  {
+    "id": "l3_0034_5982",
+    "character": "如",
+    "pinyin": "rú",
+    "meaning": "常用汉字「如」",
+    "sentence": "我喜欢如。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "女",
+      "口"
+    ],
+    "decomposeHint": "女字旁加上嘴巴——是「如」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「女」、「口」组合而成——慢慢写成今天的「如」。"
+  },
+  {
+    "id": "l3_0035_5316",
+    "character": "化",
+    "pinyin": "huà",
+    "meaning": "常用汉字「化」",
+    "sentence": "我喜欢化。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "匕"
+    ],
+    "decomposeHint": "人字旁加上匕——是「化」！"
+  },
+  {
+    "id": "l3_0036_81ea",
+    "character": "自",
+    "pinyin": "zì",
+    "meaning": "常用汉字「自」",
+    "sentence": "我喜欢自。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A nose; in China, people refer to themselves by pointing to their noses，后来写成「自」。"
+  },
+  {
+    "id": "l3_0037_4e8c",
+    "character": "二",
+    "pinyin": "èr",
+    "meaning": "常用汉字「二」",
+    "sentence": "我喜欢二。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "两横——数字「二」！",
+    "evolutionType": "象形",
+    "evolutionHint": "两横——数字「二」！"
+  },
+  {
+    "id": "l3_0038_8d77",
+    "character": "起",
+    "pinyin": "qǐ",
+    "meaning": "常用汉字「起」",
+    "sentence": "早上七点起床。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "走",
+      "己"
+    ],
+    "decomposeHint": "走加己——从躺着到「起」来！",
+    "evolutionType": "形声",
+    "evolutionHint": "走加己——从躺着到「起」来！"
+  },
+  {
+    "id": "l3_0039_73b0",
+    "character": "现",
+    "pinyin": "xiàn",
+    "meaning": "常用汉字「现」",
+    "sentence": "我喜欢现。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "王",
+      "见"
+    ],
+    "decomposeHint": "小谜语：王遇到看见，变魔术一样——拼成了「现」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To see 见 jade 王; 见 「also」帮助读音，后来写成「现」。"
+  },
+  {
+    "id": "l3_0040_91cf",
+    "character": "量",
+    "pinyin": "liàng",
+    "meaning": "常用汉字「量」",
+    "sentence": "我喜欢量。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "旦",
+      "里"
+    ],
+    "decomposeHint": "小谜语：「旦」遇到里面，变魔术一样——拼成了「量」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边里面表示意思，右边「旦」帮助读音——合在一起就是「量」，这是形声字！"
+  },
+  {
+    "id": "l3_0041_90fd",
+    "character": "都",
+    "pinyin": "dōu",
+    "meaning": "常用汉字「都」",
+    "sentence": "我喜欢都。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "者",
+      "阝"
+    ],
+    "decomposeHint": "小谜语：「者」遇到「阝」，变魔术一样——拼成了「都」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「阝」表示意思，右边「者」帮助读音——合在一起就是「都」，这是形声字！"
+  },
+  {
+    "id": "l3_0042_4e24",
+    "character": "两",
+    "pinyin": "liǎng",
+    "meaning": "常用汉字「两」",
+    "sentence": "我喜欢两。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "冂"
+    ],
+    "decomposeHint": "小谜语：一遇到「冂」，变魔术一样——拼成了「两」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「从」组合而成——慢慢写成今天的「两」。"
+  },
+  {
+    "id": "l3_0043_5236",
+    "character": "制",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「制」",
+    "sentence": "我喜欢制。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "形声",
+    "evolutionHint": "一部分表意思、一部分表读音——合起来是形声字「制」！"
+  },
+  {
+    "id": "l3_0044_5f53",
+    "character": "当",
+    "pinyin": "dāng",
+    "meaning": "常用汉字「当」",
+    "sentence": "我喜欢当。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0045_4f7f",
+    "character": "使",
+    "pinyin": "shǐ",
+    "meaning": "常用汉字「使」",
+    "sentence": "我喜欢使。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "吏"
+    ],
+    "decomposeHint": "人字旁加上「吏」——是「使」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「吏」组合而成——慢慢写成今天的「使」。"
+  },
+  {
+    "id": "l3_0046_70b9",
+    "character": "点",
+    "pinyin": "diǎn",
+    "meaning": "常用汉字「点」",
+    "sentence": "我喜欢点。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "占",
+      "灬"
+    ],
+    "decomposeHint": "小谜语：「占」遇到「灬」，变魔术一样——拼成了「点」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「灬」表示意思，右边「占」帮助读音——合在一起就是「点」，这是形声字！"
+  },
+  {
+    "id": "l3_0047_4ece",
+    "character": "从",
+    "pinyin": "cóng",
+    "meaning": "常用汉字「从」",
+    "sentence": "我喜欢从。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人"
+    ],
+    "decomposeHint": "两个人——一个跟一个，是「从」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「从」。"
+  },
+  {
+    "id": "l3_0048_4e1a",
+    "character": "业",
+    "pinyin": "yè",
+    "meaning": "常用汉字「业」",
+    "sentence": "我喜欢业。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0049_672c",
+    "character": "本",
+    "pinyin": "běn",
+    "meaning": "常用汉字「本」",
+    "sentence": "我喜欢本。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "一"
+    ],
+    "decomposeHint": "木头加上一——跟树有关的「本」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「树」、「木」组合而成——慢慢写成今天的「本」。"
+  },
+  {
+    "id": "l3_0050_628a",
+    "character": "把",
+    "pinyin": "bǎ",
+    "meaning": "常用汉字「把」",
+    "sentence": "我喜欢把。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "巴"
+    ],
+    "decomposeHint": "提手旁加上巴——用手做的动作：「把」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「巴」帮助读音——合在一起就是「把」，这是形声字！"
+  },
+  {
+    "id": "l3_0051_6027",
+    "character": "性",
+    "pinyin": "xìng",
+    "meaning": "常用汉字「性」",
+    "sentence": "我喜欢性。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "忄",
+      "生"
+    ],
+    "decomposeHint": "竖心旁加上「生」——跟心里感觉有关的「性」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边竖心旁表示意思，右边「生」帮助读音——合在一起就是「性」，这是形声字！"
+  },
+  {
+    "id": "l3_0052_5e94",
+    "character": "应",
+    "pinyin": "yīng",
+    "meaning": "常用汉字「应」",
+    "sentence": "我喜欢应。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0053_5b83",
+    "character": "它",
+    "pinyin": "tā",
+    "meaning": "常用汉字「它」",
+    "sentence": "我喜欢它。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "宀",
+      "匕"
+    ],
+    "decomposeHint": "屋字头像房顶，下面匕——跟家有关的「它」！"
+  },
+  {
+    "id": "l3_0054_5408",
+    "character": "合",
+    "pinyin": "hé",
+    "meaning": "常用汉字「合」",
+    "sentence": "我喜欢合。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亼",
+      "口"
+    ],
+    "decomposeHint": "小谜语：「亼」遇到嘴巴，变魔术一样——拼成了「合」！你也来认认看～"
+  },
+  {
+    "id": "l3_0055_56e0",
+    "character": "因",
+    "pinyin": "yīn",
+    "meaning": "常用汉字「因」",
+    "sentence": "我喜欢因。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "囗",
+      "大"
+    ],
+    "decomposeHint": "小谜语：「囗」遇到大，变魔术一样——拼成了「因」！你也来认认看～"
+  },
+  {
+    "id": "l3_0056_7531",
+    "character": "由",
+    "pinyin": "yóu",
+    "meaning": "常用汉字「由」",
+    "sentence": "我喜欢由。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「丨」、「田」组合而成——慢慢写成今天的「由」。"
+  },
+  {
+    "id": "l3_0057_5176",
+    "character": "其",
+    "pinyin": "qí",
+    "meaning": "常用汉字「其」",
+    "sentence": "我喜欢其。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "甘",
+      "一"
+    ],
+    "decomposeHint": "小谜语：「甘」遇到一，变魔术一样——拼成了「其」！你也来认认看～"
+  },
+  {
+    "id": "l3_0058_4e9b",
+    "character": "些",
+    "pinyin": "xiē",
+    "meaning": "常用汉字「些」",
+    "sentence": "我喜欢些。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "此",
+      "二"
+    ],
+    "decomposeHint": "小谜语：「此」遇到二，变魔术一样——拼成了「些」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边二表示意思，右边「此」帮助读音——合在一起就是「些」，这是形声字！"
+  },
+  {
+    "id": "l3_0059_7136",
+    "character": "然",
+    "pinyin": "rán",
+    "meaning": "常用汉字「然」",
+    "sentence": "我喜欢然。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "肰",
+      "灬"
+    ],
+    "decomposeHint": "小谜语：「肰」遇到「灬」，变魔术一样——拼成了「然」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「灬」表示意思，右边「肰」帮助读音——合在一起就是「然」，这是形声字！"
+  },
+  {
+    "id": "l3_0060_653f",
+    "character": "政",
+    "pinyin": "zhèng",
+    "meaning": "常用汉字「政」",
+    "sentence": "我喜欢政。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "正",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「正」遇到反文旁，变魔术一样——拼成了「政」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「正」帮助读音——合在一起就是「政」，这是形声字！"
+  },
+  {
+    "id": "l3_0061_56db",
+    "character": "四",
+    "pinyin": "sì",
+    "meaning": "常用汉字「四」",
+    "sentence": "我喜欢四。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "囗",
+      "儿"
+    ],
+    "decomposeHint": "四方框——数字「四」！",
+    "evolutionType": "会意",
+    "evolutionHint": "四方框——数字「四」！"
+  },
+  {
+    "id": "l3_0062_90a3",
+    "character": "那",
+    "pinyin": "nà",
+    "meaning": "常用汉字「那」",
+    "sentence": "我喜欢那。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0063_793e",
+    "character": "社",
+    "pinyin": "shè",
+    "meaning": "常用汉字「社」",
+    "sentence": "我喜欢社。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "礻",
+      "土"
+    ],
+    "decomposeHint": "小谜语：「礻」遇到土地，变魔术一样——拼成了「社」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——An 土地 土 spirit 礻; 礻 「also」帮助读音，后来写成「社」。"
+  },
+  {
+    "id": "l3_0064_4e49",
+    "character": "义",
+    "pinyin": "yì",
+    "meaning": "常用汉字「义」",
+    "sentence": "我喜欢义。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丶",
+      "乂"
+    ],
+    "decomposeHint": "小谜语：「丶」遇到「乂」，变魔术一样——拼成了「义」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「⺷」表示意思，右边「乂」帮助读音——合在一起就是「义」，这是形声字！"
+  },
+  {
+    "id": "l3_0065_5e73",
+    "character": "平",
+    "pinyin": "píng",
+    "meaning": "常用汉字「平」",
+    "sentence": "我喜欢平。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "干",
+      "丷"
+    ],
+    "decomposeHint": "小谜语：「干」遇到「丷」，变魔术一样——拼成了「平」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A leveling scale，后来写成「平」。"
+  },
+  {
+    "id": "l3_0066_5f62",
+    "character": "形",
+    "pinyin": "xíng",
+    "meaning": "常用汉字「形」",
+    "sentence": "我喜欢形。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "开",
+      "彡"
+    ],
+    "decomposeHint": "小谜语：开遇到「彡」，变魔术一样——拼成了「形」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「太」、「阳」、「彡」组合而成——慢慢写成今天的「形」。"
+  },
+  {
+    "id": "l3_0067_76f8",
+    "character": "相",
+    "pinyin": "xiāng",
+    "meaning": "常用汉字「相」",
+    "sentence": "我喜欢相。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "目"
+    ],
+    "decomposeHint": "木头加上眼睛——跟树有关的「相」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「目」、「树」、「木」组合而成——慢慢写成今天的「相」。"
+  },
+  {
+    "id": "l3_0068_8868",
+    "character": "表",
+    "pinyin": "biǎo",
+    "meaning": "常用汉字「表」",
+    "sentence": "我喜欢表。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "毛",
+      "衣"
+    ],
+    "decomposeHint": "小谜语：「毛」遇到衣，变魔术一样——拼成了「表」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「毛」、「衣」组合而成——慢慢写成今天的「表」。"
+  },
+  {
+    "id": "l3_0069_6837",
+    "character": "样",
+    "pinyin": "yàng",
+    "meaning": "常用汉字「样」",
+    "sentence": "我喜欢样。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "羊"
+    ],
+    "decomposeHint": "木头加上羊——跟树有关的「样」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「羊」帮助读音——合在一起就是「样」，这是形声字！"
+  },
+  {
+    "id": "l3_0070_4e0e",
+    "character": "与",
+    "pinyin": "yǔ",
+    "meaning": "常用汉字「与」",
+    "sentence": "我喜欢与。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0071_5173",
+    "character": "关",
+    "pinyin": "guān",
+    "meaning": "常用汉字「关」",
+    "sentence": "我喜欢关。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "天"
+    ],
+    "decomposeHint": "像门闩关上——「关」门啦！",
+    "evolutionType": "形声",
+    "evolutionHint": "像门闩关上——「关」门啦！"
+  },
+  {
+    "id": "l3_0072_7ebf",
+    "character": "线",
+    "pinyin": "xiàn",
+    "meaning": "常用汉字「线」",
+    "sentence": "我喜欢线。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "戋"
+    ],
+    "decomposeHint": "纟旁像丝线，加上「戋」——是「线」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「戋」帮助读音——合在一起就是「线」，这是形声字！"
+  },
+  {
+    "id": "l3_0073_6570",
+    "character": "数",
+    "pinyin": "shù",
+    "meaning": "常用汉字「数」",
+    "sentence": "我喜欢数。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "娄",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「娄」遇到反文旁，变魔术一样——拼成了「数」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「娄」帮助读音——合在一起就是「数」，这是形声字！"
+  },
+  {
+    "id": "l3_0074_53cd",
+    "character": "反",
+    "pinyin": "fǎn",
+    "meaning": "常用汉字「反」",
+    "sentence": "我喜欢反。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "又"
+    ],
+    "decomposeHint": "小谜语：厂遇到又，变魔术一样——拼成了「反」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「又」、「厂」组合而成——慢慢写成今天的「反」。"
+  },
+  {
+    "id": "l3_0075_539f",
+    "character": "原",
+    "pinyin": "yuán",
+    "meaning": "常用汉字「原」",
+    "sentence": "我喜欢原。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "泉"
+    ],
+    "decomposeHint": "小谜语：厂遇到「泉」，变魔术一样——拼成了「原」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边厂表示意思，右边「泉」帮助读音——合在一起就是「原」，这是形声字！"
+  },
+  {
+    "id": "l3_0076_4e48",
+    "character": "么",
+    "pinyin": "me",
+    "meaning": "常用汉字「么」",
+    "sentence": "我喜欢么。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "厶"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到「厶」，变魔术一样——拼成了「么」！你也来认认看～"
+  },
+  {
+    "id": "l3_0077_5229",
+    "character": "利",
+    "pinyin": "lì",
+    "meaning": "常用汉字「利」",
+    "sentence": "我喜欢利。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "刂"
+    ],
+    "decomposeHint": "小谜语：禾苗遇到立刀旁，变魔术一样——拼成了「利」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「刂」、「禾」组合而成——慢慢写成今天的「利」。"
+  },
+  {
+    "id": "l3_0078_6216",
+    "character": "或",
+    "pinyin": "huò",
+    "meaning": "常用汉字「或」",
+    "sentence": "我喜欢或。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "戈",
+      "口"
+    ],
+    "decomposeHint": "小谜语：戈遇到嘴巴，变魔术一样——拼成了「或」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「口」、「耳」、「朵」组合而成——慢慢写成今天的「或」。"
+  },
+  {
+    "id": "l3_0079_4f46",
+    "character": "但",
+    "pinyin": "dàn",
+    "meaning": "常用汉字「但」",
+    "sentence": "我喜欢但。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "旦"
+    ],
+    "decomposeHint": "人字旁加上「旦」——是「但」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「旦」帮助读音——合在一起就是「但」，这是形声字！"
+  },
+  {
+    "id": "l3_0080_8d28",
+    "character": "质",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「质」",
+    "sentence": "我喜欢质。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "十"
+    ],
+    "decomposeHint": "小谜语：厂遇到十，变魔术一样——拼成了「质」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边贝壳表示意思，右边「十」帮助读音——合在一起就是「质」，这是形声字！"
+  },
+  {
+    "id": "l3_0081_9053",
+    "character": "道",
+    "pinyin": "dào",
+    "meaning": "常用汉字「道」",
+    "sentence": "我喜欢道。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "首"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「首」，变魔术一样——拼成了「道」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「首」帮助读音——合在一起就是「道」，这是形声字！"
+  },
+  {
+    "id": "l3_0082_547d",
+    "character": "命",
+    "pinyin": "mìng",
+    "meaning": "常用汉字「命」",
+    "sentence": "我喜欢命。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "令",
+      "口"
+    ],
+    "decomposeHint": "小谜语：「令」遇到嘴巴，变魔术一样——拼成了「命」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「令」、「嘴」、「巴」组合而成——慢慢写成今天的「命」。"
+  },
+  {
+    "id": "l3_0083_6b64",
+    "character": "此",
+    "pinyin": "cǐ",
+    "meaning": "常用汉字「此」",
+    "sentence": "我喜欢此。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "止",
+      "匕"
+    ],
+    "decomposeHint": "小谜语：止遇到匕，变魔术一样——拼成了「此」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边匕表示意思，右边「止」帮助读音——合在一起就是「此」，这是形声字！"
+  },
+  {
+    "id": "l3_0084_53d8",
+    "character": "变",
+    "pinyin": "biàn",
+    "meaning": "常用汉字「变」",
+    "sentence": "我喜欢变。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亦",
+      "又"
+    ],
+    "decomposeHint": "小谜语：「亦」遇到又，变魔术一样——拼成了「变」！你也来认认看～"
+  },
+  {
+    "id": "l3_0085_6761",
+    "character": "条",
+    "pinyin": "tiáo",
+    "meaning": "常用汉字「条」",
+    "sentence": "我喜欢条。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "夂",
+      "木"
+    ],
+    "decomposeHint": "小谜语：「夂」遇到树木，变魔术一样——拼成了「条」！你也来认认看～"
+  },
+  {
+    "id": "l3_0086_53ea",
+    "character": "只",
+    "pinyin": "zhǐ",
+    "meaning": "常用汉字「只」",
+    "sentence": "我喜欢只。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "八"
+    ],
+    "decomposeHint": "口加八——单单「只」有一个！",
+    "evolutionType": "会意",
+    "evolutionHint": "口加八——单单「只」有一个！"
+  },
+  {
+    "id": "l3_0087_6ca1",
+    "character": "没",
+    "pinyin": "méi",
+    "meaning": "常用汉字「没」",
+    "sentence": "我喜欢没。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "殳"
+    ],
+    "decomposeHint": "三点水加「殳」——「没」有了！",
+    "evolutionType": "形声",
+    "evolutionHint": "三点水加「殳」——「没」有了！"
+  },
+  {
+    "id": "l3_0088_89e3",
+    "character": "解",
+    "pinyin": "jiě",
+    "meaning": "常用汉字「解」",
+    "sentence": "我喜欢解。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "角",
+      "刀"
+    ],
+    "decomposeHint": "小谜语：「角」遇到刀，变魔术一样——拼成了「解」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To cut 刀 the horns 角 off of an ox 牛; 角 「also」帮助读音，后来写成「解」。"
+  },
+  {
+    "id": "l3_0089_95ee",
+    "character": "问",
+    "pinyin": "wèn",
+    "meaning": "常用汉字「问」",
+    "sentence": "我喜欢问。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "门",
+      "口"
+    ],
+    "decomposeHint": "门里口——在门里开口，是「问」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边嘴巴表示意思，右边「门」帮助读音——合在一起就是「问」，这是形声字！"
+  },
+  {
+    "id": "l3_0090_610f",
+    "character": "意",
+    "pinyin": "yì",
+    "meaning": "常用汉字「意」",
+    "sentence": "我喜欢意。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "音",
+      "心"
+    ],
+    "decomposeHint": "音下心——心里的声音，是「意」思！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边心表示意思，右边「音」帮助读音——合在一起就是「意」，这是形声字！"
+  },
+  {
+    "id": "l3_0091_5efa",
+    "character": "建",
+    "pinyin": "jiàn",
+    "meaning": "常用汉字「建」",
+    "sentence": "我喜欢建。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "廴",
+      "聿"
+    ],
+    "decomposeHint": "小谜语：「廴」遇到「聿」，变魔术一样——拼成了「建」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「廴」表示意思，右边「聿」帮助读音——合在一起就是「建」，这是形声字！"
+  },
+  {
+    "id": "l3_0092_65e0",
+    "character": "无",
+    "pinyin": "wú",
+    "meaning": "常用汉字「无」",
+    "sentence": "我喜欢无。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "尢"
+    ],
+    "decomposeHint": "小谜语：一遇到「尢」，变魔术一样——拼成了「无」！你也来认认看～"
+  },
+  {
+    "id": "l3_0093_7cfb",
+    "character": "系",
+    "pinyin": "xì",
+    "meaning": "常用汉字「系」",
+    "sentence": "我喜欢系。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "糸"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到「糸」，变魔术一样——拼成了「系」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「糸」表示意思，右边「糸」帮助读音——合在一起就是「系」，这是形声字！"
+  },
+  {
+    "id": "l3_0094_519b",
+    "character": "军",
+    "pinyin": "jūn",
+    "meaning": "常用汉字「军」",
+    "sentence": "我喜欢军。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冖",
+      "车"
+    ],
+    "decomposeHint": "小谜语：「冖」遇到车，变魔术一样——拼成了「军」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Soldiers 冖 (distorted 力) in a cart 车，后来写成「军」。"
+  },
+  {
+    "id": "l3_0095_60c5",
+    "character": "情",
+    "pinyin": "qíng",
+    "meaning": "常用汉字「情」",
+    "sentence": "我喜欢情。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "忄",
+      "青"
+    ],
+    "decomposeHint": "竖心旁加「青」——心里的感觉，是「情」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边竖心旁表示意思，右边「青」帮助读音——合在一起就是「情」，这是形声字！"
+  },
+  {
+    "id": "l3_0096_8005",
+    "character": "者",
+    "pinyin": "zhě",
+    "meaning": "常用汉字「者」",
+    "sentence": "我喜欢者。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "耂",
+      "日"
+    ],
+    "decomposeHint": "小谜语：「耂」遇到太阳，变魔术一样——拼成了「者」！你也来认认看～"
+  },
+  {
+    "id": "l3_0097_7acb",
+    "character": "立",
+    "pinyin": "lì",
+    "meaning": "常用汉字「立」",
+    "sentence": "我喜欢立。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "丷",
+      "一"
+    ],
+    "decomposeHint": "三个小伙伴「亠」、「丷」、一手拉手——组成了「立」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「人」、「一」组合而成——慢慢写成今天的「立」。"
+  },
+  {
+    "id": "l3_0098_4ee3",
+    "character": "代",
+    "pinyin": "dài",
+    "meaning": "常用汉字「代」",
+    "sentence": "我喜欢代。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "弋"
+    ],
+    "decomposeHint": "人字旁加上「弋」——是「代」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「弋」组合而成——慢慢写成今天的「代」。"
+  },
+  {
+    "id": "l3_0099_60f3",
+    "character": "想",
+    "pinyin": "xiǎng",
+    "meaning": "常用汉字「想」",
+    "sentence": "我喜欢想。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "相",
+      "心"
+    ],
+    "decomposeHint": "相下心——心里冒出画面，就是「想」！",
+    "evolutionType": "形声",
+    "evolutionHint": "「相」加「心」——心里冒出画面，就是「想」！"
+  },
+  {
+    "id": "l3_0100_901a",
+    "character": "通",
+    "pinyin": "tōng",
+    "meaning": "常用汉字「通」",
+    "sentence": "我喜欢通。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "甬"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「甬」，变魔术一样——拼成了「通」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「甬」帮助读音——合在一起就是「通」，这是形声字！"
+  },
+  {
+    "id": "l3_0101_5e76",
+    "character": "并",
+    "pinyin": "bìng",
+    "meaning": "常用汉字「并」",
+    "sentence": "我喜欢并。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "开"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到开，变魔术一样——拼成了「并」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「並」、「的」、「简」组合而成——慢慢写成今天的「并」。"
+  },
+  {
+    "id": "l3_0102_63d0",
+    "character": "提",
+    "pinyin": "tí",
+    "meaning": "常用汉字「提」",
+    "sentence": "我喜欢提。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "是"
+    ],
+    "decomposeHint": "提手旁加上是——用手做的动作：「提」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「是」帮助读音——合在一起就是「提」，这是形声字！"
+  },
+  {
+    "id": "l3_0103_76f4",
+    "character": "直",
+    "pinyin": "zhí",
+    "meaning": "常用汉字「直」",
+    "sentence": "我喜欢直。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "十",
+      "目",
+      "一"
+    ],
+    "decomposeHint": "三个小伙伴十、眼睛、一手拉手——组成了「直」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「眼」、「睛」、「目」组合而成——慢慢写成今天的「直」。"
+  },
+  {
+    "id": "l3_0104_9898",
+    "character": "题",
+    "pinyin": "tí",
+    "meaning": "常用汉字「题」",
+    "sentence": "我喜欢题。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "是",
+      "页"
+    ],
+    "decomposeHint": "小谜语：是遇到页，变魔术一样——拼成了「题」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边页表示意思，右边「是」帮助读音——合在一起就是「题」，这是形声字！"
+  },
+  {
+    "id": "l3_0105_515a",
+    "character": "党",
+    "pinyin": "dǎng",
+    "meaning": "常用汉字「党」",
+    "sentence": "我喜欢党。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尚",
+      "兄"
+    ],
+    "decomposeHint": "小谜语：「尚」遇到「兄」，变魔术一样——拼成了「党」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「兄」表示意思，右边「尚」帮助读音——合在一起就是「党」，这是形声字！"
+  },
+  {
+    "id": "l3_0106_7a0b",
+    "character": "程",
+    "pinyin": "chéng",
+    "meaning": "常用汉字「程」",
+    "sentence": "我喜欢程。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "呈"
+    ],
+    "decomposeHint": "小谜语：禾苗遇到「呈」，变魔术一样——拼成了「程」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边禾苗表示意思，右边「呈」帮助读音——合在一起就是「程」，这是形声字！"
+  },
+  {
+    "id": "l3_0107_5c55",
+    "character": "展",
+    "pinyin": "zhǎn",
+    "meaning": "常用汉字「展」",
+    "sentence": "我喜欢展。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「尸」、「跟」、「很」组合而成——慢慢写成今天的「展」。"
+  },
+  {
+    "id": "l3_0108_4e94",
+    "character": "五",
+    "pinyin": "wǔ",
+    "meaning": "常用汉字「五」",
+    "sentence": "我喜欢五。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "二"
+    ],
+    "decomposeHint": "像交叉线——数字「五」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像交叉线——数字「五」！"
+  },
+  {
+    "id": "l3_0109_6599",
+    "character": "料",
+    "pinyin": "liào",
+    "meaning": "常用汉字「料」",
+    "sentence": "我喜欢料。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "米",
+      "斗"
+    ],
+    "decomposeHint": "小谜语：米遇到「斗」，变魔术一样——拼成了「料」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「斗」、「米」组合而成——慢慢写成今天的「料」。"
+  },
+  {
+    "id": "l3_0110_5458",
+    "character": "员",
+    "pinyin": "yuán",
+    "meaning": "常用汉字「员」",
+    "sentence": "我喜欢员。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "贝"
+    ],
+    "decomposeHint": "张开嘴巴，配上贝壳——凑成了「员」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边贝壳表示意思，右边「贝」帮助读音——合在一起就是「员」，这是形声字！"
+  },
+  {
+    "id": "l3_0111_9769",
+    "character": "革",
+    "pinyin": "gé",
+    "meaning": "常用汉字「革」",
+    "sentence": "我喜欢革。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——An animal being skinned，后来写成「革」。"
+  },
+  {
+    "id": "l3_0112_4f4d",
+    "character": "位",
+    "pinyin": "wèi",
+    "meaning": "常用汉字「位」",
+    "sentence": "我喜欢位。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "立"
+    ],
+    "decomposeHint": "人字旁加上立——是「位」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「立」组合而成——慢慢写成今天的「位」。"
+  },
+  {
+    "id": "l3_0113_5e38",
+    "character": "常",
+    "pinyin": "cháng",
+    "meaning": "常用汉字「常」",
+    "sentence": "我喜欢常。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尚",
+      "巾"
+    ],
+    "decomposeHint": "小谜语：「尚」遇到「巾」，变魔术一样——拼成了「常」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「巾」表示意思，右边「尚」帮助读音——合在一起就是「常」，这是形声字！"
+  },
+  {
+    "id": "l3_0114_6587",
+    "character": "文",
+    "pinyin": "wén",
+    "meaning": "常用汉字「文」",
+    "sentence": "我喜欢文。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "乂"
+    ],
+    "decomposeHint": "小谜语：「亠」遇到「乂」，变魔术一样——拼成了「文」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A tattooed chest, representing writing，后来写成「文」。"
+  },
+  {
+    "id": "l3_0115_603b",
+    "character": "总",
+    "pinyin": "zǒng",
+    "meaning": "常用汉字「总」",
+    "sentence": "我喜欢总。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "口",
+      "心"
+    ],
+    "decomposeHint": "三个小伙伴「丷」、嘴巴、心手拉手——组成了「总」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「嘴」、「巴」组合而成——慢慢写成今天的「总」。"
+  },
+  {
+    "id": "l3_0116_6b21",
+    "character": "次",
+    "pinyin": "cì",
+    "meaning": "常用汉字「次」",
+    "sentence": "我喜欢次。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冫",
+      "欠"
+    ],
+    "decomposeHint": "小谜语：「冫」遇到「欠」，变魔术一样——拼成了「次」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「欠」、「冫」组合而成——慢慢写成今天的「次」。"
+  },
+  {
+    "id": "l3_0117_54c1",
+    "character": "品",
+    "pinyin": "pǐn",
+    "meaning": "常用汉字「品」",
+    "sentence": "我喜欢品。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「口」组合而成——慢慢写成今天的「品」。"
+  },
+  {
+    "id": "l3_0118_5f0f",
+    "character": "式",
+    "pinyin": "shì",
+    "meaning": "常用汉字「式」",
+    "sentence": "我喜欢式。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "弋",
+      "工"
+    ],
+    "decomposeHint": "小谜语：「弋」遇到「工」，变魔术一样——拼成了「式」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「弋」、「工」组合而成——慢慢写成今天的「式」。"
+  },
+  {
+    "id": "l3_0119_6d3b",
+    "character": "活",
+    "pinyin": "huó",
+    "meaning": "常用汉字「活」",
+    "sentence": "我喜欢活。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "舌"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「舌」——是「活」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「舌」帮助读音——合在一起就是「活」，这是形声字！"
+  },
+  {
+    "id": "l3_0120_8bbe",
+    "character": "设",
+    "pinyin": "shè",
+    "meaning": "常用汉字「设」",
+    "sentence": "我喜欢设。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "殳"
+    ],
+    "decomposeHint": "言字旁加上「殳」——跟说话有关的「设」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「殳」帮助读音——合在一起就是「设」，这是形声字！"
+  },
+  {
+    "id": "l3_0121_53ca",
+    "character": "及",
+    "pinyin": "jí",
+    "meaning": "常用汉字「及」",
+    "sentence": "我喜欢及。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0122_7ba1",
+    "character": "管",
+    "pinyin": "guǎn",
+    "meaning": "常用汉字「管」",
+    "sentence": "我喜欢管。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "⺮",
+      "官"
+    ],
+    "decomposeHint": "竹字头下面「官」——是「管」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边竹字头表示意思，右边「官」帮助读音——合在一起就是「管」，这是形声字！"
+  },
+  {
+    "id": "l3_0123_7279",
+    "character": "特",
+    "pinyin": "tè",
+    "meaning": "常用汉字「特」",
+    "sentence": "我喜欢特。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "牛",
+      "寺"
+    ],
+    "decomposeHint": "小谜语：牛遇到「寺」，变魔术一样——拼成了「特」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边牛表示意思，右边「寺」帮助读音——合在一起就是「特」，这是形声字！"
+  },
+  {
+    "id": "l3_0124_4ef6",
+    "character": "件",
+    "pinyin": "jiàn",
+    "meaning": "常用汉字「件」",
+    "sentence": "我喜欢件。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "牛"
+    ],
+    "decomposeHint": "人字旁加上牛——是「件」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「牛」组合而成——慢慢写成今天的「件」。"
+  },
+  {
+    "id": "l3_0125_6c42",
+    "character": "求",
+    "pinyin": "qiú",
+    "meaning": "常用汉字「求」",
+    "sentence": "我喜欢求。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "氺"
+    ],
+    "decomposeHint": "小谜语：一遇到「氺」，变魔术一样——拼成了「求」！你也来认认看～"
+  },
+  {
+    "id": "l3_0126_57fa",
+    "character": "基",
+    "pinyin": "jī",
+    "meaning": "常用汉字「基」",
+    "sentence": "我喜欢基。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "其",
+      "土"
+    ],
+    "decomposeHint": "小谜语：「其」遇到土地，变魔术一样——拼成了「基」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边土地表示意思，右边「其」帮助读音——合在一起就是「基」，这是形声字！"
+  },
+  {
+    "id": "l3_0127_8d44",
+    "character": "资",
+    "pinyin": "zī",
+    "meaning": "常用汉字「资」",
+    "sentence": "我喜欢资。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "次",
+      "贝"
+    ],
+    "decomposeHint": "小谜语：「次」遇到贝壳，变魔术一样——拼成了「资」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边贝壳表示意思，右边「次」帮助读音——合在一起就是「资」，这是形声字！"
+  },
+  {
+    "id": "l3_0128_6d41",
+    "character": "流",
+    "pinyin": "liú",
+    "meaning": "常用汉字「流」",
+    "sentence": "我喜欢流。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "形声",
+    "evolutionHint": "跟水有关，加上表音的部分——写成今天的「流」！"
+  },
+  {
+    "id": "l3_0129_7ea7",
+    "character": "级",
+    "pinyin": "jí",
+    "meaning": "常用汉字「级」",
+    "sentence": "我喜欢级。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "及"
+    ],
+    "decomposeHint": "纟旁像丝线，加上「及」——是「级」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「及」帮助读音——合在一起就是「级」，这是形声字！"
+  },
+  {
+    "id": "l3_0130_7edf",
+    "character": "统",
+    "pinyin": "tǒng",
+    "meaning": "常用汉字「统」",
+    "sentence": "我喜欢统。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "充"
+    ],
+    "decomposeHint": "纟旁像丝线，加上「充」——是「统」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「充」帮助读音——合在一起就是「统」，这是形声字！"
+  },
+  {
+    "id": "l3_0131_77e5",
+    "character": "知",
+    "pinyin": "zhī",
+    "meaning": "常用汉字「知」",
+    "sentence": "我喜欢知。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "矢",
+      "口"
+    ],
+    "decomposeHint": "小谜语：「矢」遇到嘴巴，变魔术一样——拼成了「知」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边嘴巴表示意思，右边「矢」帮助读音——合在一起就是「知」，这是形声字！"
+  },
+  {
+    "id": "l3_0132_8f83",
+    "character": "较",
+    "pinyin": "jiào",
+    "meaning": "常用汉字「较」",
+    "sentence": "我喜欢较。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "车",
+      "交"
+    ],
+    "decomposeHint": "车字旁加上「交」——跟车有关的「较」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边车表示意思，右边「交」帮助读音——合在一起就是「较」，这是形声字！"
+  },
+  {
+    "id": "l3_0133_7ec4",
+    "character": "组",
+    "pinyin": "zǔ",
+    "meaning": "常用汉字「组」",
+    "sentence": "我喜欢组。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "且"
+    ],
+    "decomposeHint": "纟旁像丝线，加上「且」——是「组」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「且」帮助读音——合在一起就是「组」，这是形声字！"
+  },
+  {
+    "id": "l3_0134_89c1",
+    "character": "见",
+    "pinyin": "jiàn",
+    "meaning": "常用汉字「见」",
+    "sentence": "我喜欢见。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冂",
+      "儿"
+    ],
+    "decomposeHint": "小谜语：「冂」遇到儿，变魔术一样——拼成了「见」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——「見;」的简化写法 a 人 儿 with the 眼睛 目 emphasized，后来写成「见」。"
+  },
+  {
+    "id": "l3_0135_8ba1",
+    "character": "计",
+    "pinyin": "jì",
+    "meaning": "常用汉字「计」",
+    "sentence": "我喜欢计。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "十"
+    ],
+    "decomposeHint": "言字旁加上十——跟说话有关的「计」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「十」帮助读音——合在一起就是「计」，这是形声字！"
+  },
+  {
+    "id": "l3_0136_522b",
+    "character": "别",
+    "pinyin": "bié",
+    "meaning": "常用汉字「别」",
+    "sentence": "我喜欢别。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "另",
+      "刂"
+    ],
+    "decomposeHint": "小谜语：「另」遇到立刀旁，变魔术一样——拼成了「别」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「刂」、「另」组合而成——慢慢写成今天的「别」。"
+  },
+  {
+    "id": "l3_0137_6839",
+    "character": "根",
+    "pinyin": "gēn",
+    "meaning": "常用汉字「根」",
+    "sentence": "我喜欢根。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "艮"
+    ],
+    "decomposeHint": "木头加上「艮」——跟树有关的「根」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「艮」帮助读音——合在一起就是「根」，这是形声字！"
+  },
+  {
+    "id": "l3_0138_8bba",
+    "character": "论",
+    "pinyin": "lùn",
+    "meaning": "常用汉字「论」",
+    "sentence": "我喜欢论。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "仑"
+    ],
+    "decomposeHint": "言字旁加上「仑」——跟说话有关的「论」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Speech 讠 that explains the logic 仑; 仑 「also」帮助读音，后来写成「论」。"
+  },
+  {
+    "id": "l3_0139_6307",
+    "character": "指",
+    "pinyin": "zhǐ",
+    "meaning": "常用汉字「指」",
+    "sentence": "我喜欢指。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "旨"
+    ],
+    "decomposeHint": "提手旁加上「旨」——用手做的动作：「指」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To point 旨 by 手 扌; 旨 「also」帮助读音，后来写成「指」。"
+  },
+  {
+    "id": "l3_0140_51e0",
+    "character": "几",
+    "pinyin": "jǐ",
+    "meaning": "常用汉字「几」",
+    "sentence": "我喜欢几。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "乙"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到乙，变魔术一样——拼成了「几」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「桌」、「子」、「跟」组合而成——慢慢写成今天的「几」。"
+  },
+  {
+    "id": "l3_0141_4e5d",
+    "character": "九",
+    "pinyin": "jiǔ",
+    "meaning": "常用汉字「九」",
+    "sentence": "我喜欢九。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "乙"
+    ],
+    "decomposeHint": "像弯弯的钩子——数字「九」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像弯弯的钩子——数字「九」！"
+  },
+  {
+    "id": "l3_0142_533a",
+    "character": "区",
+    "pinyin": "qū",
+    "meaning": "常用汉字「区」",
+    "sentence": "我喜欢区。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "匸",
+      "乂"
+    ],
+    "decomposeHint": "小谜语：「匸」遇到「乂」，变魔术一样——拼成了「区」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「匸」、「乂」组合而成——慢慢写成今天的「区」。"
+  },
+  {
+    "id": "l3_0143_5f3a",
+    "character": "强",
+    "pinyin": "qiáng",
+    "meaning": "常用汉字「强」",
+    "sentence": "我喜欢强。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "弓",
+      "虽"
+    ],
+    "decomposeHint": "小谜语：「弓」遇到「虽」，变魔术一样——拼成了「强」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「弓」表示意思，右边「虫」帮助读音——合在一起就是「强」，这是形声字！"
+  },
+  {
+    "id": "l3_0144_653e",
+    "character": "放",
+    "pinyin": "fàng",
+    "meaning": "常用汉字「放」",
+    "sentence": "我喜欢放。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "方",
+      "攵"
+    ],
+    "decomposeHint": "方加攵——把东西「放」开！",
+    "evolutionType": "形声",
+    "evolutionHint": "方加攵——把东西「放」开！"
+  },
+  {
+    "id": "l3_0145_51b3",
+    "character": "决",
+    "pinyin": "jué",
+    "meaning": "常用汉字「决」",
+    "sentence": "我喜欢决。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冫",
+      "夬"
+    ],
+    "decomposeHint": "小谜语：「冫」遇到「夬」，变魔术一样——拼成了「决」！你也来认认看～"
+  },
+  {
+    "id": "l3_0146_88ab",
+    "character": "被",
+    "pinyin": "bèi",
+    "meaning": "常用汉字「被」",
+    "sentence": "我喜欢被。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "衤",
+      "皮"
+    ],
+    "decomposeHint": "小谜语：衣字旁遇到「皮」，变魔术一样——拼成了「被」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边衣字旁表示意思，右边「皮」帮助读音——合在一起就是「被」，这是形声字！"
+  },
+  {
+    "id": "l3_0147_5fc5",
+    "character": "必",
+    "pinyin": "bì",
+    "meaning": "常用汉字「必」",
+    "sentence": "我喜欢必。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "心",
+      "丿"
+    ],
+    "decomposeHint": "小谜语：心遇到「丿」，变魔术一样——拼成了「必」！你也来认认看～"
+  },
+  {
+    "id": "l3_0148_6218",
+    "character": "战",
+    "pinyin": "zhàn",
+    "meaning": "常用汉字「战」",
+    "sentence": "我喜欢战。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "占",
+      "戈"
+    ],
+    "decomposeHint": "小谜语：「占」遇到戈，变魔术一样——拼成了「战」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边戈表示意思，右边「占」帮助读音——合在一起就是「战」，这是形声字！"
+  },
+  {
+    "id": "l3_0149_5148",
+    "character": "先",
+    "pinyin": "xiān",
+    "meaning": "常用汉字「先」",
+    "sentence": "我喜欢先。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「止」、「人」、「儿」组合而成——慢慢写成今天的「先」。"
+  },
+  {
+    "id": "l3_0150_5219",
+    "character": "则",
+    "pinyin": "zé",
+    "meaning": "常用汉字「则」",
+    "sentence": "我喜欢则。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "贝",
+      "刂"
+    ],
+    "decomposeHint": "小谜语：贝壳遇到立刀旁，变魔术一样——拼成了「则」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「刂」、「贝」组合而成——慢慢写成今天的「则」。"
+  },
+  {
+    "id": "l3_0151_4efb",
+    "character": "任",
+    "pinyin": "rèn",
+    "meaning": "常用汉字「任」",
+    "sentence": "我喜欢任。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "壬"
+    ],
+    "decomposeHint": "人字旁加上「壬」——是「任」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「壬」帮助读音——合在一起就是「任」，这是形声字！"
+  },
+  {
+    "id": "l3_0152_53d6",
+    "character": "取",
+    "pinyin": "qǔ",
+    "meaning": "常用汉字「取」",
+    "sentence": "我喜欢取。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "耳",
+      "又"
+    ],
+    "decomposeHint": "耳字像耳朵，加上又——是「取」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「又」、「耳」组合而成——慢慢写成今天的「取」。"
+  },
+  {
+    "id": "l3_0153_636e",
+    "character": "据",
+    "pinyin": "jù",
+    "meaning": "常用汉字「据」",
+    "sentence": "我喜欢据。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "居"
+    ],
+    "decomposeHint": "提手旁加上「居」——用手做的动作：「据」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「居」帮助读音——合在一起就是「据」，这是形声字！"
+  },
+  {
+    "id": "l3_0154_961f",
+    "character": "队",
+    "pinyin": "duì",
+    "meaning": "常用汉字「队」",
+    "sentence": "我喜欢队。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "阝",
+      "人"
+    ],
+    "decomposeHint": "小谜语：「阝」遇到人，变魔术一样——拼成了「队」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「阝」组合而成——慢慢写成今天的「队」。"
+  },
+  {
+    "id": "l3_0155_7ed9",
+    "character": "给",
+    "pinyin": "gěi",
+    "meaning": "常用汉字「给」",
+    "sentence": "我喜欢给。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "合"
+    ],
+    "decomposeHint": "纟加合——把东西「给」别人！",
+    "evolutionType": "形声",
+    "evolutionHint": "纟加合——把东西「给」别人！"
+  },
+  {
+    "id": "l3_0156_5149",
+    "character": "光",
+    "pinyin": "guāng",
+    "meaning": "常用汉字「光」",
+    "sentence": "我喜欢光。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「儿」、「火」组合而成——慢慢写成今天的「光」。"
+  },
+  {
+    "id": "l3_0157_5373",
+    "character": "即",
+    "pinyin": "jí",
+    "meaning": "常用汉字「即」",
+    "sentence": "我喜欢即。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A hungry 人卩 kneeling over food 皀; 跟「既」很像，后来写成「即」。"
+  },
+  {
+    "id": "l3_0158_4fdd",
+    "character": "保",
+    "pinyin": "bǎo",
+    "meaning": "常用汉字「保」",
+    "sentence": "我喜欢保。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "呆"
+    ],
+    "decomposeHint": "人字旁加上「呆」——是「保」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「呆」帮助读音——合在一起就是「保」，这是形声字！"
+  },
+  {
+    "id": "l3_0159_6cbb",
+    "character": "治",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「治」",
+    "sentence": "我喜欢治。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "台"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「台」——是「治」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「台」、「水」、「氵」组合而成——慢慢写成今天的「治」。"
+  },
+  {
+    "id": "l3_0160_9020",
+    "character": "造",
+    "pinyin": "zào",
+    "meaning": "常用汉字「造」",
+    "sentence": "我喜欢造。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "告"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「告」，变魔术一样——拼成了「造」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「告」帮助读音——合在一起就是「造」，这是形声字！"
+  },
+  {
+    "id": "l3_0161_89c4",
+    "character": "规",
+    "pinyin": "guī",
+    "meaning": "常用汉字「规」",
+    "sentence": "我喜欢规。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "夫",
+      "见"
+    ],
+    "decomposeHint": "小谜语：「夫」遇到看见，变魔术一样——拼成了「规」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边看见表示意思，右边「夫」帮助读音——合在一起就是「规」，这是形声字！"
+  },
+  {
+    "id": "l3_0162_70ed",
+    "character": "热",
+    "pinyin": "rè",
+    "meaning": "常用汉字「热」",
+    "sentence": "我喜欢热。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "执",
+      "灬"
+    ],
+    "decomposeHint": "小谜语：「执」遇到「灬」，变魔术一样——拼成了「热」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「灬」表示意思，右边「执」帮助读音——合在一起就是「热」，这是形声字！"
+  },
+  {
+    "id": "l3_0163_9886",
+    "character": "领",
+    "pinyin": "lǐng",
+    "meaning": "常用汉字「领」",
+    "sentence": "我喜欢领。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "令",
+      "页"
+    ],
+    "decomposeHint": "小谜语：「令」遇到页，变魔术一样——拼成了「领」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边页表示意思，右边「令」帮助读音——合在一起就是「领」，这是形声字！"
+  },
+  {
+    "id": "l3_0164_4e03",
+    "character": "七",
+    "pinyin": "qī",
+    "meaning": "常用汉字「七」",
+    "sentence": "我喜欢七。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "乚"
+    ],
+    "decomposeHint": "一横弯钩——数字「七」！",
+    "evolutionType": "形声",
+    "evolutionHint": "一横弯钩——数字「七」！"
+  },
+  {
+    "id": "l3_0165_5bfc",
+    "character": "导",
+    "pinyin": "dǎo",
+    "meaning": "常用汉字「导」",
+    "sentence": "我喜欢导。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "巳",
+      "寸"
+    ],
+    "decomposeHint": "小谜语：「巳」遇到寸，变魔术一样——拼成了「导」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「寸」、「巳」组合而成——慢慢写成今天的「导」。"
+  },
+  {
+    "id": "l3_0166_5668",
+    "character": "器",
+    "pinyin": "qì",
+    "meaning": "常用汉字「器」",
+    "sentence": "我喜欢器。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "犬"
+    ],
+    "decomposeHint": "张开嘴巴，配上狗——凑成了「器」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「口」、「狗」、「犬」组合而成——慢慢写成今天的「器」。"
+  },
+  {
+    "id": "l3_0167_538b",
+    "character": "压",
+    "pinyin": "yā",
+    "meaning": "常用汉字「压」",
+    "sentence": "我喜欢压。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "土"
+    ],
+    "decomposeHint": "小谜语：厂遇到土地，变魔术一样——拼成了「压」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「土」、「厂」组合而成——慢慢写成今天的「压」。"
+  },
+  {
+    "id": "l3_0168_5fd7",
+    "character": "志",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「志」",
+    "sentence": "我喜欢志。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "士",
+      "心"
+    ],
+    "decomposeHint": "小谜语：「士」遇到心，变魔术一样——拼成了「志」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——The mind 心 of a scholar 士; 士 「also」帮助读音，后来写成「志」。"
+  },
+  {
+    "id": "l3_0169_4e16",
+    "character": "世",
+    "pinyin": "shì",
+    "meaning": "常用汉字「世」",
+    "sentence": "我喜欢世。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——Three leaves on a branch，后来写成「世」。"
+  },
+  {
+    "id": "l3_0170_589e",
+    "character": "增",
+    "pinyin": "zēng",
+    "meaning": "常用汉字「增」",
+    "sentence": "我喜欢增。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "土",
+      "曾"
+    ],
+    "decomposeHint": "土字旁加上「曾」——跟土地有关的「增」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边土地表示意思，右边「曾」帮助读音——合在一起就是「增」，这是形声字！"
+  },
+  {
+    "id": "l3_0171_4e89",
+    "character": "争",
+    "pinyin": "zhēng",
+    "meaning": "常用汉字「争」",
+    "sentence": "我喜欢争。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——「爭,」的简化写法 two 手s 爪 and 彐 fighting over 亅，后来写成「争」。"
+  },
+  {
+    "id": "l3_0172_6d4e",
+    "character": "济",
+    "pinyin": "jì",
+    "meaning": "常用汉字「济」",
+    "sentence": "我喜欢济。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "齐"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「齐」——是「济」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「齐」帮助读音——合在一起就是「济」，这是形声字！"
+  },
+  {
+    "id": "l3_0173_9636",
+    "character": "阶",
+    "pinyin": "jiē",
+    "meaning": "常用汉字「阶」",
+    "sentence": "我喜欢阶。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "阝",
+      "介"
+    ],
+    "decomposeHint": "小谜语：「阝」遇到「介」，变魔术一样——拼成了「阶」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「阝」表示意思，右边「介」帮助读音——合在一起就是「阶」，这是形声字！"
+  },
+  {
+    "id": "l3_0174_601d",
+    "character": "思",
+    "pinyin": "sī",
+    "meaning": "常用汉字「思」",
+    "sentence": "我喜欢思。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "田",
+      "心"
+    ],
+    "decomposeHint": "田下心——心里转来转去，是在「思」考！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「囟」、「心」组合而成——慢慢写成今天的「思」。"
+  },
+  {
+    "id": "l3_0175_672f",
+    "character": "术",
+    "pinyin": "shù",
+    "meaning": "常用汉字「术」",
+    "sentence": "我喜欢术。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "丶"
+    ],
+    "decomposeHint": "木头加上「丶」——跟树有关的「术」！"
+  },
+  {
+    "id": "l3_0176_6781",
+    "character": "极",
+    "pinyin": "jí",
+    "meaning": "常用汉字「极」",
+    "sentence": "我喜欢极。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "及"
+    ],
+    "decomposeHint": "木头加上「及」——跟树有关的「极」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「及」帮助读音——合在一起就是「极」，这是形声字！"
+  },
+  {
+    "id": "l3_0177_4ea4",
+    "character": "交",
+    "pinyin": "jiāo",
+    "meaning": "常用汉字「交」",
+    "sentence": "我喜欢交。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "六",
+      "乂"
+    ],
+    "decomposeHint": "小谜语：六遇到「乂」，变魔术一样——拼成了「交」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「交」。"
+  },
+  {
+    "id": "l3_0178_53d7",
+    "character": "受",
+    "pinyin": "shòu",
+    "meaning": "常用汉字「受」",
+    "sentence": "我喜欢受。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "爫",
+      "冖",
+      "又"
+    ],
+    "decomposeHint": "三个小伙伴「爫」、「冖」、又手拉手——组成了「受」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Something 冖 passed from one 手 爫 to another 又，后来写成「受」。"
+  },
+  {
+    "id": "l3_0179_8054",
+    "character": "联",
+    "pinyin": "lián",
+    "meaning": "常用汉字「联」",
+    "sentence": "我喜欢联。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "耳",
+      "关"
+    ],
+    "decomposeHint": "耳字像耳朵，加上关——是「联」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边耳朵表示意思，右边「关」帮助读音——合在一起就是「联」，这是形声字！"
+  },
+  {
+    "id": "l3_0180_4ec0",
+    "character": "什",
+    "pinyin": "shén",
+    "meaning": "常用汉字「什」",
+    "sentence": "我喜欢什。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "十"
+    ],
+    "decomposeHint": "人字旁加上十——是「什」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「十」、「亻」组合而成——慢慢写成今天的「什」。"
+  },
+  {
+    "id": "l3_0181_8ba4",
+    "character": "认",
+    "pinyin": "rèn",
+    "meaning": "常用汉字「认」",
+    "sentence": "我喜欢认。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "人"
+    ],
+    "decomposeHint": "言字旁加上人——跟说话有关的「认」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「人」帮助读音——合在一起就是「认」，这是形声字！"
+  },
+  {
+    "id": "l3_0182_516d",
+    "character": "六",
+    "pinyin": "liù",
+    "meaning": "常用汉字「六」",
+    "sentence": "我喜欢六。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "八"
+    ],
+    "decomposeHint": "一点两撇——数字「六」！",
+    "evolutionType": "形声",
+    "evolutionHint": "一点两撇——数字「六」！"
+  },
+  {
+    "id": "l3_0183_5171",
+    "character": "共",
+    "pinyin": "gòng",
+    "meaning": "常用汉字「共」",
+    "sentence": "我喜欢共。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "廾",
+      "一",
+      "八"
+    ],
+    "decomposeHint": "三个小伙伴「廾」、一、八手拉手——组成了「共」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「八」、「廾」组合而成——慢慢写成今天的「共」。"
+  },
+  {
+    "id": "l3_0184_6743",
+    "character": "权",
+    "pinyin": "quán",
+    "meaning": "常用汉字「权」",
+    "sentence": "我喜欢权。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "又"
+    ],
+    "decomposeHint": "木头加上又——跟树有关的「权」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「雚」帮助读音——合在一起就是「权」，这是形声字！"
+  },
+  {
+    "id": "l3_0185_6536",
+    "character": "收",
+    "pinyin": "shōu",
+    "meaning": "常用汉字「收」",
+    "sentence": "我喜欢收。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丩",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「丩」遇到反文旁，变魔术一样——拼成了「收」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「丩」帮助读音——合在一起就是「收」，这是形声字！"
+  },
+  {
+    "id": "l3_0186_8bc1",
+    "character": "证",
+    "pinyin": "zhèng",
+    "meaning": "常用汉字「证」",
+    "sentence": "我喜欢证。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "正"
+    ],
+    "decomposeHint": "言字旁加上「正」——跟说话有关的「证」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To speak 讠 the truth 正; 正 「also」帮助读音，后来写成「证」。"
+  },
+  {
+    "id": "l3_0187_6539",
+    "character": "改",
+    "pinyin": "gǎi",
+    "meaning": "常用汉字「改」",
+    "sentence": "我喜欢改。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "己",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「己」遇到反文旁，变魔术一样——拼成了「改」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「攵」、「己」组合而成——慢慢写成今天的「改」。"
+  },
+  {
+    "id": "l3_0188_5df1",
+    "character": "己",
+    "pinyin": "jǐ",
+    "meaning": "常用汉字「己」",
+    "sentence": "我喜欢己。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A loom woven with thread，后来写成「己」。"
+  },
+  {
+    "id": "l3_0189_518d",
+    "character": "再",
+    "pinyin": "zài",
+    "meaning": "常用汉字「再」",
+    "sentence": "我喜欢再。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "冉"
+    ],
+    "decomposeHint": "小谜语：一遇到「冉」，变魔术一样——拼成了「再」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「鱼」、「冉」、「一」组合而成——慢慢写成今天的「再」。"
+  },
+  {
+    "id": "l3_0190_91c7",
+    "character": "采",
+    "pinyin": "cǎi",
+    "meaning": "常用汉字「采」",
+    "sentence": "我喜欢采。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "爫",
+      "木"
+    ],
+    "decomposeHint": "小谜语：「爫」遇到树木，变魔术一样——拼成了「采」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「爫」、「树」组合而成——慢慢写成今天的「采」。"
+  },
+  {
+    "id": "l3_0191_8f6c",
+    "character": "转",
+    "pinyin": "zhuǎn",
+    "meaning": "常用汉字「转」",
+    "sentence": "我喜欢转。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "车",
+      "专"
+    ],
+    "decomposeHint": "车字旁加上「专」——跟车有关的「转」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边车表示意思，右边「专」帮助读音——合在一起就是「转」，这是形声字！"
+  },
+  {
+    "id": "l3_0192_5355",
+    "character": "单",
+    "pinyin": "dān",
+    "meaning": "常用汉字「单」",
+    "sentence": "我喜欢单。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0193_5207",
+    "character": "切",
+    "pinyin": "qiè",
+    "meaning": "常用汉字「切」",
+    "sentence": "我喜欢切。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "七",
+      "刀"
+    ],
+    "decomposeHint": "小谜语：七遇到刀，变魔术一样——拼成了「切」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边刀表示意思，右边「七」帮助读音——合在一起就是「切」，这是形声字！"
+  },
+  {
+    "id": "l3_0194_6559",
+    "character": "教",
+    "pinyin": "jiào",
+    "meaning": "常用汉字「教」",
+    "sentence": "我喜欢教。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "孝",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「孝」遇到反文旁，变魔术一样——拼成了「教」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「孝」帮助读音——合在一起就是「教」，这是形声字！"
+  },
+  {
+    "id": "l3_0195_901f",
+    "character": "速",
+    "pinyin": "sù",
+    "meaning": "常用汉字「速」",
+    "sentence": "我喜欢速。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "束"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「束」，变魔术一样——拼成了「速」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「束」帮助读音——合在一起就是「速」，这是形声字！"
+  },
+  {
+    "id": "l3_0196_5e26",
+    "character": "带",
+    "pinyin": "dài",
+    "meaning": "常用汉字「带」",
+    "sentence": "我喜欢带。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "卅",
+      "冖"
+    ],
+    "decomposeHint": "小谜语：「卅」遇到「冖」，变魔术一样——拼成了「带」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「卅」、「巾」组合而成——慢慢写成今天的「带」。"
+  },
+  {
+    "id": "l3_0197_4f8b",
+    "character": "例",
+    "pinyin": "lì",
+    "meaning": "常用汉字「例」",
+    "sentence": "我喜欢例。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "列"
+    ],
+    "decomposeHint": "人字旁加上「列」——是「例」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「列」帮助读音——合在一起就是「例」，这是形声字！"
+  },
+  {
+    "id": "l3_0198_52a1",
+    "character": "务",
+    "pinyin": "wù",
+    "meaning": "常用汉字「务」",
+    "sentence": "我喜欢务。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "夂",
+      "力"
+    ],
+    "decomposeHint": "小谜语：「夂」遇到力气，变魔术一样——拼成了「务」！你也来认认看～"
+  },
+  {
+    "id": "l3_0199_76ee",
+    "character": "目",
+    "pinyin": "mù",
+    "meaning": "常用汉字「目」",
+    "sentence": "我喜欢目。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "二"
+    ],
+    "decomposeHint": "张开嘴巴，配上二——凑成了「目」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「眼」、「睛」组合而成——慢慢写成今天的「目」。"
+  },
+  {
+    "id": "l3_0200_81f3",
+    "character": "至",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「至」",
+    "sentence": "我喜欢至。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "土"
+    ],
+    "decomposeHint": "小谜语：一遇到土地，变魔术一样——拼成了「至」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「鸟」、「土」组合而成——慢慢写成今天的「至」。"
+  },
+  {
+    "id": "l3_0201_8fbe",
+    "character": "达",
+    "pinyin": "dá",
+    "meaning": "常用汉字「达」",
+    "sentence": "我喜欢达。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "大"
+    ],
+    "decomposeHint": "小谜语：走之底遇到大，变魔术一样——拼成了「达」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「大」帮助读音——合在一起就是「达」，这是形声字！"
+  },
+  {
+    "id": "l3_0202_8d70",
+    "character": "走",
+    "pinyin": "zǒu",
+    "meaning": "常用汉字「走」",
+    "sentence": "我们走路上学。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "土",
+      "止"
+    ],
+    "decomposeHint": "像人迈开步子——「走」路去！",
+    "evolutionType": "会意",
+    "evolutionHint": "像人迈开步子——「走」路去！"
+  },
+  {
+    "id": "l3_0203_79ef",
+    "character": "积",
+    "pinyin": "jī",
+    "meaning": "常用汉字「积」",
+    "sentence": "我喜欢积。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "只"
+    ],
+    "decomposeHint": "小谜语：禾苗遇到只，变魔术一样——拼成了「积」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边禾苗表示意思，右边「只」帮助读音——合在一起就是「积」，这是形声字！"
+  },
+  {
+    "id": "l3_0204_793a",
+    "character": "示",
+    "pinyin": "shì",
+    "meaning": "常用汉字「示」",
+    "sentence": "我喜欢示。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "二",
+      "小"
+    ],
+    "decomposeHint": "小谜语：二遇到小，变魔术一样——拼成了「示」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——An altar，后来写成「示」。"
+  },
+  {
+    "id": "l3_0205_8bae",
+    "character": "议",
+    "pinyin": "yì",
+    "meaning": "常用汉字「议」",
+    "sentence": "我喜欢议。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "义"
+    ],
+    "decomposeHint": "言字旁加上「义」——跟说话有关的「议」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「义」帮助读音——合在一起就是「议」，这是形声字！"
+  },
+  {
+    "id": "l3_0206_58f0",
+    "character": "声",
+    "pinyin": "shēng",
+    "meaning": "常用汉字「声」",
+    "sentence": "我喜欢声。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「聲」、「的」、「简」组合而成——慢慢写成今天的「声」。"
+  },
+  {
+    "id": "l3_0207_62a5",
+    "character": "报",
+    "pinyin": "bào",
+    "meaning": "常用汉字「报」",
+    "sentence": "我喜欢报。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "卩"
+    ],
+    "decomposeHint": "提手旁加上「卩」——用手做的动作：「报」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 手 扌 cuffing 又 a criminal 卩, representing sentencing，后来写成「报」。"
+  },
+  {
+    "id": "l3_0208_6597",
+    "character": "斗",
+    "pinyin": "dòu",
+    "meaning": "常用汉字「斗」",
+    "sentence": "我喜欢斗。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「握」、「着」组合而成——慢慢写成今天的「斗」。"
+  },
+  {
+    "id": "l3_0209_5b8c",
+    "character": "完",
+    "pinyin": "wán",
+    "meaning": "常用汉字「完」",
+    "sentence": "我喜欢完。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "宀",
+      "元"
+    ],
+    "decomposeHint": "屋字头像房顶，下面「元」——跟家有关的「完」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边房子表示意思，右边「元」帮助读音——合在一起就是「完」，这是形声字！"
+  },
+  {
+    "id": "l3_0210_7c7b",
+    "character": "类",
+    "pinyin": "lèi",
+    "meaning": "常用汉字「类」",
+    "sentence": "我喜欢类。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "米",
+      "大"
+    ],
+    "decomposeHint": "小谜语：米遇到大，变魔术一样——拼成了「类」！你也来认认看～"
+  },
+  {
+    "id": "l3_0211_516b",
+    "character": "八",
+    "pinyin": "bā",
+    "meaning": "常用汉字「八」",
+    "sentence": "我喜欢八。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像分开的路——数字「八」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像分开的路——数字「八」！"
+  },
+  {
+    "id": "l3_0212_79bb",
+    "character": "离",
+    "pinyin": "lí",
+    "meaning": "常用汉字「离」",
+    "sentence": "我喜欢离。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "禸"
+    ],
+    "decomposeHint": "小谜语：「亠」遇到「禸」，变魔术一样——拼成了「离」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「亠」组合而成——慢慢写成今天的「离」。"
+  },
+  {
+    "id": "l3_0213_534e",
+    "character": "华",
+    "pinyin": "huá",
+    "meaning": "常用汉字「华」",
+    "sentence": "我喜欢华。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "化",
+      "十"
+    ],
+    "decomposeHint": "小谜语：「化」遇到十，变魔术一样——拼成了「华」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边十表示意思，右边「化」帮助读音——合在一起就是「华」，这是形声字！"
+  },
+  {
+    "id": "l3_0214_786e",
+    "character": "确",
+    "pinyin": "què",
+    "meaning": "常用汉字「确」",
+    "sentence": "我喜欢确。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "石",
+      "角"
+    ],
+    "decomposeHint": "小谜语：石头遇到「角」，变魔术一样——拼成了「确」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边石头表示意思，右边「角」帮助读音——合在一起就是「确」，这是形声字！"
+  },
+  {
+    "id": "l3_0215_5f20",
+    "character": "张",
+    "pinyin": "zhāng",
+    "meaning": "常用汉字「张」",
+    "sentence": "我喜欢张。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "弓",
+      "长"
+    ],
+    "decomposeHint": "小谜语：「弓」遇到长，变魔术一样——拼成了「张」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「弓」表示意思，右边「长」帮助读音——合在一起就是「张」，这是形声字！"
+  },
+  {
+    "id": "l3_0216_4fe1",
+    "character": "信",
+    "pinyin": "xìn",
+    "meaning": "常用汉字「信」",
+    "sentence": "我喜欢信。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "言"
+    ],
+    "decomposeHint": "人字旁加上说话——是「信」！"
+  },
+  {
+    "id": "l3_0217_7a7a",
+    "character": "空",
+    "pinyin": "kōng",
+    "meaning": "常用汉字「空」",
+    "sentence": "我喜欢空。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "穴",
+      "工"
+    ],
+    "decomposeHint": "穴加工——里面是「空」的！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边洞穴表示意思，右边「工」帮助读音——合在一起就是「空」，这是形声字！"
+  },
+  {
+    "id": "l3_0218_51b5",
+    "character": "况",
+    "pinyin": "kuàng",
+    "meaning": "常用汉字「况」",
+    "sentence": "我喜欢况。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冫",
+      "兄"
+    ],
+    "decomposeHint": "小谜语：「冫」遇到「兄」，变魔术一样——拼成了「况」！你也来认认看～"
+  },
+  {
+    "id": "l3_0219_4eca",
+    "character": "今",
+    "pinyin": "jīn",
+    "meaning": "常用汉字「今」",
+    "sentence": "我喜欢今。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「嘴」、「巴」、「亼」组合而成——慢慢写成今天的「今」。"
+  },
+  {
+    "id": "l3_0220_96c6",
+    "character": "集",
+    "pinyin": "jí",
+    "meaning": "常用汉字「集」",
+    "sentence": "我喜欢集。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "隹",
+      "木"
+    ],
+    "decomposeHint": "小谜语：「隹」遇到树木，变魔术一样——拼成了「集」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「鸟」、「隹」、「树」组合而成——慢慢写成今天的「集」。"
+  },
+  {
+    "id": "l3_0221_4f20",
+    "character": "传",
+    "pinyin": "chuán",
+    "meaning": "常用汉字「传」",
+    "sentence": "我喜欢传。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "专"
+    ],
+    "decomposeHint": "人字旁加上「专」——是「传」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「专」帮助读音——合在一起就是「传」，这是形声字！"
+  },
+  {
+    "id": "l3_0222_8bb8",
+    "character": "许",
+    "pinyin": "xǔ",
+    "meaning": "常用汉字「许」",
+    "sentence": "我喜欢许。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "午"
+    ],
+    "decomposeHint": "言字旁加上「午」——跟说话有关的「许」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「午」帮助读音——合在一起就是「许」，这是形声字！"
+  },
+  {
+    "id": "l3_0223_6b65",
+    "character": "步",
+    "pinyin": "bù",
+    "meaning": "常用汉字「步」",
+    "sentence": "我喜欢步。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「歨」、「脚」、「止」组合而成——慢慢写成今天的「步」。"
+  },
+  {
+    "id": "l3_0224_7fa4",
+    "character": "群",
+    "pinyin": "qún",
+    "meaning": "常用汉字「群」",
+    "sentence": "我喜欢群。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "君",
+      "羊"
+    ],
+    "decomposeHint": "小谜语：「君」遇到羊，变魔术一样——拼成了「群」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边羊表示意思，右边「君」帮助读音——合在一起就是「群」，这是形声字！"
+  },
+  {
+    "id": "l3_0225_5e7f",
+    "character": "广",
+    "pinyin": "guǎng",
+    "meaning": "常用汉字「广」",
+    "sentence": "我喜欢广。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丶",
+      "厂"
+    ],
+    "decomposeHint": "小谜语：「丶」遇到厂，变魔术一样——拼成了「广」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「厂」组合而成——慢慢写成今天的「广」。"
+  },
+  {
+    "id": "l3_0226_77f3",
+    "character": "石",
+    "pinyin": "shí",
+    "meaning": "常用汉字「石」",
+    "sentence": "我喜欢石。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "口"
+    ],
+    "decomposeHint": "小谜语：厂遇到嘴巴，变魔术一样——拼成了「石」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「口」、「厂」组合而成——慢慢写成今天的「石」。"
+  },
+  {
+    "id": "l3_0227_8bb0",
+    "character": "记",
+    "pinyin": "jì",
+    "meaning": "常用汉字「记」",
+    "sentence": "我喜欢记。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "己"
+    ],
+    "decomposeHint": "言字旁加上「己」——跟说话有关的「记」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A private 己 note 讠; 己 「also」帮助读音，后来写成「记」。"
+  },
+  {
+    "id": "l3_0228_9700",
+    "character": "需",
+    "pinyin": "xū",
+    "meaning": "常用汉字「需」",
+    "sentence": "我喜欢需。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "雨",
+      "而"
+    ],
+    "decomposeHint": "雨字头下面「而」——跟下雨有关的「需」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「雨」组合而成——慢慢写成今天的「需」。"
+  },
+  {
+    "id": "l3_0229_6bb5",
+    "character": "段",
+    "pinyin": "duàn",
+    "meaning": "常用汉字「段」",
+    "sentence": "我喜欢段。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「殳」组合而成——慢慢写成今天的「段」。"
+  },
+  {
+    "id": "l3_0230_7814",
+    "character": "研",
+    "pinyin": "yán",
+    "meaning": "常用汉字「研」",
+    "sentence": "我喜欢研。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "石",
+      "开"
+    ],
+    "decomposeHint": "小谜语：石头遇到开，变魔术一样——拼成了「研」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边石头表示意思，右边「开」帮助读音——合在一起就是「研」，这是形声字！"
+  },
+  {
+    "id": "l3_0231_754c",
+    "character": "界",
+    "pinyin": "jiè",
+    "meaning": "常用汉字「界」",
+    "sentence": "我喜欢界。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "田",
+      "介"
+    ],
+    "decomposeHint": "小谜语：田地遇到「介」，变魔术一样——拼成了「界」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边田地表示意思，右边「介」帮助读音——合在一起就是「界」，这是形声字！"
+  },
+  {
+    "id": "l3_0232_5f8b",
+    "character": "律",
+    "pinyin": "lǜ",
+    "meaning": "常用汉字「律」",
+    "sentence": "我喜欢律。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "彳",
+      "聿"
+    ],
+    "decomposeHint": "小谜语：「彳」遇到「聿」，变魔术一样——拼成了「律」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「彳」、「聿」组合而成——慢慢写成今天的「律」。"
+  },
+  {
+    "id": "l3_0233_53eb",
+    "character": "叫",
+    "pinyin": "jiào",
+    "meaning": "常用汉字「叫」",
+    "sentence": "我喜欢叫。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "丩"
+    ],
+    "decomposeHint": "张开嘴巴，配上「丩」——凑成了「叫」！",
+    "evolutionType": "形声",
+    "evolutionHint": "口加「丩」——张开嘴「叫」！"
+  },
+  {
+    "id": "l3_0234_4e14",
+    "character": "且",
+    "pinyin": "qiě",
+    "meaning": "常用汉字「且」",
+    "sentence": "我喜欢且。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "月",
+      "一"
+    ],
+    "decomposeHint": "月亮亮晶晶，加上一——是「且」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A stone altar，后来写成「且」。"
+  },
+  {
+    "id": "l3_0235_7a76",
+    "character": "究",
+    "pinyin": "jiū",
+    "meaning": "常用汉字「究」",
+    "sentence": "我喜欢究。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "穴",
+      "九"
+    ],
+    "decomposeHint": "穴字头像洞洞，下面九——是「究」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边洞穴表示意思，右边「九」帮助读音——合在一起就是「究」，这是形声字！"
+  },
+  {
+    "id": "l3_0236_89c2",
+    "character": "观",
+    "pinyin": "guān",
+    "meaning": "常用汉字「观」",
+    "sentence": "我喜欢观。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "又",
+      "见"
+    ],
+    "decomposeHint": "小谜语：又遇到看见，变魔术一样——拼成了「观」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「见」、「又」组合而成——慢慢写成今天的「观」。"
+  },
+  {
+    "id": "l3_0237_8d8a",
+    "character": "越",
+    "pinyin": "yuè",
+    "meaning": "常用汉字「越」",
+    "sentence": "我喜欢越。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "走",
+      "戉"
+    ],
+    "decomposeHint": "小谜语：走遇到「戉」，变魔术一样——拼成了「越」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走表示意思，右边「戉」帮助读音——合在一起就是「越」，这是形声字！"
+  },
+  {
+    "id": "l3_0238_7ec7",
+    "character": "织",
+    "pinyin": "zhī",
+    "meaning": "常用汉字「织」",
+    "sentence": "我喜欢织。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "只"
+    ],
+    "decomposeHint": "纟旁像丝线，加上只——是「织」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「只」帮助读音——合在一起就是「织」，这是形声字！"
+  },
+  {
+    "id": "l3_0239_88c5",
+    "character": "装",
+    "pinyin": "zhuāng",
+    "meaning": "常用汉字「装」",
+    "sentence": "我喜欢装。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "壮",
+      "衣"
+    ],
+    "decomposeHint": "小谜语：「壮」遇到衣，变魔术一样——拼成了「装」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边衣表示意思，右边「壮」帮助读音——合在一起就是「装」，这是形声字！"
+  },
+  {
+    "id": "l3_0240_7b97",
+    "character": "算",
+    "pinyin": "suàn",
+    "meaning": "常用汉字「算」",
+    "sentence": "我喜欢算。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "⺮",
+      "具"
+    ],
+    "decomposeHint": "竹字头下面「具」——是「算」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「具」组合而成——慢慢写成今天的「算」。"
+  },
+  {
+    "id": "l3_0241_6301",
+    "character": "持",
+    "pinyin": "chí",
+    "meaning": "常用汉字「持」",
+    "sentence": "我喜欢持。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "寺"
+    ],
+    "decomposeHint": "提手旁加上「寺」——用手做的动作：「持」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「寺」帮助读音——合在一起就是「持」，这是形声字！"
+  },
+  {
+    "id": "l3_0242_97f3",
+    "character": "音",
+    "pinyin": "yīn",
+    "meaning": "常用汉字「音」",
+    "sentence": "我喜欢音。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "立",
+      "日"
+    ],
+    "decomposeHint": "小谜语：立遇到太阳，变魔术一样——拼成了「音」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「立」、「嘴」、「巴」组合而成——慢慢写成今天的「音」。"
+  },
+  {
+    "id": "l3_0243_4f17",
+    "character": "众",
+    "pinyin": "zhòng",
+    "meaning": "常用汉字「众」",
+    "sentence": "我喜欢众。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人"
+    ],
+    "decomposeHint": "三个人——人多就是「众」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「众」。"
+  },
+  {
+    "id": "l3_0244_5e03",
+    "character": "布",
+    "pinyin": "bù",
+    "meaning": "常用汉字「布」",
+    "sentence": "我喜欢布。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「巾」、「手」组合而成——慢慢写成今天的「布」。"
+  },
+  {
+    "id": "l3_0245_590d",
+    "character": "复",
+    "pinyin": "fù",
+    "meaning": "常用汉字「复」",
+    "sentence": "我喜欢复。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "日"
+    ],
+    "decomposeHint": "人字旁加上太阳——是「复」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 who goes  somewhere 夂 every day 日，后来写成「复」。"
+  },
+  {
+    "id": "l3_0246_5bb9",
+    "character": "容",
+    "pinyin": "róng",
+    "meaning": "常用汉字「容」",
+    "sentence": "我喜欢容。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "宀",
+      "谷"
+    ],
+    "decomposeHint": "屋字头像房顶，下面「谷」——跟家有关的「容」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边房子表示意思，右边「谷」帮助读音——合在一起就是「容」，这是形声字！"
+  },
+  {
+    "id": "l3_0247_513f",
+    "character": "儿",
+    "pinyin": "ér",
+    "meaning": "常用汉字「儿」",
+    "sentence": "我喜欢儿。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "乚"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到「乚」，变魔术一样——拼成了「儿」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「兒」、「的」、「简」组合而成——慢慢写成今天的「儿」。"
+  },
+  {
+    "id": "l3_0248_987b",
+    "character": "须",
+    "pinyin": "xū",
+    "meaning": "常用汉字「须」",
+    "sentence": "我喜欢须。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "彡",
+      "页"
+    ],
+    "decomposeHint": "小谜语：「彡」遇到页，变魔术一样——拼成了「须」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「彡」、「页」组合而成——慢慢写成今天的「须」。"
+  },
+  {
+    "id": "l3_0249_9645",
+    "character": "际",
+    "pinyin": "jì",
+    "meaning": "常用汉字「际」",
+    "sentence": "我喜欢际。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "阝",
+      "示"
+    ],
+    "decomposeHint": "小谜语：「阝」遇到「示」，变魔术一样——拼成了「际」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「阝」表示意思，右边「示」帮助读音——合在一起就是「际」，这是形声字！"
+  },
+  {
+    "id": "l3_0250_9a8c",
+    "character": "验",
+    "pinyin": "yàn",
+    "meaning": "常用汉字「验」",
+    "sentence": "我喜欢验。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "马",
+      "佥"
+    ],
+    "decomposeHint": "小谜语：马遇到「佥」，变魔术一样——拼成了「验」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边马表示意思，右边「佥」帮助读音——合在一起就是「验」，这是形声字！"
+  },
+  {
+    "id": "l3_0251_8fde",
+    "character": "连",
+    "pinyin": "lián",
+    "meaning": "常用汉字「连」",
+    "sentence": "我喜欢连。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "车"
+    ],
+    "decomposeHint": "小谜语：走之底遇到车，变魔术一样——拼成了「连」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「车」、「辶」组合而成——慢慢写成今天的「连」。"
+  },
+  {
+    "id": "l3_0252_65ad",
+    "character": "断",
+    "pinyin": "duàn",
+    "meaning": "常用汉字「断」",
+    "sentence": "我喜欢断。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「斤」、「米」组合而成——慢慢写成今天的「断」。"
+  },
+  {
+    "id": "l3_0253_77ff",
+    "character": "矿",
+    "pinyin": "kuàng",
+    "meaning": "常用汉字「矿」",
+    "sentence": "我喜欢矿。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "石",
+      "广"
+    ],
+    "decomposeHint": "小谜语：石头遇到广，变魔术一样——拼成了「矿」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边石头表示意思，右边「广」帮助读音——合在一起就是「矿」，这是形声字！"
+  },
+  {
+    "id": "l3_0254_59d4",
+    "character": "委",
+    "pinyin": "wěi",
+    "meaning": "常用汉字「委」",
+    "sentence": "我喜欢委。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "女"
+    ],
+    "decomposeHint": "小谜语：禾苗遇到女性，变魔术一样——拼成了「委」！你也来认认看～"
+  },
+  {
+    "id": "l3_0255_7d20",
+    "character": "素",
+    "pinyin": "sù",
+    "meaning": "常用汉字「素」",
+    "sentence": "我喜欢素。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "龶",
+      "糸"
+    ],
+    "decomposeHint": "小谜语：「龶」遇到「糸」，变魔术一样——拼成了「素」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「糸」、「树」、「龶」组合而成——慢慢写成今天的「素」。"
+  },
+  {
+    "id": "l3_0256_6280",
+    "character": "技",
+    "pinyin": "jì",
+    "meaning": "常用汉字「技」",
+    "sentence": "我喜欢技。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "支"
+    ],
+    "decomposeHint": "提手旁加上「支」——用手做的动作：「技」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「支」帮助读音——合在一起就是「技」，这是形声字！"
+  },
+  {
+    "id": "l3_0257_5907",
+    "character": "备",
+    "pinyin": "bèi",
+    "meaning": "常用汉字「备」",
+    "sentence": "我喜欢备。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "夂",
+      "田"
+    ],
+    "decomposeHint": "小谜语：「夂」遇到田地，变魔术一样——拼成了「备」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「夂」、「田」组合而成——慢慢写成今天的「备」。"
+  },
+  {
+    "id": "l3_0258_534a",
+    "character": "半",
+    "pinyin": "bàn",
+    "meaning": "常用汉字「半」",
+    "sentence": "我喜欢半。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "牛"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到牛，变魔术一样——拼成了「半」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「牛」、「丷」组合而成——慢慢写成今天的「半」。"
+  },
+  {
+    "id": "l3_0259_529e",
+    "character": "办",
+    "pinyin": "bàn",
+    "meaning": "常用汉字「办」",
+    "sentence": "我喜欢办。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "力",
+      "八"
+    ],
+    "decomposeHint": "小谜语：力气遇到八，变魔术一样——拼成了「办」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边力气表示意思，右边「八」帮助读音——合在一起就是「办」，这是形声字！"
+  },
+  {
+    "id": "l3_0260_7701",
+    "character": "省",
+    "pinyin": "shěng",
+    "meaning": "常用汉字「省」",
+    "sentence": "我喜欢省。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "少",
+      "目"
+    ],
+    "decomposeHint": "小谜语：「少」遇到眼睛，变魔术一样——拼成了「省」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边眼睛表示意思，右边「少」帮助读音——合在一起就是「省」，这是形声字！"
+  },
+  {
+    "id": "l3_0261_5217",
+    "character": "列",
+    "pinyin": "liè",
+    "meaning": "常用汉字「列」",
+    "sentence": "我喜欢列。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "歹",
+      "刂"
+    ],
+    "decomposeHint": "小谜语：歹遇到立刀旁，变魔术一样——拼成了「列」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边立刀旁表示意思，右边「刂」帮助读音——合在一起就是「列」，这是形声字！"
+  },
+  {
+    "id": "l3_0262_54cd",
+    "character": "响",
+    "pinyin": "xiǎng",
+    "meaning": "常用汉字「响」",
+    "sentence": "我喜欢响。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "向"
+    ],
+    "decomposeHint": "张开嘴巴，配上「向」——凑成了「响」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边嘴巴表示意思，右边「向」帮助读音——合在一起就是「响」，这是形声字！"
+  },
+  {
+    "id": "l3_0263_652f",
+    "character": "支",
+    "pinyin": "zhī",
+    "meaning": "常用汉字「支」",
+    "sentence": "我喜欢支。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "十",
+      "又"
+    ],
+    "decomposeHint": "小谜语：十遇到又，变魔术一样——拼成了「支」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「又」、「握」组合而成——慢慢写成今天的「支」。"
+  },
+  {
+    "id": "l3_0264_822c",
+    "character": "般",
+    "pinyin": "bān",
+    "meaning": "常用汉字「般」",
+    "sentence": "我喜欢般。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "舟",
+      "殳"
+    ],
+    "decomposeHint": "小谜语：「舟」遇到「殳」，变魔术一样——拼成了「般」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「殳」、「舟」组合而成——慢慢写成今天的「般」。"
+  },
+  {
+    "id": "l3_0265_53f2",
+    "character": "史",
+    "pinyin": "shǐ",
+    "meaning": "常用汉字「史」",
+    "sentence": "我喜欢史。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "乂"
+    ],
+    "decomposeHint": "张开嘴巴，配上「乂」——凑成了「史」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「乂」组合而成——慢慢写成今天的「史」。"
+  },
+  {
+    "id": "l3_0266_611f",
+    "character": "感",
+    "pinyin": "gǎn",
+    "meaning": "常用汉字「感」",
+    "sentence": "我喜欢感。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "咸",
+      "心"
+    ],
+    "decomposeHint": "小谜语：「咸」遇到心，变魔术一样——拼成了「感」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「心」、「咸」组合而成——慢慢写成今天的「感」。"
+  },
+  {
+    "id": "l3_0267_4fbf",
+    "character": "便",
+    "pinyin": "biàn",
+    "meaning": "常用汉字「便」",
+    "sentence": "我喜欢便。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "更"
+    ],
+    "decomposeHint": "人字旁加上「更」——是「便」！"
+  },
+  {
+    "id": "l3_0268_5f80",
+    "character": "往",
+    "pinyin": "wǎng",
+    "meaning": "常用汉字「往」",
+    "sentence": "我喜欢往。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "形声",
+    "evolutionHint": "一部分表意思、一部分表读音——合起来是形声字「往」！"
+  },
+  {
+    "id": "l3_0269_5386",
+    "character": "历",
+    "pinyin": "lì",
+    "meaning": "常用汉字「历」",
+    "sentence": "我喜欢历。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厂",
+      "力"
+    ],
+    "decomposeHint": "小谜语：厂遇到力气，变魔术一样——拼成了「历」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「厤」表示意思，右边「力」帮助读音——合在一起就是「历」，这是形声字！"
+  },
+  {
+    "id": "l3_0270_514b",
+    "character": "克",
+    "pinyin": "kè",
+    "meaning": "常用汉字「克」",
+    "sentence": "我喜欢克。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "十",
+      "兄"
+    ],
+    "decomposeHint": "小谜语：十遇到「兄」，变魔术一样——拼成了「克」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「兵」、「器」、「十」组合而成——慢慢写成今天的「克」。"
+  },
+  {
+    "id": "l3_0271_4f55",
+    "character": "何",
+    "pinyin": "hé",
+    "meaning": "常用汉字「何」",
+    "sentence": "我喜欢何。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "可"
+    ],
+    "decomposeHint": "人字旁加上「可」——是「何」！"
+  },
+  {
+    "id": "l3_0272_6d88",
+    "character": "消",
+    "pinyin": "xiāo",
+    "meaning": "常用汉字「消」",
+    "sentence": "我喜欢消。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "肖"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「肖」——是「消」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「肖」帮助读音——合在一起就是「消」，这是形声字！"
+  },
+  {
+    "id": "l3_0273_6784",
+    "character": "构",
+    "pinyin": "gòu",
+    "meaning": "常用汉字「构」",
+    "sentence": "我喜欢构。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "勾"
+    ],
+    "decomposeHint": "木头加上「勾」——跟树有关的「构」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「勾」帮助读音——合在一起就是「构」，这是形声字！"
+  },
+  {
+    "id": "l3_0274_5e9c",
+    "character": "府",
+    "pinyin": "fǔ",
+    "meaning": "常用汉字「府」",
+    "sentence": "我喜欢府。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "广",
+      "付"
+    ],
+    "decomposeHint": "小谜语：广遇到「付」，变魔术一样——拼成了「府」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边广表示意思，右边「付」帮助读音——合在一起就是「府」，这是形声字！"
+  },
+  {
+    "id": "l3_0275_51c6",
+    "character": "准",
+    "pinyin": "zhǔn",
+    "meaning": "常用汉字「准」",
+    "sentence": "我喜欢准。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冫",
+      "隹"
+    ],
+    "decomposeHint": "小谜语：「冫」遇到「隹」，变魔术一样——拼成了「准」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「冫」表示意思，右边「隹」帮助读音——合在一起就是「准」，这是形声字！"
+  },
+  {
+    "id": "l3_0276_7cbe",
+    "character": "精",
+    "pinyin": "jīng",
+    "meaning": "常用汉字「精」",
+    "sentence": "我喜欢精。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "米",
+      "青"
+    ],
+    "decomposeHint": "小谜语：米遇到青，变魔术一样——拼成了「精」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边米表示意思，右边「青」帮助读音——合在一起就是「精」，这是形声字！"
+  },
+  {
+    "id": "l3_0277_503c",
+    "character": "值",
+    "pinyin": "zhí",
+    "meaning": "常用汉字「值」",
+    "sentence": "我喜欢值。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "直"
+    ],
+    "decomposeHint": "人字旁加上「直」——是「值」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「直」帮助读音——合在一起就是「值」，这是形声字！"
+  },
+  {
+    "id": "l3_0278_53f7",
+    "character": "号",
+    "pinyin": "hào",
+    "meaning": "常用汉字「号」",
+    "sentence": "我喜欢号。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "丂"
+    ],
+    "decomposeHint": "张开嘴巴，配上「丂」——凑成了「号」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边嘴巴表示意思，右边「丂」帮助读音——合在一起就是「号」，这是形声字！"
+  },
+  {
+    "id": "l3_0279_7387",
+    "character": "率",
+    "pinyin": "lǜ",
+    "meaning": "常用汉字「率」",
+    "sentence": "我喜欢率。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "幺"
+    ],
+    "decomposeHint": "小谜语：「亠」遇到「幺」，变魔术一样——拼成了「率」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A string 幺 vibrating in an instrument 亠十，后来写成「率」。"
+  },
+  {
+    "id": "l3_0280_65cf",
+    "character": "族",
+    "pinyin": "zú",
+    "meaning": "常用汉字「族」",
+    "sentence": "我喜欢族。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「耳」、「朵」、「矢」组合而成——慢慢写成今天的「族」。"
+  },
+  {
+    "id": "l3_0281_7ef4",
+    "character": "维",
+    "pinyin": "wéi",
+    "meaning": "常用汉字「维」",
+    "sentence": "我喜欢维。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "隹"
+    ],
+    "decomposeHint": "纟旁像丝线，加上「隹」——是「维」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「隹」帮助读音——合在一起就是「维」，这是形声字！"
+  },
+  {
+    "id": "l3_0282_5212",
+    "character": "划",
+    "pinyin": "huà",
+    "meaning": "常用汉字「划」",
+    "sentence": "我喜欢划。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "戈",
+      "刂"
+    ],
+    "decomposeHint": "小谜语：戈遇到立刀旁，变魔术一样——拼成了「划」！你也来认认看～"
+  },
+  {
+    "id": "l3_0283_9009",
+    "character": "选",
+    "pinyin": "xuǎn",
+    "meaning": "常用汉字「选」",
+    "sentence": "我喜欢选。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "先"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「先」，变魔术一样——拼成了「选」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「先」帮助读音——合在一起就是「选」，这是形声字！"
+  },
+  {
+    "id": "l3_0284_6807",
+    "character": "标",
+    "pinyin": "biāo",
+    "meaning": "常用汉字「标」",
+    "sentence": "我喜欢标。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "示"
+    ],
+    "decomposeHint": "木头加上「示」——跟树有关的「标」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边树木表示意思，右边「票」帮助读音——合在一起就是「标」，这是形声字！"
+  },
+  {
+    "id": "l3_0285_5b58",
+    "character": "存",
+    "pinyin": "cún",
+    "meaning": "常用汉字「存」",
+    "sentence": "我喜欢存。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "才",
+      "子"
+    ],
+    "decomposeHint": "小谜语：「才」遇到孩子，变魔术一样——拼成了「存」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边孩子表示意思，右边「才」帮助读音——合在一起就是「存」，这是形声字！"
+  },
+  {
+    "id": "l3_0286_5019",
+    "character": "候",
+    "pinyin": "hòu",
+    "meaning": "常用汉字「候」",
+    "sentence": "我喜欢候。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "矦"
+    ],
+    "decomposeHint": "人字旁加上「矦」——是「候」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「矦」帮助读音——合在一起就是「候」，这是形声字！"
+  },
+  {
+    "id": "l3_0287_6bdb",
+    "character": "毛",
+    "pinyin": "máo",
+    "meaning": "常用汉字「毛」",
+    "sentence": "我喜欢毛。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "乇",
+      "一"
+    ],
+    "decomposeHint": "小谜语：「乇」遇到一，变魔术一样——拼成了「毛」！你也来认认看～"
+  },
+  {
+    "id": "l3_0288_4eb2",
+    "character": "亲",
+    "pinyin": "qīn",
+    "meaning": "常用汉字「亲」",
+    "sentence": "我喜欢亲。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "立",
+      "一"
+    ],
+    "decomposeHint": "小谜语：立遇到一，变魔术一样——拼成了「亲」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「树」、「木」、「耳」组合而成——慢慢写成今天的「亲」。"
+  },
+  {
+    "id": "l3_0289_6548",
+    "character": "效",
+    "pinyin": "xiào",
+    "meaning": "常用汉字「效」",
+    "sentence": "我喜欢效。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "交",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「交」遇到反文旁，变魔术一样——拼成了「效」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「交」帮助读音——合在一起就是「效」，这是形声字！"
+  },
+  {
+    "id": "l3_0290_65af",
+    "character": "斯",
+    "pinyin": "sī",
+    "meaning": "常用汉字「斯」",
+    "sentence": "我喜欢斯。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "其",
+      "斤"
+    ],
+    "decomposeHint": "小谜语：「其」遇到斤，变魔术一样——拼成了「斯」！你也来认认看～"
+  },
+  {
+    "id": "l3_0291_9662",
+    "character": "院",
+    "pinyin": "yuàn",
+    "meaning": "常用汉字「院」",
+    "sentence": "我喜欢院。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "阝",
+      "完"
+    ],
+    "decomposeHint": "小谜语：「阝」遇到「完」，变魔术一样——拼成了「院」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「阝」表示意思，右边「完」帮助读音——合在一起就是「院」，这是形声字！"
+  },
+  {
+    "id": "l3_0292_67e5",
+    "character": "查",
+    "pinyin": "chá",
+    "meaning": "常用汉字「查」",
+    "sentence": "我喜欢查。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "旦"
+    ],
+    "decomposeHint": "木头加上「旦」——跟树有关的「查」！"
+  },
+  {
+    "id": "l3_0293_578b",
+    "character": "型",
+    "pinyin": "xíng",
+    "meaning": "常用汉字「型」",
+    "sentence": "我喜欢型。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "刑",
+      "土"
+    ],
+    "decomposeHint": "小谜语：「刑」遇到土地，变魔术一样——拼成了「型」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边土地表示意思，右边「刑」帮助读音——合在一起就是「型」，这是形声字！"
+  },
+  {
+    "id": "l3_0294_738b",
+    "character": "王",
+    "pinyin": "wáng",
+    "meaning": "常用汉字「王」",
+    "sentence": "我喜欢王。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "土"
+    ],
+    "decomposeHint": "小谜语：一遇到土地，变魔术一样——拼成了「王」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「十」、「天」组合而成——慢慢写成今天的「王」。"
+  },
+  {
+    "id": "l3_0295_6309",
+    "character": "按",
+    "pinyin": "àn",
+    "meaning": "常用汉字「按」",
+    "sentence": "我喜欢按。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "安"
+    ],
+    "decomposeHint": "提手旁加上「安」——用手做的动作：「按」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「安」帮助读音——合在一起就是「按」，这是形声字！"
+  },
+  {
+    "id": "l3_0296_517b",
+    "character": "养",
+    "pinyin": "yǎng",
+    "meaning": "常用汉字「养」",
+    "sentence": "我喜欢养。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "羊",
+      "儿"
+    ],
+    "decomposeHint": "小谜语：羊遇到儿，变魔术一样——拼成了「养」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边儿表示意思，右边「羊」帮助读音——合在一起就是「养」，这是形声字！"
+  },
+  {
+    "id": "l3_0297_6613",
+    "character": "易",
+    "pinyin": "yì",
+    "meaning": "常用汉字「易」",
+    "sentence": "我喜欢易。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "勿"
+    ],
+    "decomposeHint": "太阳照一照，加上「勿」——是「易」！"
+  },
+  {
+    "id": "l3_0298_7f6e",
+    "character": "置",
+    "pinyin": "zhì",
+    "meaning": "常用汉字「置」",
+    "sentence": "我喜欢置。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "罒",
+      "直"
+    ],
+    "decomposeHint": "小谜语：「罒」遇到「直」，变魔术一样——拼成了「置」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「罒」表示意思，右边「直」帮助读音——合在一起就是「置」，这是形声字！"
+  },
+  {
+    "id": "l3_0299_6d3e",
+    "character": "派",
+    "pinyin": "pài",
+    "meaning": "常用汉字「派」",
+    "sentence": "我喜欢派。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0300_5c42",
+    "character": "层",
+    "pinyin": "céng",
+    "meaning": "常用汉字「层」",
+    "sentence": "我喜欢层。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尸",
+      "云"
+    ],
+    "decomposeHint": "小谜语：尸遇到「云」，变魔术一样——拼成了「层」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「層」、「的」、「简」组合而成——慢慢写成今天的「层」。"
+  },
+  {
+    "id": "l3_0301_59cb",
+    "character": "始",
+    "pinyin": "shǐ",
+    "meaning": "常用汉字「始」",
+    "sentence": "我喜欢始。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "女",
+      "台"
+    ],
+    "decomposeHint": "女字旁加上「台」——是「始」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边女性表示意思，右边「台」帮助读音——合在一起就是「始」，这是形声字！"
+  },
+  {
+    "id": "l3_0302_5374",
+    "character": "却",
+    "pinyin": "què",
+    "meaning": "常用汉字「却」",
+    "sentence": "我喜欢却。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "去",
+      "卩"
+    ],
+    "decomposeHint": "小谜语：「去」遇到「卩」，变魔术一样——拼成了「却」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「卩」表示意思，右边「去」帮助读音——合在一起就是「却」，这是形声字！"
+  },
+  {
+    "id": "l3_0303_4e13",
+    "character": "专",
+    "pinyin": "zhuān",
+    "meaning": "常用汉字「专」",
+    "sentence": "我喜欢专。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0304_72b6",
+    "character": "状",
+    "pinyin": "zhuàng",
+    "meaning": "常用汉字「状」",
+    "sentence": "我喜欢状。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丬",
+      "犬"
+    ],
+    "decomposeHint": "小谜语：「丬」遇到狗，变魔术一样——拼成了「状」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边狗表示意思，右边「丬」帮助读音——合在一起就是「状」，这是形声字！"
+  },
+  {
+    "id": "l3_0305_80b2",
+    "character": "育",
+    "pinyin": "yù",
+    "meaning": "常用汉字「育」",
+    "sentence": "我喜欢育。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「育」。"
+  },
+  {
+    "id": "l3_0306_5382",
+    "character": "厂",
+    "pinyin": "chǎng",
+    "meaning": "常用汉字「厂」",
+    "sentence": "我喜欢厂。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0307_8bc6",
+    "character": "识",
+    "pinyin": "shí",
+    "meaning": "常用汉字「识」",
+    "sentence": "我喜欢识。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "只"
+    ],
+    "decomposeHint": "言字旁加上只——跟说话有关的「识」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「只」帮助读音——合在一起就是「识」，这是形声字！"
+  },
+  {
+    "id": "l3_0308_9002",
+    "character": "适",
+    "pinyin": "shì",
+    "meaning": "常用汉字「适」",
+    "sentence": "我喜欢适。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "辶",
+      "舌"
+    ],
+    "decomposeHint": "小谜语：走之底遇到「舌」，变魔术一样——拼成了「适」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边走之底表示意思，右边「舌」帮助读音——合在一起就是「适」，这是形声字！"
+  },
+  {
+    "id": "l3_0309_5c5e",
+    "character": "属",
+    "pinyin": "shǔ",
+    "meaning": "常用汉字「属」",
+    "sentence": "我喜欢属。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尸",
+      "禹"
+    ],
+    "decomposeHint": "小谜语：尸遇到「禹」，变魔术一样——拼成了「属」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边尸表示意思，右边「禹」帮助读音——合在一起就是「属」，这是形声字！"
+  },
+  {
+    "id": "l3_0310_5706",
+    "character": "圆",
+    "pinyin": "yuán",
+    "meaning": "常用汉字「圆」",
+    "sentence": "我喜欢圆。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "囗",
+      "员"
+    ],
+    "decomposeHint": "小谜语：「囗」遇到「员」，变魔术一样——拼成了「圆」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「囗」表示意思，右边「员」帮助读音——合在一起就是「圆」，这是形声字！"
+  },
+  {
+    "id": "l3_0311_4f4f",
+    "character": "住",
+    "pinyin": "zhù",
+    "meaning": "常用汉字「住」",
+    "sentence": "我喜欢住。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "主"
+    ],
+    "decomposeHint": "人字旁加上「主」——是「住」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 who hosts 主; 主 「also」帮助读音，后来写成「住」。"
+  },
+  {
+    "id": "l3_0312_8c03",
+    "character": "调",
+    "pinyin": "diào",
+    "meaning": "常用汉字「调」",
+    "sentence": "我喜欢调。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "周"
+    ],
+    "decomposeHint": "言字旁加上「周」——跟说话有关的「调」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「周」帮助读音——合在一起就是「调」，这是形声字！"
+  },
+  {
+    "id": "l3_0313_6ee1",
+    "character": "满",
+    "pinyin": "mǎn",
+    "meaning": "常用汉字「满」",
+    "sentence": "我喜欢满。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "艹"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到草字头——是「满」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「㒼」帮助读音——合在一起就是「满」，这是形声字！"
+  },
+  {
+    "id": "l3_0314_53bf",
+    "character": "县",
+    "pinyin": "xiàn",
+    "meaning": "常用汉字「县」",
+    "sentence": "我喜欢县。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "且",
+      "厶"
+    ],
+    "decomposeHint": "小谜语：「且」遇到「厶」，变魔术一样——拼成了「县」！你也来认认看～"
+  },
+  {
+    "id": "l3_0315_5c40",
+    "character": "局",
+    "pinyin": "jú",
+    "meaning": "常用汉字「局」",
+    "sentence": "我喜欢局。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尺",
+      "口"
+    ],
+    "decomposeHint": "小谜语：「尺」遇到嘴巴，变魔术一样——拼成了「局」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「尺」、「口」组合而成——慢慢写成今天的「局」。"
+  },
+  {
+    "id": "l3_0316_53c2",
+    "character": "参",
+    "pinyin": "cān",
+    "meaning": "常用汉字「参」",
+    "sentence": "我喜欢参。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厶",
+      "彡"
+    ],
+    "decomposeHint": "小谜语：「厶」遇到「彡」，变魔术一样——拼成了「参」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「厶」表示意思，右边「彡」帮助读音——合在一起就是「参」，这是形声字！"
+  },
+  {
+    "id": "l3_0317_7ec6",
+    "character": "细",
+    "pinyin": "xì",
+    "meaning": "常用汉字「细」",
+    "sentence": "我喜欢细。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "田"
+    ],
+    "decomposeHint": "纟旁像丝线，加上田地——是「细」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「纟」表示意思，右边「田」帮助读音——合在一起就是「细」，这是形声字！"
+  },
+  {
+    "id": "l3_0318_5f15",
+    "character": "引",
+    "pinyin": "yǐn",
+    "meaning": "常用汉字「引」",
+    "sentence": "我喜欢引。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "弓",
+      "丨"
+    ],
+    "decomposeHint": "小谜语：「弓」遇到「丨」，变魔术一样——拼成了「引」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「弓」、「丨」组合而成——慢慢写成今天的「引」。"
+  },
+  {
+    "id": "l3_0319_542c",
+    "character": "听",
+    "pinyin": "tīng",
+    "meaning": "常用汉字「听」",
+    "sentence": "上课认真听老师讲。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "斤"
+    ],
+    "decomposeHint": "口加斤——侧耳听，是「听」！",
+    "evolutionType": "会意",
+    "evolutionHint": "口加斤——侧耳「听」！"
+  },
+  {
+    "id": "l3_0320_8be5",
+    "character": "该",
+    "pinyin": "gāi",
+    "meaning": "常用汉字「该」",
+    "sentence": "我喜欢该。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "亥"
+    ],
+    "decomposeHint": "言字旁加上「亥」——跟说话有关的「该」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「亥」帮助读音——合在一起就是「该」，这是形声字！"
+  },
+  {
+    "id": "l3_0321_94c1",
+    "character": "铁",
+    "pinyin": "tiě",
+    "meaning": "常用汉字「铁」",
+    "sentence": "我喜欢铁。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "钅",
+      "失"
+    ],
+    "decomposeHint": "小谜语：「钅」遇到「失」，变魔术一样——拼成了「铁」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「钅」表示意思，右边「失」帮助读音——合在一起就是「铁」，这是形声字！"
+  },
+  {
+    "id": "l3_0322_4e25",
+    "character": "严",
+    "pinyin": "yán",
+    "meaning": "常用汉字「严」",
+    "sentence": "我喜欢严。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亚",
+      "厂"
+    ],
+    "decomposeHint": "小谜语：「亚」遇到厂，变魔术一样——拼成了「严」！你也来认认看～"
+  },
+  {
+    "id": "l3_0323_9f99",
+    "character": "龙",
+    "pinyin": "lóng",
+    "meaning": "常用汉字「龙」",
+    "sentence": "我喜欢龙。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "尤",
+      "丿"
+    ],
+    "decomposeHint": "小谜语：「尤」遇到「丿」，变魔术一样——拼成了「龙」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A dragon，后来写成「龙」。"
+  },
+  {
+    "id": "l3_0324_613f",
+    "character": "愿",
+    "pinyin": "yuàn",
+    "meaning": "常用汉字「愿」",
+    "sentence": "我喜欢愿。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "原",
+      "心"
+    ],
+    "decomposeHint": "小谜语：「原」遇到心，变魔术一样——拼成了「愿」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边心表示意思，右边「原」帮助读音——合在一起就是「愿」，这是形声字！"
+  },
+  {
+    "id": "l3_0325_7597",
+    "character": "疗",
+    "pinyin": "liáo",
+    "meaning": "常用汉字「疗」",
+    "sentence": "我喜欢疗。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "疒",
+      "了"
+    ],
+    "decomposeHint": "小谜语：「疒」遇到「了」，变魔术一样——拼成了「疗」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To cl耳朵 了 an illness 疒; 了 「also」帮助读音，后来写成「疗」。"
+  },
+  {
+    "id": "l3_0326_7cae",
+    "character": "粮",
+    "pinyin": "liáng",
+    "meaning": "常用汉字「粮」",
+    "sentence": "我喜欢粮。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "米",
+      "良"
+    ],
+    "decomposeHint": "小谜语：米遇到「良」，变魔术一样——拼成了「粮」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边米表示意思，右边「良」帮助读音——合在一起就是「粮」，这是形声字！"
+  },
+  {
+    "id": "l3_0327_8bd5",
+    "character": "试",
+    "pinyin": "shì",
+    "meaning": "常用汉字「试」",
+    "sentence": "我喜欢试。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "讠",
+      "式"
+    ],
+    "decomposeHint": "言字旁加上「式」——跟说话有关的「试」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边言字旁表示意思，右边「式」帮助读音——合在一起就是「试」，这是形声字！"
+  },
+  {
+    "id": "l3_0328_8865",
+    "character": "补",
+    "pinyin": "bǔ",
+    "meaning": "常用汉字「补」",
+    "sentence": "我喜欢补。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "衤",
+      "卜"
+    ],
+    "decomposeHint": "小谜语：衣字旁遇到卜，变魔术一样——拼成了「补」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边衣字旁表示意思，右边「卜」帮助读音——合在一起就是「补」，这是形声字！"
+  },
+  {
+    "id": "l3_0329_8d5e",
+    "character": "赞",
+    "pinyin": "zàn",
+    "meaning": "常用汉字「赞」",
+    "sentence": "我喜欢赞。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "兟",
+      "贝"
+    ],
+    "decomposeHint": "小谜语：「兟」遇到贝壳，变魔术一样——拼成了「赞」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边贝壳表示意思，右边「兟」帮助读音——合在一起就是「赞」，这是形声字！"
+  },
+  {
+    "id": "l3_0330_7ade",
+    "character": "竞",
+    "pinyin": "jìng",
+    "meaning": "常用汉字「竞」",
+    "sentence": "我喜欢竞。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "立",
+      "兄"
+    ],
+    "decomposeHint": "小谜语：立遇到「兄」，变魔术一样——拼成了「竞」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「立」、「兄」组合而成——慢慢写成今天的「竞」。"
+  },
+  {
+    "id": "l3_0331_7adf",
+    "character": "竟",
+    "pinyin": "jìng",
+    "meaning": "常用汉字「竟」",
+    "sentence": "我喜欢竟。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "音",
+      "儿"
+    ],
+    "decomposeHint": "小谜语：「音」遇到儿，变魔术一样——拼成了「竟」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「儿」、「音」组合而成——慢慢写成今天的「竟」。"
+  },
+  {
+    "id": "l3_0332_7ae0",
+    "character": "章",
+    "pinyin": "zhāng",
+    "meaning": "常用汉字「章」",
+    "sentence": "我喜欢章。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "音",
+      "十"
+    ],
+    "decomposeHint": "小谜语：「音」遇到十，变魔术一样——拼成了「章」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「十」、「音」组合而成——慢慢写成今天的「章」。"
+  },
+  {
+    "id": "l3_0333_654c",
+    "character": "敌",
+    "pinyin": "dí",
+    "meaning": "常用汉字「敌」",
+    "sentence": "我喜欢敌。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "舌",
+      "攵"
+    ],
+    "decomposeHint": "小谜语：「舌」遇到反文旁，变魔术一样——拼成了「敌」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边反文旁表示意思，右边「啇」帮助读音——合在一起就是「敌」，这是形声字！"
+  },
+  {
+    "id": "l3_0334_6e90",
+    "character": "源",
+    "pinyin": "yuán",
+    "meaning": "常用汉字「源」",
+    "sentence": "我喜欢源。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "原"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「原」——是「源」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「原」帮助读音——合在一起就是「源」，这是形声字！"
+  },
+  {
+    "id": "l3_0335_5584",
+    "character": "善",
+    "pinyin": "shàn",
+    "meaning": "常用汉字「善」",
+    "sentence": "我喜欢善。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "羊",
+      "丷"
+    ],
+    "decomposeHint": "小谜语：羊遇到「丷」，变魔术一样——拼成了「善」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「羊」、「口」组合而成——慢慢写成今天的「善」。"
+  },
+  {
+    "id": "l3_0336_6f14",
+    "character": "演",
+    "pinyin": "yǎn",
+    "meaning": "常用汉字「演」",
+    "sentence": "我喜欢演。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "氵",
+      "寅"
+    ],
+    "decomposeHint": "哗啦啦的水，遇到「寅」——是「演」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边三点水表示意思，右边「寅」帮助读音——合在一起就是「演」，这是形声字！"
+  },
+  {
+    "id": "l3_0337_6392",
+    "character": "排",
+    "pinyin": "pái",
+    "meaning": "常用汉字「排」",
+    "sentence": "我喜欢排。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "非"
+    ],
+    "decomposeHint": "提手旁加上「非」——用手做的动作：「排」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「非」帮助读音——合在一起就是「排」，这是形声字！"
+  },
+  {
+    "id": "l3_0338_534f",
+    "character": "协",
+    "pinyin": "xié",
+    "meaning": "常用汉字「协」",
+    "sentence": "我喜欢协。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "十",
+      "办"
+    ],
+    "decomposeHint": "小谜语：十遇到「办」，变魔术一样——拼成了「协」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「办」表示意思，右边「十」帮助读音——合在一起就是「协」，这是形声字！"
+  },
+  {
+    "id": "l3_0339_4f18",
+    "character": "优",
+    "pinyin": "yōu",
+    "meaning": "常用汉字「优」",
+    "sentence": "我喜欢优。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尤"
+    ],
+    "decomposeHint": "人字旁加上「尤」——是「优」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「尤」帮助读音——合在一起就是「优」，这是形声字！"
+  },
+  {
+    "id": "l3_0340_5723",
+    "character": "圣",
+    "pinyin": "shèng",
+    "meaning": "常用汉字「圣」",
+    "sentence": "我喜欢圣。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "又",
+      "土"
+    ],
+    "decomposeHint": "小谜语：又遇到土地，变魔术一样——拼成了「圣」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——「聖;」的简化写法 a king 王 of listening 耳  and speaking口，后来写成「圣」。"
+  },
+  {
+    "id": "l3_0341_76df",
+    "character": "盟",
+    "pinyin": "méng",
+    "meaning": "常用汉字「盟」",
+    "sentence": "我喜欢盟。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "明",
+      "皿"
+    ],
+    "decomposeHint": "小谜语：明亮遇到「皿」，变魔术一样——拼成了「盟」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「皿」表示意思，右边「明」帮助读音——合在一起就是「盟」，这是形声字！"
+  },
+  {
+    "id": "l3_0342_91ca",
+    "character": "释",
+    "pinyin": "shì",
+    "meaning": "常用汉字「释」",
+    "sentence": "我喜欢释。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "形声",
+    "evolutionHint": "一部分表意思、一部分表读音——合起来是形声字「释」！"
+  },
+  {
+    "id": "l3_0343_7591",
+    "character": "疑",
+    "pinyin": "yí",
+    "meaning": "常用汉字「疑」",
+    "sentence": "我喜欢疑。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——An old 人 walking 疋 while holding 匕 a cane 矢，后来写成「疑」。"
+  },
+  {
+    "id": "l3_0344_6001",
+    "character": "态",
+    "pinyin": "tài",
+    "meaning": "常用汉字「态」",
+    "sentence": "我喜欢态。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "太",
+      "心"
+    ],
+    "decomposeHint": "小谜语：「太」遇到心，变魔术一样——拼成了「态」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边心表示意思，右边「太」帮助读音——合在一起就是「态」，这是形声字！"
+  },
+  {
+    "id": "l3_0345_8303",
+    "character": "范",
+    "pinyin": "fàn",
+    "meaning": "常用汉字「范」",
+    "sentence": "我喜欢范。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "艹",
+      "氾"
+    ],
+    "decomposeHint": "草字头下面「氾」——跟植物有关的「范」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边草字头表示意思，右边「氾」帮助读音——合在一起就是「范」，这是形声字！"
+  },
+  {
+    "id": "l3_0346_6388",
+    "character": "授",
+    "pinyin": "shòu",
+    "meaning": "常用汉字「授」",
+    "sentence": "我喜欢授。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "受"
+    ],
+    "decomposeHint": "提手旁加上「受」——用手做的动作：「授」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「受」帮助读音——合在一起就是「授」，这是形声字！"
+  },
+  {
+    "id": "l3_0347_767b",
+    "character": "登",
+    "pinyin": "dēng",
+    "meaning": "常用汉字「登」",
+    "sentence": "我喜欢登。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "癶",
+      "豆"
+    ],
+    "decomposeHint": "小谜语：「癶」遇到豆，变魔术一样——拼成了「登」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「癶」表示意思，右边「豆」帮助读音——合在一起就是「登」，这是形声字！"
+  },
+  {
+    "id": "l3_0348_4e01",
+    "character": "丁",
+    "pinyin": "dīng",
+    "meaning": "常用汉字「丁」",
+    "sentence": "我喜欢丁。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「钉」、「子」组合而成——慢慢写成今天的「丁」。"
+  },
+  {
+    "id": "l3_0349_4e08",
+    "character": "丈",
+    "pinyin": "zhàng",
+    "meaning": "常用汉字「丈」",
+    "sentence": "我喜欢丈。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "又"
+    ],
+    "decomposeHint": "小谜语：一遇到又，变魔术一样——拼成了「丈」！你也来认认看～"
+  },
+  {
+    "id": "l3_0350_4e11",
+    "character": "丑",
+    "pinyin": "chǒu",
+    "meaning": "常用汉字「丑」",
+    "sentence": "我喜欢丑。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "刀",
+      "二"
+    ],
+    "decomposeHint": "小谜语：刀遇到二，变魔术一样——拼成了「丑」！你也来认认看～"
+  },
+  {
+    "id": "l3_0351_4e18",
+    "character": "丘",
+    "pinyin": "qiū",
+    "meaning": "常用汉字「丘」",
+    "sentence": "我喜欢丘。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "斤",
+      "一"
+    ],
+    "decomposeHint": "小谜语：斤遇到一，变魔术一样——拼成了「丘」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——Two hills，后来写成「丘」。"
+  },
+  {
+    "id": "l3_0352_4e19",
+    "character": "丙",
+    "pinyin": "bǐng",
+    "meaning": "常用汉字「丙」",
+    "sentence": "我喜欢丙。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "内"
+    ],
+    "decomposeHint": "小谜语：一遇到「内」，变魔术一样——拼成了「丙」！你也来认认看～"
+  },
+  {
+    "id": "l3_0353_4e1b",
+    "character": "丛",
+    "pinyin": "cóng",
+    "meaning": "常用汉字「丛」",
+    "sentence": "我喜欢丛。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "从",
+      "一"
+    ],
+    "decomposeHint": "小谜语：「从」遇到一，变魔术一样——拼成了「丛」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边一表示意思，右边「从」帮助读音——合在一起就是「丛」，这是形声字！"
+  },
+  {
+    "id": "l3_0354_4e1d",
+    "character": "丝",
+    "pinyin": "sī",
+    "meaning": "常用汉字「丝」",
+    "sentence": "我喜欢丝。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「絲」、「的」、「简」组合而成——慢慢写成今天的「丝」。"
+  },
+  {
+    "id": "l3_0355_4e27",
+    "character": "丧",
+    "pinyin": "sàng",
+    "meaning": "常用汉字「丧」",
+    "sentence": "我喜欢丧。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——「喪;」的简化写法 to cry 哭 over the dead 亡，后来写成「丧」。"
+  },
+  {
+    "id": "l3_0356_4e30",
+    "character": "丰",
+    "pinyin": "fēng",
+    "meaning": "常用汉字「丰」",
+    "sentence": "我喜欢丰。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "三",
+      "丨"
+    ],
+    "decomposeHint": "小谜语：三遇到「丨」，变魔术一样——拼成了「丰」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「耳」、「朵」、「草」组合而成——慢慢写成今天的「丰」。"
+  },
+  {
+    "id": "l3_0357_4e32",
+    "character": "串",
+    "pinyin": "chuàn",
+    "meaning": "常用汉字「串」",
+    "sentence": "我喜欢串。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "丨"
+    ],
+    "decomposeHint": "张开嘴巴，配上「丨」——凑成了「串」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「口」、「丨」组合而成——慢慢写成今天的「串」。"
+  },
+  {
+    "id": "l3_0358_4e34",
+    "character": "临",
+    "pinyin": "lín",
+    "meaning": "常用汉字「临」",
+    "sentence": "我喜欢临。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0359_4e38",
+    "character": "丸",
+    "pinyin": "wán",
+    "meaning": "常用汉字「丸」",
+    "sentence": "我喜欢丸。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "九",
+      "丶"
+    ],
+    "decomposeHint": "小谜语：九遇到「丶」，变魔术一样——拼成了「丸」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「九」、「握」、「着」组合而成——慢慢写成今天的「丸」。"
+  },
+  {
+    "id": "l3_0360_4e39",
+    "character": "丹",
+    "pinyin": "dān",
+    "meaning": "常用汉字「丹」",
+    "sentence": "我喜欢丹。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冂",
+      "亠"
+    ],
+    "decomposeHint": "小谜语：「冂」遇到「亠」，变魔术一样——拼成了「丹」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「丶」、「井」组合而成——慢慢写成今天的「丹」。"
+  },
+  {
+    "id": "l3_0361_4e3e",
+    "character": "举",
+    "pinyin": "jǔ",
+    "meaning": "常用汉字「举」",
+    "sentence": "我喜欢举。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "兴",
+      "扌"
+    ],
+    "decomposeHint": "小谜语：「兴」遇到提手旁，变魔术一样——拼成了「举」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边提手旁表示意思，右边「舉」帮助读音——合在一起就是「举」，这是形声字！"
+  },
+  {
+    "id": "l3_0362_4e43",
+    "character": "乃",
+    "pinyin": "nǎi",
+    "meaning": "常用汉字「乃」",
+    "sentence": "我喜欢乃。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「跟」、「孕」组合而成——慢慢写成今天的「乃」。"
+  },
+  {
+    "id": "l3_0363_4e45",
+    "character": "久",
+    "pinyin": "jiǔ",
+    "meaning": "常用汉字「久」",
+    "sentence": "我喜欢久。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0364_4e4c",
+    "character": "乌",
+    "pinyin": "wū",
+    "meaning": "常用汉字「乌」",
+    "sentence": "我喜欢乌。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「烏」、「的」、「简」组合而成——慢慢写成今天的「乌」。"
+  },
+  {
+    "id": "l3_0365_4e4d",
+    "character": "乍",
+    "pinyin": "zhà",
+    "meaning": "常用汉字「乍」",
+    "sentence": "我喜欢乍。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "下"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到下面，变魔术一样——拼成了「乍」！你也来认认看～"
+  },
+  {
+    "id": "l3_0366_4e4e",
+    "character": "乎",
+    "pinyin": "hū",
+    "meaning": "常用汉字「乎」",
+    "sentence": "我喜欢乎。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0367_4e4f",
+    "character": "乏",
+    "pinyin": "fá",
+    "meaning": "常用汉字「乏」",
+    "sentence": "我喜欢乏。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "之"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到「之」，变魔术一样——拼成了「乏」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「脚」、「之」、「丿」组合而成——慢慢写成今天的「乏」。"
+  },
+  {
+    "id": "l3_0368_4e50",
+    "character": "乐",
+    "pinyin": "lè",
+    "meaning": "常用汉字「乐」",
+    "sentence": "我喜欢乐。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丿",
+      "小"
+    ],
+    "decomposeHint": "小谜语：「丿」遇到小，变魔术一样——拼成了「乐」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——「樂,」的简化写法 a musical instrument with wood 木, strings 幺, and a pick 白，后来写成「乐」。"
+  },
+  {
+    "id": "l3_0369_4e52",
+    "character": "乒",
+    "pinyin": "pīng",
+    "meaning": "常用汉字「乒」",
+    "sentence": "我喜欢乒。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丘",
+      "丿"
+    ],
+    "decomposeHint": "小谜语：「丘」遇到「丿」，变魔术一样——拼成了「乒」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「跟」、「乓」、「很」组合而成——慢慢写成今天的「乒」。"
+  },
+  {
+    "id": "l3_0370_4e53",
+    "character": "乓",
+    "pinyin": "pāng",
+    "meaning": "常用汉字「乓」",
+    "sentence": "我喜欢乓。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丘",
+      "丶"
+    ],
+    "decomposeHint": "小谜语：「丘」遇到「丶」，变魔术一样——拼成了「乓」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「跟」、「乒」、「很」组合而成——慢慢写成今天的「乓」。"
+  },
+  {
+    "id": "l3_0371_4e54",
+    "character": "乔",
+    "pinyin": "qiáo",
+    "meaning": "常用汉字「乔」",
+    "sentence": "我喜欢乔。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「夭」组合而成——慢慢写成今天的「乔」。"
+  },
+  {
+    "id": "l3_0372_4e56",
+    "character": "乖",
+    "pinyin": "guāi",
+    "meaning": "常用汉字「乖」",
+    "sentence": "我喜欢乖。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "千",
+      "北"
+    ],
+    "decomposeHint": "小谜语：「千」遇到北方，变魔术一样——拼成了「乖」！你也来认认看～"
+  },
+  {
+    "id": "l3_0373_4e59",
+    "character": "乙",
+    "pinyin": "yǐ",
+    "meaning": "常用汉字「乙」",
+    "sentence": "我喜欢乙。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A swallow，后来写成「乙」。"
+  },
+  {
+    "id": "l3_0374_4e5e",
+    "character": "乞",
+    "pinyin": "qǐ",
+    "meaning": "常用汉字「乞」",
+    "sentence": "我喜欢乞。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0375_4e71",
+    "character": "乱",
+    "pinyin": "luàn",
+    "meaning": "常用汉字「乱」",
+    "sentence": "我喜欢乱。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "舌",
+      "乚"
+    ],
+    "decomposeHint": "小谜语：「舌」遇到「乚」，变魔术一样——拼成了「乱」！你也来认认看～"
+  },
+  {
+    "id": "l3_0376_4e73",
+    "character": "乳",
+    "pinyin": "rǔ",
+    "meaning": "常用汉字「乳」",
+    "sentence": "我喜欢乳。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "孚",
+      "乚"
+    ],
+    "decomposeHint": "小谜语：「孚」遇到「乚」，变魔术一样——拼成了「乳」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「乚」表示意思，右边「孚」帮助读音——合在一起就是「乳」，这是形声字！"
+  },
+  {
+    "id": "l3_0377_4e88",
+    "character": "予",
+    "pinyin": "yǔ",
+    "meaning": "常用汉字「予」",
+    "sentence": "我喜欢予。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0378_4e8f",
+    "character": "亏",
+    "pinyin": "kuī",
+    "meaning": "常用汉字「亏」",
+    "sentence": "我喜欢亏。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0379_4e92",
+    "character": "互",
+    "pinyin": "hù",
+    "meaning": "常用汉字「互」",
+    "sentence": "我喜欢互。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Two hooks hooking eachother，后来写成「互」。"
+  },
+  {
+    "id": "l3_0380_4e95",
+    "character": "井",
+    "pinyin": "jǐng",
+    "meaning": "常用汉字「井」",
+    "sentence": "我喜欢井。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——A mine or well，后来写成「井」。"
+  },
+  {
+    "id": "l3_0381_4e9a",
+    "character": "亚",
+    "pinyin": "yà",
+    "meaning": "常用汉字「亚」",
+    "sentence": "我喜欢亚。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "业"
+    ],
+    "decomposeHint": "小谜语：一遇到「业」，变魔术一样——拼成了「亚」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「房」、「子」组合而成——慢慢写成今天的「亚」。"
+  },
+  {
+    "id": "l3_0382_4ea1",
+    "character": "亡",
+    "pinyin": "wáng",
+    "meaning": "常用汉字「亡」",
+    "sentence": "我喜欢亡。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亾」组合而成——慢慢写成今天的「亡」。"
+  },
+  {
+    "id": "l3_0383_4ea5",
+    "character": "亥",
+    "pinyin": "hài",
+    "meaning": "常用汉字「亥」",
+    "sentence": "我喜欢亥。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0384_4ea6",
+    "character": "亦",
+    "pinyin": "yì",
+    "meaning": "常用汉字「亦」",
+    "sentence": "我喜欢亦。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「亦」。"
+  },
+  {
+    "id": "l3_0385_4ea8",
+    "character": "亨",
+    "pinyin": "hēng",
+    "meaning": "常用汉字「亨」",
+    "sentence": "我喜欢亨。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "口",
+      "了"
+    ],
+    "decomposeHint": "三个小伙伴「亠」、嘴巴、「了」手拉手——组成了「亨」！"
+  },
+  {
+    "id": "l3_0386_4eab",
+    "character": "享",
+    "pinyin": "xiǎng",
+    "meaning": "常用汉字「享」",
+    "sentence": "我喜欢享。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "口",
+      "子"
+    ],
+    "decomposeHint": "三个小伙伴「亠」、嘴巴、孩子手拉手——组成了「享」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Children 子 living and eating 口 in the 房子 亠，后来写成「享」。"
+  },
+  {
+    "id": "l3_0387_4ead",
+    "character": "亭",
+    "pinyin": "tíng",
+    "meaning": "常用汉字「亭」",
+    "sentence": "我喜欢亭。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "丁"
+    ],
+    "decomposeHint": "小谜语：「亠」遇到「丁」，变魔术一样——拼成了「亭」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——亠, 口, and 冖 form a picture of a pavilion; 「丁」帮助读音，后来写成「亭」。"
+  },
+  {
+    "id": "l3_0388_4ec1",
+    "character": "仁",
+    "pinyin": "rén",
+    "meaning": "常用汉字「仁」",
+    "sentence": "我喜欢仁。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "二"
+    ],
+    "decomposeHint": "人字旁加上二——是「仁」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「二」、「亻」组合而成——慢慢写成今天的「仁」。"
+  },
+  {
+    "id": "l3_0389_4ec5",
+    "character": "仅",
+    "pinyin": "jǐn",
+    "meaning": "常用汉字「仅」",
+    "sentence": "我喜欢仅。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "又"
+    ],
+    "decomposeHint": "人字旁加上又——是「仅」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「又」帮助读音——合在一起就是「仅」，这是形声字！"
+  },
+  {
+    "id": "l3_0390_4ec6",
+    "character": "仆",
+    "pinyin": "pū",
+    "meaning": "常用汉字「仆」",
+    "sentence": "我喜欢仆。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "卜"
+    ],
+    "decomposeHint": "人字旁加上卜——是「仆」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「卜」帮助读音——合在一起就是「仆」，这是形声字！"
+  },
+  {
+    "id": "l3_0391_4ec7",
+    "character": "仇",
+    "pinyin": "chóu",
+    "meaning": "常用汉字「仇」",
+    "sentence": "我喜欢仇。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "九"
+    ],
+    "decomposeHint": "人字旁加上九——是「仇」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「九」帮助读音——合在一起就是「仇」，这是形声字！"
+  },
+  {
+    "id": "l3_0392_4ecb",
+    "character": "介",
+    "pinyin": "jiè",
+    "meaning": "常用汉字「介」",
+    "sentence": "我喜欢介。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「八」、「人」组合而成——慢慢写成今天的「介」。"
+  },
+  {
+    "id": "l3_0393_4ecd",
+    "character": "仍",
+    "pinyin": "réng",
+    "meaning": "常用汉字「仍」",
+    "sentence": "我喜欢仍。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "乃"
+    ],
+    "decomposeHint": "人字旁加上「乃」——是「仍」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「乃」表示意思，右边「亻」帮助读音——合在一起就是「仍」，这是形声字！"
+  },
+  {
+    "id": "l3_0394_4ed1",
+    "character": "仑",
+    "pinyin": "lún",
+    "meaning": "常用汉字「仑」",
+    "sentence": "我喜欢仑。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人",
+      "匕"
+    ],
+    "decomposeHint": "人字旁加上匕——是「仑」！"
+  },
+  {
+    "id": "l3_0395_4ed3",
+    "character": "仓",
+    "pinyin": "cāng",
+    "meaning": "常用汉字「仓」",
+    "sentence": "我喜欢仓。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——「倉;」的简化写法 grains 食 kept in storage 口，后来写成「仓」。"
+  },
+  {
+    "id": "l3_0396_4ed4",
+    "character": "仔",
+    "pinyin": "zǎi",
+    "meaning": "常用汉字「仔」",
+    "sentence": "我喜欢仔。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "子"
+    ],
+    "decomposeHint": "人字旁加上孩子——是「仔」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 keeping watch over a child 子; 子 「also」帮助读音，后来写成「仔」。"
+  },
+  {
+    "id": "l3_0397_4ed7",
+    "character": "仗",
+    "pinyin": "zhàng",
+    "meaning": "常用汉字「仗」",
+    "sentence": "我喜欢仗。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "丈"
+    ],
+    "decomposeHint": "人字旁加上「丈」——是「仗」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「丈」帮助读音——合在一起就是「仗」，这是形声字！"
+  },
+  {
+    "id": "l3_0398_4ed8",
+    "character": "付",
+    "pinyin": "fù",
+    "meaning": "常用汉字「付」",
+    "sentence": "我喜欢付。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "寸"
+    ],
+    "decomposeHint": "人字旁加上寸——是「付」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「寸」、「亻」组合而成——慢慢写成今天的「付」。"
+  },
+  {
+    "id": "l3_0399_4ed9",
+    "character": "仙",
+    "pinyin": "xiān",
+    "meaning": "常用汉字「仙」",
+    "sentence": "我喜欢仙。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "山"
+    ],
+    "decomposeHint": "人字旁加上山——是「仙」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「山」帮助读音——合在一起就是「仙」，这是形声字！"
+  },
+  {
+    "id": "l3_0400_4ee4",
+    "character": "令",
+    "pinyin": "lìng",
+    "meaning": "常用汉字「令」",
+    "sentence": "我喜欢令。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」组合而成——慢慢写成今天的「令」。"
+  },
+  {
+    "id": "l3_0401_4eea",
+    "character": "仪",
+    "pinyin": "yí",
+    "meaning": "常用汉字「仪」",
+    "sentence": "我喜欢仪。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "义"
+    ],
+    "decomposeHint": "人字旁加上「义」——是「仪」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「义」帮助读音——合在一起就是「仪」，这是形声字！"
+  },
+  {
+    "id": "l3_0402_4ef0",
+    "character": "仰",
+    "pinyin": "yǎng",
+    "meaning": "常用汉字「仰」",
+    "sentence": "我喜欢仰。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "卬"
+    ],
+    "decomposeHint": "人字旁加上「卬」——是「仰」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「卬」、「人」、「亻」组合而成——慢慢写成今天的「仰」。"
+  },
+  {
+    "id": "l3_0403_4ef2",
+    "character": "仲",
+    "pinyin": "zhòng",
+    "meaning": "常用汉字「仲」",
+    "sentence": "我喜欢仲。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "中"
+    ],
+    "decomposeHint": "人字旁加上「中」——是「仲」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——The middle 中 人 亻; 中 「also」帮助读音，后来写成「仲」。"
+  },
+  {
+    "id": "l3_0404_4efd",
+    "character": "份",
+    "pinyin": "fèn",
+    "meaning": "常用汉字「份」",
+    "sentence": "我喜欢份。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "分"
+    ],
+    "decomposeHint": "人字旁加上「分」——是「份」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「分」、「人」、「亻」组合而成——慢慢写成今天的「份」。"
+  },
+  {
+    "id": "l3_0405_4eff",
+    "character": "仿",
+    "pinyin": "fǎng",
+    "meaning": "常用汉字「仿」",
+    "sentence": "我喜欢仿。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "方"
+    ],
+    "decomposeHint": "人字旁加上「方」——是「仿」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「方」帮助读音——合在一起就是「仿」，这是形声字！"
+  },
+  {
+    "id": "l3_0406_4f01",
+    "character": "企",
+    "pinyin": "qǐ",
+    "meaning": "常用汉字「企」",
+    "sentence": "我喜欢企。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人",
+      "止"
+    ],
+    "decomposeHint": "人字旁加上止——是「企」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 人 on his feet 止; 止 「also」帮助读音，后来写成「企」。"
+  },
+  {
+    "id": "l3_0407_4f0a",
+    "character": "伊",
+    "pinyin": "yī",
+    "meaning": "常用汉字「伊」",
+    "sentence": "我喜欢伊。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尹"
+    ],
+    "decomposeHint": "人字旁加上「尹」——是「伊」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「尹」帮助读音——合在一起就是「伊」，这是形声字！"
+  },
+  {
+    "id": "l3_0408_4f0d",
+    "character": "伍",
+    "pinyin": "wǔ",
+    "meaning": "常用汉字「伍」",
+    "sentence": "我喜欢伍。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "五"
+    ],
+    "decomposeHint": "人字旁加上五——是「伍」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Five 五 people 亻; 五 「also」帮助读音，后来写成「伍」。"
+  },
+  {
+    "id": "l3_0409_4f0f",
+    "character": "伏",
+    "pinyin": "fú",
+    "meaning": "常用汉字「伏」",
+    "sentence": "我喜欢伏。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "犬"
+    ],
+    "decomposeHint": "人字旁加上狗——是「伏」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「狗」组合而成——慢慢写成今天的「伏」。"
+  },
+  {
+    "id": "l3_0410_4f10",
+    "character": "伐",
+    "pinyin": "fá",
+    "meaning": "常用汉字「伐」",
+    "sentence": "我喜欢伐。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "戈"
+    ],
+    "decomposeHint": "人字旁加上戈——是「伐」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「戈」组合而成——慢慢写成今天的「伐」。"
+  },
+  {
+    "id": "l3_0411_4f11",
+    "character": "休",
+    "pinyin": "xiū",
+    "meaning": "常用汉字「休」",
+    "sentence": "我喜欢休。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "木"
+    ],
+    "decomposeHint": "人靠木——累了靠在树上歇歇，就是「休」息！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」、「树」组合而成——慢慢写成今天的「休」。"
+  },
+  {
+    "id": "l3_0412_4f19",
+    "character": "伙",
+    "pinyin": "huǒ",
+    "meaning": "常用汉字「伙」",
+    "sentence": "我喜欢伙。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "火"
+    ],
+    "decomposeHint": "人字旁加上火——是「伙」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「火」帮助读音——合在一起就是「伙」，这是形声字！"
+  },
+  {
+    "id": "l3_0413_4f1e",
+    "character": "伞",
+    "pinyin": "sǎn",
+    "meaning": "常用汉字「伞」",
+    "sentence": "我喜欢伞。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——An umbrella，后来写成「伞」。"
+  },
+  {
+    "id": "l3_0414_4f1f",
+    "character": "伟",
+    "pinyin": "wěi",
+    "meaning": "常用汉字「伟」",
+    "sentence": "我喜欢伟。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "韦"
+    ],
+    "decomposeHint": "人字旁加上「韦」——是「伟」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「韦」帮助读音——合在一起就是「伟」，这是形声字！"
+  },
+  {
+    "id": "l3_0415_4f24",
+    "character": "伤",
+    "pinyin": "shāng",
+    "meaning": "常用汉字「伤」",
+    "sentence": "我喜欢伤。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0416_4f26",
+    "character": "伦",
+    "pinyin": "lún",
+    "meaning": "常用汉字「伦」",
+    "sentence": "我喜欢伦。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "仑"
+    ],
+    "decomposeHint": "人字旁加上「仑」——是「伦」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——The logical order 仑 of hu人 亻 society; 仑 「also」帮助读音，后来写成「伦」。"
+  },
+  {
+    "id": "l3_0417_4f2a",
+    "character": "伪",
+    "pinyin": "wěi",
+    "meaning": "常用汉字「伪」",
+    "sentence": "我喜欢伪。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "为"
+    ],
+    "decomposeHint": "人字旁加上「为」——是「伪」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「为」帮助读音——合在一起就是「伪」，这是形声字！"
+  },
+  {
+    "id": "l3_0418_4f2f",
+    "character": "伯",
+    "pinyin": "bó",
+    "meaning": "常用汉字「伯」",
+    "sentence": "我喜欢伯。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "白"
+    ],
+    "decomposeHint": "人字旁加上白——是「伯」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「白」帮助读音——合在一起就是「伯」，这是形声字！"
+  },
+  {
+    "id": "l3_0419_4f30",
+    "character": "估",
+    "pinyin": "gū",
+    "meaning": "常用汉字「估」",
+    "sentence": "我喜欢估。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "古"
+    ],
+    "decomposeHint": "人字旁加上「古」——是「估」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「古」帮助读音——合在一起就是「估」，这是形声字！"
+  },
+  {
+    "id": "l3_0420_4f34",
+    "character": "伴",
+    "pinyin": "bàn",
+    "meaning": "常用汉字「伴」",
+    "sentence": "我喜欢伴。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "半"
+    ],
+    "decomposeHint": "人字旁加上「半」——是「伴」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「半」帮助读音——合在一起就是「伴」，这是形声字！"
+  },
+  {
+    "id": "l3_0421_4f38",
+    "character": "伸",
+    "pinyin": "shēn",
+    "meaning": "常用汉字「伸」",
+    "sentence": "我喜欢伸。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "申"
+    ],
+    "decomposeHint": "人字旁加上「申」——是「伸」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To extend your confidence 申 to another 人 亻; 申 「also」帮助读音，后来写成「伸」。"
+  },
+  {
+    "id": "l3_0422_4f3a",
+    "character": "伺",
+    "pinyin": "cì",
+    "meaning": "常用汉字「伺」",
+    "sentence": "我喜欢伺。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "司"
+    ],
+    "decomposeHint": "人字旁加上「司」——是「伺」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「司」帮助读音——合在一起就是「伺」，这是形声字！"
+  },
+  {
+    "id": "l3_0423_4f3c",
+    "character": "似",
+    "pinyin": "shì",
+    "meaning": "常用汉字「似」",
+    "sentence": "我喜欢似。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "以"
+    ],
+    "decomposeHint": "人字旁加上「以」——是「似」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「亻」组合而成——慢慢写成今天的「似」。"
+  },
+  {
+    "id": "l3_0424_4f43",
+    "character": "佃",
+    "pinyin": "diàn",
+    "meaning": "常用汉字「佃」",
+    "sentence": "我喜欢佃。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "田"
+    ],
+    "decomposeHint": "人字旁加上田地——是「佃」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 on the farm 田; 田 「also」帮助读音，后来写成「佃」。"
+  },
+  {
+    "id": "l3_0425_4f51",
+    "character": "佑",
+    "pinyin": "yòu",
+    "meaning": "常用汉字「佑」",
+    "sentence": "我喜欢佑。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "右"
+    ],
+    "decomposeHint": "人字旁加上右——是「佑」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「右」帮助读音——合在一起就是「佑」，这是形声字！"
+  },
+  {
+    "id": "l3_0426_4f59",
+    "character": "余",
+    "pinyin": "yú",
+    "meaning": "常用汉字「余」",
+    "sentence": "我喜欢余。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0427_4f5b",
+    "character": "佛",
+    "pinyin": "fú",
+    "meaning": "常用汉字「佛」",
+    "sentence": "我喜欢佛。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "弗"
+    ],
+    "decomposeHint": "人字旁加上「弗」——是「佛」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「弗」帮助读音——合在一起就是「佛」，这是形声字！"
+  },
+  {
+    "id": "l3_0428_4f63",
+    "character": "佣",
+    "pinyin": "yōng",
+    "meaning": "常用汉字「佣」",
+    "sentence": "我喜欢佣。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "用"
+    ],
+    "decomposeHint": "人字旁加上「用」——是「佣」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——An employed 用 人 亻; 用 「also」帮助读音，后来写成「佣」。"
+  },
+  {
+    "id": "l3_0429_4f69",
+    "character": "佩",
+    "pinyin": "pèi",
+    "meaning": "常用汉字「佩」",
+    "sentence": "我喜欢佩。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "凡"
+    ],
+    "decomposeHint": "人字旁加上「凡」——是「佩」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Common 凡 cloth 巾 ornaments worn by people 亻，后来写成「佩」。"
+  },
+  {
+    "id": "l3_0430_4f73",
+    "character": "佳",
+    "pinyin": "jiā",
+    "meaning": "常用汉字「佳」",
+    "sentence": "我喜欢佳。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "圭"
+    ],
+    "decomposeHint": "人字旁加上「圭」——是「佳」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「圭」帮助读音——合在一起就是「佳」，这是形声字！"
+  },
+  {
+    "id": "l3_0431_4f9b",
+    "character": "供",
+    "pinyin": "gōng",
+    "meaning": "常用汉字「供」",
+    "sentence": "我喜欢供。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "共"
+    ],
+    "decomposeHint": "人字旁加上「共」——是「供」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 making an offering with both 手s 共; 共 「also」帮助读音，后来写成「供」。"
+  },
+  {
+    "id": "l3_0432_4f9d",
+    "character": "依",
+    "pinyin": "yī",
+    "meaning": "常用汉字「依」",
+    "sentence": "我喜欢依。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "衣"
+    ],
+    "decomposeHint": "人字旁加上衣——是「依」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「衣」帮助读音——合在一起就是「依」，这是形声字！"
+  },
+  {
+    "id": "l3_0433_4fa0",
+    "character": "侠",
+    "pinyin": "xiá",
+    "meaning": "常用汉字「侠」",
+    "sentence": "我喜欢侠。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "夹"
+    ],
+    "decomposeHint": "人字旁加上「夹」——是「侠」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「夹」帮助读音——合在一起就是「侠」，这是形声字！"
+  },
+  {
+    "id": "l3_0434_4fa3",
+    "character": "侣",
+    "pinyin": "lǚ",
+    "meaning": "常用汉字「侣」",
+    "sentence": "我喜欢侣。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "吕"
+    ],
+    "decomposeHint": "人字旁加上「吕」——是「侣」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「吕」帮助读音——合在一起就是「侣」，这是形声字！"
+  },
+  {
+    "id": "l3_0435_4fa5",
+    "character": "侥",
+    "pinyin": "jiǎo",
+    "meaning": "常用汉字「侥」",
+    "sentence": "我喜欢侥。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尧"
+    ],
+    "decomposeHint": "人字旁加上「尧」——是「侥」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「尧」帮助读音——合在一起就是「侥」，这是形声字！"
+  },
+  {
+    "id": "l3_0436_4fa6",
+    "character": "侦",
+    "pinyin": "zhēn",
+    "meaning": "常用汉字「侦」",
+    "sentence": "我喜欢侦。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "贞"
+    ],
+    "decomposeHint": "人字旁加上「贞」——是「侦」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「贞」帮助读音——合在一起就是「侦」，这是形声字！"
+  },
+  {
+    "id": "l3_0437_4fa7",
+    "character": "侧",
+    "pinyin": "cè",
+    "meaning": "常用汉字「侧」",
+    "sentence": "我喜欢侧。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "则"
+    ],
+    "decomposeHint": "人字旁加上「则」——是「侧」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「则」帮助读音——合在一起就是「侧」，这是形声字！"
+  },
+  {
+    "id": "l3_0438_4fa8",
+    "character": "侨",
+    "pinyin": "qiáo",
+    "meaning": "常用汉字「侨」",
+    "sentence": "我喜欢侨。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "乔"
+    ],
+    "decomposeHint": "人字旁加上「乔」——是「侨」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「乔」帮助读音——合在一起就是「侨」，这是形声字！"
+  },
+  {
+    "id": "l3_0439_4fae",
+    "character": "侮",
+    "pinyin": "wǔ",
+    "meaning": "常用汉字「侮」",
+    "sentence": "我喜欢侮。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "每"
+    ],
+    "decomposeHint": "人字旁加上「每」——是「侮」！"
+  },
+  {
+    "id": "l3_0440_4faf",
+    "character": "侯",
+    "pinyin": "hóu",
+    "meaning": "常用汉字「侯」",
+    "sentence": "我喜欢侯。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "矦"
+    ],
+    "decomposeHint": "人字旁加上「矦」——是「侯」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「人」、「亻」、「矦」组合而成——慢慢写成今天的「侯」。"
+  },
+  {
+    "id": "l3_0441_4fb5",
+    "character": "侵",
+    "pinyin": "qīn",
+    "meaning": "常用汉字「侵」",
+    "sentence": "我喜欢侵。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "彐"
+    ],
+    "decomposeHint": "人字旁加上「彐」——是「侵」！"
+  },
+  {
+    "id": "l3_0442_4fc3",
+    "character": "促",
+    "pinyin": "cù",
+    "meaning": "常用汉字「促」",
+    "sentence": "我喜欢促。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "足"
+    ],
+    "decomposeHint": "人字旁加上脚——是「促」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Someone 亻 on your heels 足; 足 「also」帮助读音，后来写成「促」。"
+  },
+  {
+    "id": "l3_0443_4fc4",
+    "character": "俄",
+    "pinyin": "é",
+    "meaning": "常用汉字「俄」",
+    "sentence": "我喜欢俄。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "我"
+    ],
+    "decomposeHint": "人字旁加上「我」——是「俄」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「我」帮助读音——合在一起就是「俄」，这是形声字！"
+  },
+  {
+    "id": "l3_0444_4fca",
+    "character": "俊",
+    "pinyin": "jùn",
+    "meaning": "常用汉字「俊」",
+    "sentence": "我喜欢俊。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "夋"
+    ],
+    "decomposeHint": "人字旁加上「夋」——是「俊」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「夋」帮助读音——合在一起就是「俊」，这是形声字！"
+  },
+  {
+    "id": "l3_0445_4fd7",
+    "character": "俗",
+    "pinyin": "sú",
+    "meaning": "常用汉字「俗」",
+    "sentence": "我喜欢俗。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "谷"
+    ],
+    "decomposeHint": "人字旁加上「谷」——是「俗」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「谷」帮助读音——合在一起就是「俗」，这是形声字！"
+  },
+  {
+    "id": "l3_0446_4fd8",
+    "character": "俘",
+    "pinyin": "fú",
+    "meaning": "常用汉字「俘」",
+    "sentence": "我喜欢俘。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "孚"
+    ],
+    "decomposeHint": "人字旁加上「孚」——是「俘」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「孚」帮助读音——合在一起就是「俘」，这是形声字！"
+  },
+  {
+    "id": "l3_0447_4fe9",
+    "character": "俩",
+    "pinyin": "liǎ",
+    "meaning": "常用汉字「俩」",
+    "sentence": "我喜欢俩。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "两"
+    ],
+    "decomposeHint": "人字旁加上「两」——是「俩」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「寿」、「帮」、「助」组合而成——慢慢写成今天的「俩」。"
+  },
+  {
+    "id": "l3_0448_4fed",
+    "character": "俭",
+    "pinyin": "jiǎn",
+    "meaning": "常用汉字「俭」",
+    "sentence": "我喜欢俭。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "佥"
+    ],
+    "decomposeHint": "人字旁加上「佥」——是「俭」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「佥」帮助读音——合在一起就是「俭」，这是形声字！"
+  },
+  {
+    "id": "l3_0449_4fee",
+    "character": "修",
+    "pinyin": "xiū",
+    "meaning": "常用汉字「修」",
+    "sentence": "我喜欢修。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "攸",
+      "彡"
+    ],
+    "decomposeHint": "小谜语：「攸」遇到「彡」，变魔术一样——拼成了「修」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「彡」表示意思，右边「攸」帮助读音——合在一起就是「修」，这是形声字！"
+  },
+  {
+    "id": "l3_0450_4fef",
+    "character": "俯",
+    "pinyin": "fǔ",
+    "meaning": "常用汉字「俯」",
+    "sentence": "我喜欢俯。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "府"
+    ],
+    "decomposeHint": "人字旁加上「府」——是「俯」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「府」帮助读音——合在一起就是「俯」，这是形声字！"
+  },
+  {
+    "id": "l3_0451_500d",
+    "character": "倍",
+    "pinyin": "bèi",
+    "meaning": "常用汉字「倍」",
+    "sentence": "我喜欢倍。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "咅"
+    ],
+    "decomposeHint": "人字旁加上「咅」——是「倍」！"
+  },
+  {
+    "id": "l3_0452_5012",
+    "character": "倒",
+    "pinyin": "dào",
+    "meaning": "常用汉字「倒」",
+    "sentence": "我喜欢倒。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "到"
+    ],
+    "decomposeHint": "人字旁加上「到」——是「倒」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「到」帮助读音——合在一起就是「倒」，这是形声字！"
+  },
+  {
+    "id": "l3_0453_501a",
+    "character": "倚",
+    "pinyin": "yǐ",
+    "meaning": "常用汉字「倚」",
+    "sentence": "我喜欢倚。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "奇"
+    ],
+    "decomposeHint": "人字旁加上「奇」——是「倚」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「奇」帮助读音——合在一起就是「倚」，这是形声字！"
+  },
+  {
+    "id": "l3_0454_501f",
+    "character": "借",
+    "pinyin": "jiè",
+    "meaning": "常用汉字「借」",
+    "sentence": "我喜欢借。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "昔"
+    ],
+    "decomposeHint": "人字旁加上「昔」——是「借」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「昔」帮助读音——合在一起就是「借」，这是形声字！"
+  },
+  {
+    "id": "l3_0455_5021",
+    "character": "倡",
+    "pinyin": "chàng",
+    "meaning": "常用汉字「倡」",
+    "sentence": "我喜欢倡。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "昌"
+    ],
+    "decomposeHint": "人字旁加上「昌」——是「倡」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Someone 亻 who lights the way 昌; 昌 「also」帮助读音，后来写成「倡」。"
+  },
+  {
+    "id": "l3_0456_5026",
+    "character": "倦",
+    "pinyin": "juàn",
+    "meaning": "常用汉字「倦」",
+    "sentence": "我喜欢倦。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "卷"
+    ],
+    "decomposeHint": "人字旁加上「卷」——是「倦」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A curled-up 卷 人 亻; 卷 「also」帮助读音，后来写成「倦」。"
+  },
+  {
+    "id": "l3_0457_503a",
+    "character": "债",
+    "pinyin": "zhài",
+    "meaning": "常用汉字「债」",
+    "sentence": "我喜欢债。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "责"
+    ],
+    "decomposeHint": "人字旁加上「责」——是「债」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人's 亻 duty 责; 责 「also」帮助读音，后来写成「债」。"
+  },
+  {
+    "id": "l3_0458_503e",
+    "character": "倾",
+    "pinyin": "qīng",
+    "meaning": "常用汉字「倾」",
+    "sentence": "我喜欢倾。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "顷"
+    ],
+    "decomposeHint": "人字旁加上「顷」——是「倾」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「顷」帮助读音——合在一起就是「倾」，这是形声字！"
+  },
+  {
+    "id": "l3_0459_504e",
+    "character": "偎",
+    "pinyin": "wēi",
+    "meaning": "常用汉字「偎」",
+    "sentence": "我喜欢偎。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "畏"
+    ],
+    "decomposeHint": "人字旁加上「畏」——是「偎」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——To cling to someone 亻 in f耳朵 畏; 畏 「also」帮助读音，后来写成「偎」。"
+  },
+  {
+    "id": "l3_0460_504f",
+    "character": "偏",
+    "pinyin": "piān",
+    "meaning": "常用汉字「偏」",
+    "sentence": "我喜欢偏。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "扁"
+    ],
+    "decomposeHint": "人字旁加上「扁」——是「偏」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「扁」帮助读音——合在一起就是「偏」，这是形声字！"
+  },
+  {
+    "id": "l3_0461_505c",
+    "character": "停",
+    "pinyin": "tíng",
+    "meaning": "常用汉字「停」",
+    "sentence": "我喜欢停。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "亭"
+    ],
+    "decomposeHint": "人字旁加上「亭」——是「停」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「亭」帮助读音——合在一起就是「停」，这是形声字！"
+  },
+  {
+    "id": "l3_0462_5065",
+    "character": "健",
+    "pinyin": "jiàn",
+    "meaning": "常用汉字「健」",
+    "sentence": "我喜欢健。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "建"
+    ],
+    "decomposeHint": "人字旁加上「建」——是「健」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Someone 亻 who can build 建 things; 建 「also」帮助读音，后来写成「健」。"
+  },
+  {
+    "id": "l3_0463_5076",
+    "character": "偶",
+    "pinyin": "ǒu",
+    "meaning": "常用汉字「偶」",
+    "sentence": "我喜欢偶。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "禺"
+    ],
+    "decomposeHint": "人字旁加上「禺」——是「偶」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「禺」帮助读音——合在一起就是「偶」，这是形声字！"
+  },
+  {
+    "id": "l3_0464_5077",
+    "character": "偷",
+    "pinyin": "tōu",
+    "meaning": "常用汉字「偷」",
+    "sentence": "我喜欢偷。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "俞"
+    ],
+    "decomposeHint": "人字旁加上「俞」——是「偷」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「俞」帮助读音——合在一起就是「偷」，这是形声字！"
+  },
+  {
+    "id": "l3_0465_507f",
+    "character": "偿",
+    "pinyin": "cháng",
+    "meaning": "常用汉字「偿」",
+    "sentence": "我喜欢偿。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尝"
+    ],
+    "decomposeHint": "人字旁加上「尝」——是「偿」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「尝」帮助读音——合在一起就是「偿」，这是形声字！"
+  },
+  {
+    "id": "l3_0466_5080",
+    "character": "傀",
+    "pinyin": "guī",
+    "meaning": "常用汉字「傀」",
+    "sentence": "我喜欢傀。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "鬼"
+    ],
+    "decomposeHint": "人字旁加上「鬼」——是「傀」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「鬼」帮助读音——合在一起就是「傀」，这是形声字！"
+  },
+  {
+    "id": "l3_0467_5085",
+    "character": "傅",
+    "pinyin": "fù",
+    "meaning": "常用汉字「傅」",
+    "sentence": "我喜欢傅。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尃"
+    ],
+    "decomposeHint": "人字旁加上「尃」——是「傅」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Someone 亻 who lectures 尃; 尃 「also」帮助读音，后来写成「傅」。"
+  },
+  {
+    "id": "l3_0468_508d",
+    "character": "傍",
+    "pinyin": "bàng",
+    "meaning": "常用汉字「傍」",
+    "sentence": "我喜欢傍。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "旁"
+    ],
+    "decomposeHint": "人字旁加上「旁」——是「傍」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——Someone 亻 by your side 旁; 旁 「also」帮助读音，后来写成「傍」。"
+  },
+  {
+    "id": "l3_0469_50a8",
+    "character": "储",
+    "pinyin": "chǔ",
+    "meaning": "常用汉字「储」",
+    "sentence": "我喜欢储。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "诸"
+    ],
+    "decomposeHint": "人字旁加上「诸」——是「储」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「诸」帮助读音——合在一起就是「储」，这是形声字！"
+  },
+  {
+    "id": "l3_0470_50ac",
+    "character": "催",
+    "pinyin": "cuī",
+    "meaning": "常用汉字「催」",
+    "sentence": "我喜欢催。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "崔"
+    ],
+    "decomposeHint": "人字旁加上「崔」——是「催」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「崔」帮助读音——合在一起就是「催」，这是形声字！"
+  },
+  {
+    "id": "l3_0471_50b2",
+    "character": "傲",
+    "pinyin": "ào",
+    "meaning": "常用汉字「傲」",
+    "sentence": "我喜欢傲。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "敖"
+    ],
+    "decomposeHint": "人字旁加上「敖」——是「傲」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「敖」帮助读音——合在一起就是「傲」，这是形声字！"
+  },
+  {
+    "id": "l3_0472_50bb",
+    "character": "傻",
+    "pinyin": "shǎ",
+    "meaning": "常用汉字「傻」",
+    "sentence": "我喜欢傻。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "囟"
+    ],
+    "decomposeHint": "人字旁加上「囟」——是「傻」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 亻 being hit 夂 on the head 囟，后来写成「傻」。"
+  },
+  {
+    "id": "l3_0473_50cf",
+    "character": "像",
+    "pinyin": "xiàng",
+    "meaning": "常用汉字「像」",
+    "sentence": "我喜欢像。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "象"
+    ],
+    "decomposeHint": "人字旁加上「象」——是「像」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「象」帮助读音——合在一起就是「像」，这是形声字！"
+  },
+  {
+    "id": "l3_0474_50da",
+    "character": "僚",
+    "pinyin": "liáo",
+    "meaning": "常用汉字「僚」",
+    "sentence": "我喜欢僚。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尞"
+    ],
+    "decomposeHint": "人字旁加上「尞」——是「僚」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「尞」帮助读音——合在一起就是「僚」，这是形声字！"
+  },
+  {
+    "id": "l3_0475_50e7",
+    "character": "僧",
+    "pinyin": "sēng",
+    "meaning": "常用汉字「僧」",
+    "sentence": "我喜欢僧。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "曾"
+    ],
+    "decomposeHint": "人字旁加上「曾」——是「僧」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「曾」帮助读音——合在一起就是「僧」，这是形声字！"
+  },
+  {
+    "id": "l3_0476_50f5",
+    "character": "僵",
+    "pinyin": "jiāng",
+    "meaning": "常用汉字「僵」",
+    "sentence": "我喜欢僵。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "畺"
+    ],
+    "decomposeHint": "人字旁加上「畺」——是「僵」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「畺」帮助读音——合在一起就是「僵」，这是形声字！"
+  },
+  {
+    "id": "l3_0477_50fb",
+    "character": "僻",
+    "pinyin": "pì",
+    "meaning": "常用汉字「僻」",
+    "sentence": "我喜欢僻。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "辟"
+    ],
+    "decomposeHint": "人字旁加上「辟」——是「僻」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「辟」帮助读音——合在一起就是「僻」，这是形声字！"
+  },
+  {
+    "id": "l3_0478_5112",
+    "character": "儒",
+    "pinyin": "rú",
+    "meaning": "常用汉字「儒」",
+    "sentence": "我喜欢儒。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "需"
+    ],
+    "decomposeHint": "人字旁加上「需」——是「儒」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「需」帮助读音——合在一起就是「儒」，这是形声字！"
+  },
+  {
+    "id": "l3_0479_5121",
+    "character": "儡",
+    "pinyin": "lěi",
+    "meaning": "常用汉字「儡」",
+    "sentence": "我喜欢儡。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "畾"
+    ],
+    "decomposeHint": "人字旁加上「畾」——是「儡」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边人表示意思，右边「畾」帮助读音——合在一起就是「儡」，这是形声字！"
+  },
+  {
+    "id": "l3_0480_5141",
+    "character": "允",
+    "pinyin": "yǔn",
+    "meaning": "常用汉字「允」",
+    "sentence": "我喜欢允。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "厶",
+      "儿"
+    ],
+    "decomposeHint": "小谜语：「厶」遇到儿，变魔术一样——拼成了「允」！你也来认认看～"
+  },
+  {
+    "id": "l3_0481_5144",
+    "character": "兄",
+    "pinyin": "xiōng",
+    "meaning": "常用汉字「兄」",
+    "sentence": "我喜欢兄。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "儿"
+    ],
+    "decomposeHint": "张开嘴巴，配上儿——凑成了「兄」！",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「儿」、「口」组合而成——慢慢写成今天的「兄」。"
+  },
+  {
+    "id": "l3_0482_5145",
+    "character": "充",
+    "pinyin": "chōng",
+    "meaning": "常用汉字「充」",
+    "sentence": "我喜欢充。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "允"
+    ],
+    "decomposeHint": "小谜语：「亠」遇到「允」，变魔术一样——拼成了「充」！你也来认认看～"
+  },
+  {
+    "id": "l3_0483_5146",
+    "character": "兆",
+    "pinyin": "zhào",
+    "meaning": "常用汉字「兆」",
+    "sentence": "我喜欢兆。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——Cracks in oracle bones used in fortune-telling，后来写成「兆」。"
+  },
+  {
+    "id": "l3_0484_514d",
+    "character": "免",
+    "pinyin": "miǎn",
+    "meaning": "常用汉字「免」",
+    "sentence": "我喜欢免。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0485_5151",
+    "character": "兑",
+    "pinyin": "duì",
+    "meaning": "常用汉字「兑」",
+    "sentence": "我喜欢兑。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "兄"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到「兄」，变魔术一样——拼成了「兑」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「兄」、「丷」组合而成——慢慢写成今天的「兑」。"
+  },
+  {
+    "id": "l3_0486_515c",
+    "character": "兜",
+    "pinyin": "dōu",
+    "meaning": "常用汉字「兜」",
+    "sentence": "我喜欢兜。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「人」、「耳」、「朵」组合而成——慢慢写成今天的「兜」。"
+  },
+  {
+    "id": "l3_0487_5162",
+    "character": "兢",
+    "pinyin": "jīng",
+    "meaning": "常用汉字「兢」",
+    "sentence": "我喜欢兢。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null
+  },
+  {
+    "id": "l3_0488_5170",
+    "character": "兰",
+    "pinyin": "lán",
+    "meaning": "常用汉字「兰」",
+    "sentence": "我喜欢兰。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "三"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到三，变魔术一样——拼成了「兰」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——An orchid in bloom，后来写成「兰」。"
+  },
+  {
+    "id": "l3_0489_5175",
+    "character": "兵",
+    "pinyin": "bīng",
+    "meaning": "常用汉字「兵」",
+    "sentence": "我喜欢兵。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丘",
+      "八"
+    ],
+    "decomposeHint": "小谜语：「丘」遇到八，变魔术一样——拼成了「兵」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「八」、「丘」组合而成——慢慢写成今天的「兵」。"
+  },
+  {
+    "id": "l3_0490_5178",
+    "character": "典",
+    "pinyin": "diǎn",
+    "meaning": "常用汉字「典」",
+    "sentence": "我喜欢典。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "曲",
+      "八"
+    ],
+    "decomposeHint": "小谜语：「曲」遇到八，变魔术一样——拼成了「典」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「八」、「冊」组合而成——慢慢写成今天的「典」。"
+  },
+  {
+    "id": "l3_0491_517c",
+    "character": "兼",
+    "pinyin": "jiān",
+    "meaning": "常用汉字「兼」",
+    "sentence": "我喜欢兼。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "彐"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到「彐」，变魔术一样——拼成了「兼」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候由「手」、「握」、「着」组合而成——慢慢写成今天的「兼」。"
+  },
+  {
+    "id": "l3_0492_517d",
+    "character": "兽",
+    "pinyin": "shòu",
+    "meaning": "常用汉字「兽」",
+    "sentence": "我喜欢兽。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "一"
+    ],
+    "decomposeHint": "小谜语：「丷」遇到一，变魔术一样——拼成了「兽」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——An animal with horns 丷, 眼睛s 田, nose 一, and 嘴巴 口，后来写成「兽」。"
+  },
+  {
+    "id": "l3_0493_5180",
+    "character": "冀",
+    "pinyin": "jì",
+    "meaning": "常用汉字「冀」",
+    "sentence": "我喜欢冀。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "北",
+      "異"
+    ],
+    "decomposeHint": "小谜语：北方遇到「異」，变魔术一样——拼成了「冀」！你也来认认看～",
+    "evolutionType": "形声",
+    "evolutionHint": "左边北方表示意思，右边「異」帮助读音——合在一起就是「冀」，这是形声字！"
+  },
+  {
+    "id": "l3_0494_5188",
+    "character": "冈",
+    "pinyin": "gāng",
+    "meaning": "常用汉字「冈」",
+    "sentence": "我喜欢冈。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冂",
+      "乂"
+    ],
+    "decomposeHint": "小谜语：「冂」遇到「乂」，变魔术一样——拼成了「冈」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候的字像一幅小画——「岡,」的简化写法 clouds 网 forming over a 山 山，后来写成「冈」。"
+  },
+  {
+    "id": "l3_0495_518c",
+    "character": "册",
+    "pinyin": "cè",
+    "meaning": "常用汉字「册」",
+    "sentence": "我喜欢册。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冂",
+      "一"
+    ],
+    "decomposeHint": "小谜语：「冂」遇到一，变魔术一样——拼成了「册」！你也来认认看～",
+    "evolutionType": "象形",
+    "evolutionHint": "像一幅小画：古时候由「冂」组合而成——慢慢写成今天的「册」。"
+  },
+  {
+    "id": "l3_0496_5192",
+    "character": "冒",
+    "pinyin": "mào",
+    "meaning": "常用汉字「冒」",
+    "sentence": "我喜欢冒。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "目"
+    ],
+    "decomposeHint": "太阳照一照，加上眼睛——是「冒」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边眼睛表示意思，右边「冃」帮助读音——合在一起就是「冒」，这是形声字！"
+  },
+  {
+    "id": "l3_0497_5195",
+    "character": "冕",
+    "pinyin": "miǎn",
+    "meaning": "常用汉字「冕」",
+    "sentence": "我喜欢冕。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "免"
+    ],
+    "decomposeHint": "太阳照一照，加上「免」——是「冕」！",
+    "evolutionType": "形声",
+    "evolutionHint": "左边「冂」表示意思，右边「免」帮助读音——合在一起就是「冕」，这是形声字！"
+  },
+  {
+    "id": "l3_0498_51a0",
+    "character": "冠",
+    "pinyin": "guān",
+    "meaning": "常用汉字「冠」",
+    "sentence": "我喜欢冠。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冖",
+      "元"
+    ],
+    "decomposeHint": "小谜语：「冖」遇到「元」，变魔术一样——拼成了「冠」！你也来认认看～",
+    "evolutionType": "会意",
+    "evolutionHint": "古时候的字像一幅小画——A 人 元 puts on a cap 冖 with his 手 寸，后来写成「冠」。"
+  },
+  {
+    "id": "l3_0499_51a4",
+    "character": "冤",
+    "pinyin": "yuān",
+    "meaning": "常用汉字「冤」",
+    "sentence": "我喜欢冤。",
+    "level": 3,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "冖",
+      "兔"
+    ],
+    "decomposeHint": "小谜语：「冖」遇到「兔」，变魔术一样——拼成了「冤」！你也来认认看～"
+  }
+]

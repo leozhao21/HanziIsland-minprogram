@@ -1,0 +1,77 @@
+<view class="quiz-page">
+  <view class="toolbar" wx:if="{{phase !== 'done'}}">
+    <view class="home-btn" bindtap="onExitTap">🏠</view>
+    <text class="phase-title">{{phaseTitle}}</text>
+  </view>
+
+  <!-- 认识新字 -->
+  <view wx:if="{{phase === 'learn' && currentLearnChar}}" class="learn-phase">
+    <scroll-view scroll-y class="learn-scroll">
+      <view class="char-row">
+        <text class="big-char">{{currentLearnChar.character}}</text>
+        <view class="audio-btn" bindtap="onReplayCharacter">🔊 听字</view>
+      </view>
+      <text class="pinyin">{{currentLearnChar.pinyin}}</text>
+      <view class="sentence-row">
+        <text class="sentence">{{currentLearnChar.sentence}}</text>
+        <view class="audio-btn small" bindtap="onReplaySentence">🔊</view>
+      </view>
+      <view wx:if="{{currentLearnChar.components && currentLearnChar.components.length}}" class="section orange">
+        <view class="section-title">🧩 这个字怎么组成？</view>
+        <view class="audio-btn" bindtap="onSpeakComposition">🔊 听组成</view>
+      </view>
+      <view wx:if="{{currentLearnChar.evolutionHint}}" class="section purple">
+        <view class="section-title">📜 汉字演变故事</view>
+        <view class="audio-btn" bindtap="onSpeakEvolution">🔊 听故事</view>
+      </view>
+    </scroll-view>
+    <button class="learn-done-btn" bindtap="onLearnDone">👍 我学会啦！</button>
+  </view>
+
+  <!-- 检测题 -->
+  <view wx:if="{{phase === 'quiz' && currentQuestion}}" class="quiz-phase">
+    <view wx:if="{{currentQuestion.type === 'sentenceFill'}}" class="prompt-card">
+      <text class="prompt-text">{{currentQuestion.prompt}}</text>
+      <view class="audio-btn" bindtap="onReplayAudio">🔊 听例句</view>
+    </view>
+    <view wx:else class="listen-prompt">
+      <text class="listen-title">👂 听一听，选出你听到的字</text>
+      <view class="audio-btn" bindtap="onReplayAudio">🔊 再听一遍</view>
+    </view>
+
+    <view class="options">
+      <view
+        wx:for="{{currentQuestion.options}}"
+        wx:key="*this"
+        class="option {{selectedIndex >= 0 ? (index === currentQuestion.correctIndex ? 'correct' : (index === selectedIndex ? 'wrong' : 'dim')) : ''}}"
+        data-index="{{index}}"
+        bindtap="onSelectOption"
+      >
+        <text style="font-size: {{optionFontSize}}rpx;">{{item}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{showResult}}" class="result-area">
+      <text class="result-text">{{resultText}}</text>
+      <button class="continue-btn" bindtap="onContinueQuiz">继续 👉</button>
+    </view>
+  </view>
+
+  <!-- 完成 -->
+  <view wx:if="{{phase === 'done'}}" class="done-phase">
+    <text class="done-emoji">🎉</text>
+    <text class="done-title">太厉害啦！</text>
+    <text class="star-reward">⭐ +{{starReward}}</text>
+    <button class="finish-btn" bindtap="onFinish">回岛上看星星 🏝️</button>
+  </view>
+
+  <view wx:if="{{showExitModal}}" class="modal-mask">
+    <view class="modal">
+      <text class="modal-title">要休息一下吗？</text>
+      <view class="modal-actions">
+        <button bindtap="onCancelExit">继续学</button>
+        <button class="destructive" bindtap="onConfirmExit">先休息</button>
+      </view>
+    </view>
+  </view>
+</view>

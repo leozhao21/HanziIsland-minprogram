@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/bootstrap/index",
+    "pages/home/index",
+    "pages/learned/index",
+    "pages/island/index",
+    "pages/quiz/index",
+    "pages/learned-detail/index",
+    "pages/parent/index",
+    "pages/achievement/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "识字岛",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4CAF50",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "玩",
+        "iconPath": "assets/tab-play.png",
+        "selectedIconPath": "assets/tab-play-active.png"
+      },
+      {
+        "pagePath": "pages/learned/index",
+        "text": "已学",
+        "iconPath": "assets/tab-learned.png",
+        "selectedIconPath": "assets/tab-learned-active.png"
+      },
+      {
+        "pagePath": "pages/island/index",
+        "text": "星星",
+        "iconPath": "assets/tab-star.png",
+        "selectedIconPath": "assets/tab-star-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,28 @@
+<view class="home-page">
+  <view class="parent-btn" bindtap="onOpenParent">👤</view>
+
+  <view class="header">
+    <text class="island-emoji">🏝️</text>
+    <text class="app-title">识字岛</text>
+    <view class="star-row">
+      <text class="star-emoji">⭐</text>
+      <text class="star-count">{{starCount}}</text>
+    </view>
+  </view>
+
+  <view class="progress-card">
+    <text wx:if="{{isGoalMet}}" class="progress-title">🎉 今天太棒啦！</text>
+    <text wx:else class="progress-title">今天已学 {{studiedCount}} 个字</text>
+    <progress percent="{{progressPercent}}" activeColor="#4CAF50" backgroundColor="#eee" stroke-width="12" border-radius="8" />
+  </view>
+
+  <button class="start-btn" bindtap="onStartLearn" disabled="{{!canStart}}">
+    <text class="btn-emoji">🚀</text>
+    <text class="btn-text">开始学汉字</text>
+  </button>
+
+  <button wx:if="{{hasIntensiveReview}}" class="retry-btn" bindtap="onRetryWrong">
+    <text class="btn-emoji">💪</text>
+    <text class="retry-text">再练一遍错题</text>
+  </button>
+</view>

@@ -1,0 +1,44 @@
+<view class="detail-page" wx:if="{{character}}">
+  <view class="learn-card">
+    <view class="char-row">
+      <text class="big-char">{{character.character}}</text>
+      <view class="audio-btn" bindtap="onSpeakCharacter">🔊 听字</view>
+    </view>
+    <text class="pinyin">{{character.pinyin}}</text>
+    <view class="sentence-row">
+      <text class="sentence">{{character.sentence}}</text>
+      <view class="audio-btn small" bindtap="onSpeakSentence">🔊</view>
+    </view>
+
+    <view wx:if="{{character.components && character.components.length}}" class="section orange">
+      <view class="section-title">🧩 这个字怎么组成？</view>
+      <view class="components">
+        <block wx:for="{{character.components}}" wx:key="*this">
+          <text wx:if="{{index > 0}}" class="plus">+</text>
+          <text class="comp">{{item}}</text>
+        </block>
+        <text wx:if="{{character.components.length >= 2}}" class="plus">=</text>
+        <text wx:if="{{character.components.length >= 2}}" class="comp highlight">{{character.character}}</text>
+      </view>
+      <view class="audio-btn" bindtap="onSpeakComposition">🔊 听组成</view>
+    </view>
+
+    <view wx:if="{{character.evolutionHint}}" class="section purple">
+      <view class="section-title">📜 汉字演变故事 <text wx:if="{{character.evolutionType}}" class="tag">{{character.evolutionType}}</text></view>
+      <view class="audio-btn" bindtap="onSpeakEvolution">🔊 听故事</view>
+    </view>
+  </view>
+
+  <view class="stats-card">
+    <view class="stats-header">
+      <text class="stats-title">掌握程度</text>
+      <text class="stats-value">{{masteryTitle}}</text>
+    </view>
+    <progress percent="{{masteryPercent}}" activeColor="#4CAF50" stroke-width="8" />
+    <text class="stats-detail">答对 {{correctCount}} 次 · 答错 {{wrongCount}} 次</text>
+    <text wx:if="{{nextReviewText}}" class="stats-detail">下次复习：{{nextReviewText}}</text>
+    <text wx:if="{{inIntensiveReview}}" class="intensive">🔥 在重点复习库里，多练几次吧</text>
+  </view>
+
+  <button class="retest-btn" bindtap="onRetest">🔄 再测一次</button>
+</view>

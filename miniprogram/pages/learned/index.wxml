@@ -1,0 +1,56 @@
+<view class="learned-page">
+  <view class="header">
+    <text class="header-emoji">📚</text>
+    <text class="header-title">我已学过的字</text>
+  </view>
+
+  <view class="stats-row">
+    <view class="stat-card {{filter === 'mastered' ? 'active' : ''}}" data-filter="mastered" bindtap="onStatTap">
+      <text class="stat-emoji">🌟</text>
+      <text class="stat-count">{{stats.mastered}}</text>
+      <text class="stat-label">完全掌握</text>
+    </view>
+    <view class="stat-card {{filter === 'inProgress' ? 'active' : ''}}" data-filter="inProgress" bindtap="onStatTap">
+      <text class="stat-emoji">💪</text>
+      <text class="stat-count">{{stats.inProgress}}</text>
+      <text class="stat-label">还在练</text>
+    </view>
+    <view class="stat-card {{filter === 'intensive' ? 'active' : ''}}" data-filter="intensive" bindtap="onStatTap">
+      <text class="stat-emoji">🔥</text>
+      <text class="stat-count">{{stats.intensive}}</text>
+      <text class="stat-label">要多练</text>
+    </view>
+  </view>
+
+  <scroll-view scroll-x class="filter-scroll">
+    <view class="filter-row">
+      <view
+        wx:for="{{filterOptions}}"
+        wx:key="key"
+        class="filter-chip {{filter === item.key ? 'active' : ''}}"
+        data-filter="{{item.key}}"
+        bindtap="onFilterTap"
+      >{{item.title}}</view>
+    </view>
+  </scroll-view>
+
+  <view wx:if="{{items.length === 0}}" class="empty">
+    <text class="empty-emoji">{{filter === 'all' ? '📭' : '🔍'}}</text>
+    <text class="empty-title">{{emptyMessage}}</text>
+    <text wx:if="{{showEmptyHint}}" class="empty-hint">去「玩」里点大按钮，开始学汉字吧 🚀</text>
+  </view>
+
+  <view wx:else class="list">
+    <view wx:for="{{items}}" wx:key="id" class="list-item" data-id="{{item.id}}" bindtap="onItemTap">
+      <text class="char">{{item.character}}</text>
+      <view class="info">
+        <text class="pinyin">{{item.pinyin}}</text>
+        <text class="sentence">{{item.sentence}}</text>
+      </view>
+      <view class="status">
+        <text class="status-emoji">{{item.statusEmoji}}</text>
+        <text class="status-label">{{item.masteryTitle}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="achievement-page">
+  <view class="header-card">
+    <text class="header-title">长期掌握汉字</text>
+    <text class="header-sub">认识 → 理解 → 使用 → 记住</text>
+    <view class="header-stats">
+      <text>⭐ {{starCount}} 星星</text>
+      <text>已掌握 {{masteredCount}} 字</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">成就徽章</text>
+    <scroll-view scroll-x class="badge-scroll">
+      <view wx:for="{{badges}}" wx:key="threshold" class="badge {{item.earned ? 'earned' : ''}}">
+        <text class="badge-emoji">{{item.emoji}}</text>
+        <text class="badge-title">{{item.title}}</text>
+        <text class="badge-threshold">{{item.threshold}}字</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">字库分级</text>
+    <view wx:for="{{levels}}" wx:key="level" class="level-row">
+      <text>Level {{item.level}}</text>
+      <text class="level-count">{{item.mastered}}/{{item.total}}</text>
+      <progress percent="{{item.percent}}" activeColor="#4CAF50" stroke-width="6" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="island-page">
+  <view class="star-banner">
+    <text class="star-emoji">⭐</text>
+    <text class="star-count">{{starCount}}</text>
+  </view>
+
+  <text class="subtitle">用星星解锁新岛屿 🏝️</text>
+
+  <view wx:for="{{islands}}" wx:key="id" class="island-card">
+    <text class="island-emoji">{{item.emoji}}</text>
+    <view class="island-info">
+      <text class="island-name">{{item.name}}</text>
+      <text class="island-cost">{{item.unlocked ? '✅ 已解锁' : '需要 ⭐' + item.starCost}}</text>
+    </view>
+    <text wx:if="{{item.unlocked}}" class="celebrate">🎉</text>
+    <button wx:else class="unlock-btn" data-id="{{item.id}}" bindtap="onUnlock" disabled="{{!item.canUnlock}}">解锁</button>
+  </view>
+
+  <text wx:if="{{message}}" class="message">{{message}}</text>
+
+  <view class="achievement-link" bindtap="onGoAchievement">
+    <text>🏆 查看成就徽章</text>
+  </view>
+</view>

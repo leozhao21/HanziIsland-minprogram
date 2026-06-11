@@ -1,0 +1,1600 @@
+[
+  {
+    "id": "l1_0000_6211",
+    "character": "我",
+    "pinyin": "wǒ",
+    "meaning": "常用汉字「我」",
+    "sentence": "我是小学生。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "扌",
+      "戈"
+    ],
+    "decomposeHint": "手里握着小小兵器——古时候这样表示自己，就是「我」！",
+    "evolutionType": "形声",
+    "evolutionHint": "古时候，一只手（扌）握着小小兵器（戈），表示自己——慢慢写成今天的「我」。"
+  },
+  {
+    "id": "l1_0001_4f60",
+    "character": "你",
+    "pinyin": "nǐ",
+    "meaning": "常用汉字「你」",
+    "sentence": "你在做什么？",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "尔"
+    ],
+    "decomposeHint": "一个人（亻）加上「尔」，专门指对面的你～",
+    "evolutionType": "会意",
+    "evolutionHint": "「亻」表示人，「尔」表读音——合在一起专门指对面的「你」。"
+  },
+  {
+    "id": "l1_0002_4ed6",
+    "character": "他",
+    "pinyin": "tā",
+    "meaning": "常用汉字「他」",
+    "sentence": "他在看书。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "也"
+    ],
+    "decomposeHint": "人字旁旁边一个「也」，指着别人说：是他！",
+    "evolutionType": "会意",
+    "evolutionHint": "人字旁（亻）加「也」，指着旁边的人说：是他！"
+  },
+  {
+    "id": "l1_0003_5979",
+    "character": "她",
+    "pinyin": "tā",
+    "meaning": "常用汉字「她」",
+    "sentence": "她在画画。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "女",
+      "也"
+    ],
+    "decomposeHint": "女字旁加「也」，用来称呼女生的她～",
+    "evolutionType": "会意",
+    "evolutionHint": "女字旁表示女性，加「也」表音——用来称呼「她」。"
+  },
+  {
+    "id": "l1_0004_7238",
+    "character": "爸",
+    "pinyin": "bà",
+    "meaning": "常用汉字「爸」",
+    "sentence": "爸爸带我去公园。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "父",
+      "巴"
+    ],
+    "decomposeHint": "上面像「父」，下面「巴」巴地望着你——叫爸爸！",
+    "evolutionType": "形声",
+    "evolutionHint": "上面是「父」，下面是「巴」表音——叫爸爸！"
+  },
+  {
+    "id": "l1_0005_5988",
+    "character": "妈",
+    "pinyin": "mā",
+    "meaning": "常用汉字「妈」",
+    "sentence": "妈妈给我做晚饭。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "女",
+      "马"
+    ],
+    "decomposeHint": "女字旁加个「马」，小时候像骑马马找妈妈——「妈」！",
+    "evolutionType": "形声",
+    "evolutionHint": "女字旁表示妈妈，「马」表音——小时候常喊「妈妈」写成「妈」。"
+  },
+  {
+    "id": "l1_0006_5bb6",
+    "character": "家",
+    "pinyin": "jiā",
+    "meaning": "常用汉字「家」",
+    "sentence": "放学后我要回家。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "宀",
+      "豕"
+    ],
+    "decomposeHint": "屋字头像房顶，下面有只小猪——古时候家里养猪，有吃有住，就是温暖的家！",
+    "evolutionType": "形声",
+    "evolutionHint": "屋字头（宀）像房顶，下面「豕」是猪——古人家里养猪，有吃有住就是「家」。"
+  },
+  {
+    "id": "l1_0007_6765",
+    "character": "来",
+    "pinyin": "lái",
+    "meaning": "常用汉字「来」",
+    "sentence": "朋友来我家玩。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "未",
+      "丷"
+    ],
+    "decomposeHint": "像带着麦穗走来：来人啦，来做客啦——就是「来」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像带着麦穗走来——「来」了、来做客了！"
+  },
+  {
+    "id": "l1_0008_53bb",
+    "character": "去",
+    "pinyin": "qù",
+    "meaning": "常用汉字「去」",
+    "sentence": "我们一起去上学。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "土",
+      "厶"
+    ],
+    "decomposeHint": "离开土地（土）悄悄走——「去」就是到别处去。",
+    "evolutionType": "形声",
+    "evolutionHint": "像脚离开地面走开——从这儿到别处，就是「去」。"
+  },
+  {
+    "id": "l1_0009_770b",
+    "character": "看",
+    "pinyin": "kàn",
+    "meaning": "常用汉字「看」",
+    "sentence": "我喜欢看动画片。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "手",
+      "目"
+    ],
+    "decomposeHint": "手（手）搭在眼睛（目）上远望——你在看远处呢！",
+    "evolutionType": "会意",
+    "evolutionHint": "手（手）搭在眼睛（目）上远望——这就是「看」！"
+  },
+  {
+    "id": "l1_0010_51fa",
+    "character": "出",
+    "pinyin": "chū",
+    "meaning": "常用汉字「出」",
+    "sentence": "我喜欢出。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "屮",
+      "凵"
+    ],
+    "decomposeHint": "像脚从凹坑里迈出来——从里面到外面，就是「出」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像小苗从坑里长出来——从里面到外面，就是「出」。"
+  },
+  {
+    "id": "l1_0011_5403",
+    "character": "吃",
+    "pinyin": "chī",
+    "meaning": "常用汉字「吃」",
+    "sentence": "中午我吃米饭。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "乞"
+    ],
+    "decomposeHint": "张开嘴巴（口）——左边一口右边一口，「吃」饭啦！",
+    "evolutionType": "形声",
+    "evolutionHint": "嘴巴（口）加上表音的字——跟嘴有关，就是「吃」。"
+  },
+  {
+    "id": "l1_0012_559d",
+    "character": "喝",
+    "pinyin": "hē",
+    "meaning": "常用汉字「喝」",
+    "sentence": "天热的时候要多喝水。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "曷"
+    ],
+    "decomposeHint": "嘴巴（口）咕噜咕噜——「喝」水啦！",
+    "evolutionType": "形声",
+    "evolutionHint": "嘴巴（口）加上表音——咕噜咕噜「喝」水！"
+  },
+  {
+    "id": "l1_0013_8dd1",
+    "character": "跑",
+    "pinyin": "pǎo",
+    "meaning": "常用汉字「跑」",
+    "sentence": "小明每天都去操场跑步。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "足",
+      "包"
+    ],
+    "decomposeHint": "足字旁加「包」，小脚丫包着风——跑快快！",
+    "evolutionType": "形声",
+    "evolutionHint": "足字旁表示脚，「包」表音——小脚丫带着风「跑」！"
+  },
+  {
+    "id": "l1_0014_8df3",
+    "character": "跳",
+    "pinyin": "tiào",
+    "meaning": "常用汉字「跳」",
+    "sentence": "孩子们在草地上跳。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "足",
+      "兆"
+    ],
+    "decomposeHint": "足字旁加「兆」，脚底下嗖地弹起来——「跳」！",
+    "evolutionType": "形声",
+    "evolutionHint": "足字旁加「兆」——脚底下弹起来，就是「跳」！"
+  },
+  {
+    "id": "l1_0015_7b11",
+    "character": "笑",
+    "pinyin": "xiào",
+    "meaning": "常用汉字「笑」",
+    "sentence": "听到笑话我们都笑了。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "⺮",
+      "夭"
+    ],
+    "decomposeHint": "竹字头像弯弯眉，下面像人捧腹——开心到「笑」！",
+    "evolutionType": "会意",
+    "evolutionHint": "像人（夭）眉开眼笑，上面像弯弯的竹——开心就「笑」！"
+  },
+  {
+    "id": "l1_0016_54ed",
+    "character": "哭",
+    "pinyin": "kū",
+    "meaning": "常用汉字「哭」",
+    "sentence": "弟弟摔倒了在哭。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "犬"
+    ],
+    "decomposeHint": "嘴巴（口）张大大，旁边像小狗汪汪——伤心就「哭」啦。",
+    "evolutionType": "会意",
+    "evolutionHint": "口像张大的嘴，旁边像泪——伤心就「哭」啦。"
+  },
+  {
+    "id": "l1_0017_5927",
+    "character": "大",
+    "pinyin": "dà",
+    "meaning": "常用汉字「大」",
+    "sentence": "这棵树好大啊。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "人张开手脚，占领好大一片——就是「大」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像人张开手脚，占好大地方——就是「大」！"
+  },
+  {
+    "id": "l1_0018_5c0f",
+    "character": "小",
+    "pinyin": "xiǎo",
+    "meaning": "常用汉字「小」",
+    "sentence": "我有一只小狗。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "三小点缩在一起——「小」小的。",
+    "evolutionType": "象形",
+    "evolutionHint": "中间一竖，两边分开——东西变「小」啦。"
+  },
+  {
+    "id": "l1_0019_591a",
+    "character": "多",
+    "pinyin": "duō",
+    "meaning": "常用汉字「多」",
+    "sentence": "花园里有很多花。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "夕",
+      "夕"
+    ],
+    "decomposeHint": "两个「夕」叠罗汉，越多越好——「多」！",
+    "evolutionType": "形声",
+    "evolutionHint": "两个「夕」叠在一起——越来越多，就是「多」！"
+  },
+  {
+    "id": "l1_0020_5c11",
+    "character": "少",
+    "pinyin": "shǎo",
+    "meaning": "常用汉字「少」",
+    "sentence": "今天作业很少。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "小",
+      "丿"
+    ],
+    "decomposeHint": "在「小」上轻轻一撇，东西变「少」啦～",
+    "evolutionType": "象形",
+    "evolutionHint": "在「小」上轻轻一撇——东西变「少」了。"
+  },
+  {
+    "id": "l1_0021_5929",
+    "character": "天",
+    "pinyin": "tiān",
+    "meaning": "常用汉字「天」",
+    "sentence": "我喜欢天。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "大"
+    ],
+    "decomposeHint": "「大」人头顶一横——比人还大的，就是「天」！",
+    "evolutionType": "会意",
+    "evolutionHint": "「大」人头顶一横——比人还大的，就是「天」！"
+  },
+  {
+    "id": "l1_0022_5730",
+    "character": "地",
+    "pinyin": "dì",
+    "meaning": "常用汉字「地」",
+    "sentence": "我喜欢地。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "土",
+      "也"
+    ],
+    "decomposeHint": "土地（土）也在这里——我们踩的「地」！",
+    "evolutionType": "形声",
+    "evolutionHint": "土字旁表示土地，「也」表音——我们踩的「地」！"
+  },
+  {
+    "id": "l1_0023_65e5",
+    "character": "日",
+    "pinyin": "rì",
+    "meaning": "常用汉字「日」",
+    "sentence": "我喜欢日。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "圆圆的一格——像太阳公公「日」！",
+    "evolutionType": "象形",
+    "evolutionHint": "圆圆的一格——像太阳公公，象形字「日」！"
+  },
+  {
+    "id": "l1_0024_6708",
+    "character": "月",
+    "pinyin": "yuè",
+    "meaning": "常用汉字「月」",
+    "sentence": "我喜欢月。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "弯弯像眉毛——是晚上的月亮「月」！",
+    "evolutionType": "象形",
+    "evolutionHint": "弯弯像眉毛——晚上天上的月亮「月」！"
+  },
+  {
+    "id": "l1_0025_6c34",
+    "character": "水",
+    "pinyin": "shuǐ",
+    "meaning": "常用汉字「水」",
+    "sentence": "我喜欢水。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "中间一竖，两边溅水花——哗啦啦的「水」！",
+    "evolutionType": "象形",
+    "evolutionHint": "中间一竖，两边像水花——哗啦啦的「水」！"
+  },
+  {
+    "id": "l1_0026_706b",
+    "character": "火",
+    "pinyin": "huǒ",
+    "meaning": "常用汉字「火」",
+    "sentence": "我喜欢火。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像火苗往上蹿——噼里啪啦的「火」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像火苗往上蹿——象形字「火」！"
+  },
+  {
+    "id": "l1_0027_6728",
+    "character": "木",
+    "pinyin": "mù",
+    "meaning": "常用汉字「木」",
+    "sentence": "我喜欢木。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "一竖是树干，两横两撇是树枝——一棵「木」！",
+    "evolutionType": "象形",
+    "evolutionHint": "一竖是树干，两横两撇是树枝——一棵「木」！"
+  },
+  {
+    "id": "l1_0028_91d1",
+    "character": "金",
+    "pinyin": "jīn",
+    "meaning": "常用汉字「金」",
+    "sentence": "我喜欢金。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "人",
+      "王"
+    ],
+    "decomposeHint": "人托着宝贝——金子最闪亮，就是「金」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像金属或铃铛的形状——亮晶晶的「金」！"
+  },
+  {
+    "id": "l1_0029_571f",
+    "character": "土",
+    "pinyin": "tǔ",
+    "meaning": "常用汉字「土」",
+    "sentence": "我喜欢土。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "地上鼓起一小堆——「土」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像地上鼓起的一小堆——「土」！"
+  },
+  {
+    "id": "l1_0030_5c71",
+    "character": "山",
+    "pinyin": "shān",
+    "meaning": "常用汉字「山」",
+    "sentence": "我喜欢山。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "三座山峰连一起——高高的「山」！",
+    "evolutionType": "象形",
+    "evolutionHint": "三座山峰连在一起——高高的「山」！"
+  },
+  {
+    "id": "l1_0031_5934",
+    "character": "头",
+    "pinyin": "tóu",
+    "meaning": "常用汉字「头」",
+    "sentence": "我喜欢头。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "大",
+      "页"
+    ],
+    "decomposeHint": "「大」在上，「页」在下——身体最上面，就是「头」！",
+    "evolutionType": "形声",
+    "evolutionHint": "「大」在上，「页」在下——身体最上面是「头」！"
+  },
+  {
+    "id": "l1_0032_624b",
+    "character": "手",
+    "pinyin": "shǒu",
+    "meaning": "常用汉字「手」",
+    "sentence": "我喜欢手。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "五根手指伸开——这是「手」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像张开的手指——象形字「手」！"
+  },
+  {
+    "id": "l1_0033_8db3",
+    "character": "足",
+    "pinyin": "zú",
+    "meaning": "常用汉字「足」",
+    "sentence": "我喜欢足。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像人的脚，也用来走路——「足」就是脚！",
+    "evolutionType": "象形",
+    "evolutionHint": "像人的脚——走路用的「足」！"
+  },
+  {
+    "id": "l1_0034_5fc3",
+    "character": "心",
+    "pinyin": "xīn",
+    "meaning": "常用汉字「心」",
+    "sentence": "我喜欢心。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "弯弯曲曲像小心脏——「心」里装着你的感觉。",
+    "evolutionType": "象形",
+    "evolutionHint": "弯弯曲曲像小心脏——「心」里装着感觉。"
+  },
+  {
+    "id": "l1_0035_773c",
+    "character": "眼",
+    "pinyin": "yǎn",
+    "meaning": "常用汉字「眼」",
+    "sentence": "我喜欢眼。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "目",
+      "艮"
+    ],
+    "decomposeHint": "眼睛（目）加上「艮」——用来「眼」看世界的！",
+    "evolutionType": "形声",
+    "evolutionHint": "「目」像眼睛——用来看世界的「眼」！"
+  },
+  {
+    "id": "l1_0036_8033",
+    "character": "耳",
+    "pinyin": "ěr",
+    "meaning": "常用汉字「耳」",
+    "sentence": "我喜欢耳。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "弯弯像耳朵——用来听声音的「耳」！",
+    "evolutionType": "象形",
+    "evolutionHint": "弯弯像耳朵——用来听的「耳」！"
+  },
+  {
+    "id": "l1_0037_53e3",
+    "character": "口",
+    "pinyin": "kǒu",
+    "meaning": "常用汉字「口」",
+    "sentence": "我喜欢口。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "方方框框像张开的嘴——「口」！",
+    "evolutionType": "象形",
+    "evolutionHint": "方方框框像张开的嘴——「口」！"
+  },
+  {
+    "id": "l1_0038_72d7",
+    "character": "狗",
+    "pinyin": "gǒu",
+    "meaning": "常用汉字「狗」",
+    "sentence": "小狗在院子里玩。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "犭",
+      "句"
+    ],
+    "decomposeHint": "反犬旁加「句」——汪汪汪，是小「狗」！",
+    "evolutionType": "形声",
+    "evolutionHint": "反犬旁表示动物，「句」表音——汪汪「狗」！"
+  },
+  {
+    "id": "l1_0039_732b",
+    "character": "猫",
+    "pinyin": "māo",
+    "meaning": "常用汉字「猫」",
+    "sentence": "我家的猫喜欢晒太阳。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "犭",
+      "苗"
+    ],
+    "decomposeHint": "反犬旁加「苗」——喵喵喵，是小「猫」！",
+    "evolutionType": "形声",
+    "evolutionHint": "反犬旁加「苗」——喵喵「猫」！"
+  },
+  {
+    "id": "l1_0040_9a6c",
+    "character": "马",
+    "pinyin": "mǎ",
+    "meaning": "常用汉字「马」",
+    "sentence": "我喜欢马。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像一匹有鬃毛的马——跑起来哒哒哒！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一匹有鬃毛的马——象形字「马」！"
+  },
+  {
+    "id": "l1_0041_725b",
+    "character": "牛",
+    "pinyin": "niú",
+    "meaning": "常用汉字「牛」",
+    "sentence": "我喜欢牛。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "弯弯的角，壮壮的身体——「牛」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像牛角和牛身——「牛」！"
+  },
+  {
+    "id": "l1_0042_7f8a",
+    "character": "羊",
+    "pinyin": "yáng",
+    "meaning": "常用汉字「羊」",
+    "sentence": "我喜欢羊。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "两点像羊角——咩咩叫的「羊」！",
+    "evolutionType": "象形",
+    "evolutionHint": "两点像羊角——咩咩「羊」！"
+  },
+  {
+    "id": "l1_0043_9e21",
+    "character": "鸡",
+    "pinyin": "jī",
+    "meaning": "常用汉字「鸡」",
+    "sentence": "我喜欢鸡。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "又",
+      "鸟"
+    ],
+    "decomposeHint": "又加鸟——喔喔喔，是会打鸣的「鸡」！",
+    "evolutionType": "会意",
+    "evolutionHint": "又加鸟——喔喔叫的「鸡」！"
+  },
+  {
+    "id": "l1_0044_9c7c",
+    "character": "鱼",
+    "pinyin": "yú",
+    "meaning": "常用汉字「鱼」",
+    "sentence": "鱼缸里游着小鱼。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "中间像鱼鳞，下面像尾巴——游啊游的「鱼」！",
+    "evolutionType": "象形",
+    "evolutionHint": "中间像鱼鳞，下面像尾巴——游啊游的「鱼」！"
+  },
+  {
+    "id": "l1_0045_9e1f",
+    "character": "鸟",
+    "pinyin": "niǎo",
+    "meaning": "常用汉字「鸟」",
+    "sentence": "树上有一只小鸟。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "有头有翅还有尾——扑棱棱的「鸟」！",
+    "evolutionType": "象形",
+    "evolutionHint": "有头有翅有尾巴——扑棱棱的「鸟」！"
+  },
+  {
+    "id": "l1_0046_866b",
+    "character": "虫",
+    "pinyin": "chóng",
+    "meaning": "常用汉字「虫」",
+    "sentence": "我喜欢虫。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像一条小虫子——爬啊爬的「虫」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一条小虫子——爬啊爬的「虫」！"
+  },
+  {
+    "id": "l1_0047_82b1",
+    "character": "花",
+    "pinyin": "huā",
+    "meaning": "常用汉字「花」",
+    "sentence": "春天公园里开满花。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "艹",
+      "化"
+    ],
+    "decomposeHint": "草字头加「化」——能开能香的就是「花」！",
+    "evolutionType": "会意",
+    "evolutionHint": "草字头加「化」——能开能香的就是「花」！"
+  },
+  {
+    "id": "l1_0048_8349",
+    "character": "草",
+    "pinyin": "cǎo",
+    "meaning": "常用汉字「草」",
+    "sentence": "草坪上的草很绿。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "艹",
+      "早"
+    ],
+    "decomposeHint": "草字头加「早」——清晨沾露珠的小「草」！",
+    "evolutionType": "形声",
+    "evolutionHint": "草字头加「早」——清晨沾露珠的小「草」！"
+  },
+  {
+    "id": "l1_0049_6811",
+    "character": "树",
+    "pinyin": "shù",
+    "meaning": "常用汉字「树」",
+    "sentence": "大树下很凉快。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "对"
+    ],
+    "decomposeHint": "木字旁加「对」——好多木头站在一起，就是「树」！",
+    "evolutionType": "形声",
+    "evolutionHint": "木字旁加「对」——好多木头站在一起是「树」！"
+  },
+  {
+    "id": "l1_0050_53f6",
+    "character": "叶",
+    "pinyin": "yè",
+    "meaning": "常用汉字「叶」",
+    "sentence": "我喜欢叶。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "十"
+    ],
+    "decomposeHint": "口加十——像一片「叶」子挂在枝上。",
+    "evolutionType": "形声",
+    "evolutionHint": "像一片叶子挂在枝上——「叶」！"
+  },
+  {
+    "id": "l1_0051_7c73",
+    "character": "米",
+    "pinyin": "mǐ",
+    "meaning": "常用汉字「米」",
+    "sentence": "我喜欢米。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "木"
+    ],
+    "decomposeHint": "上面像散开，下面像木——一粒粒白「米」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一粒粒白「米」！"
+  },
+  {
+    "id": "l1_0052_74dc",
+    "character": "瓜",
+    "pinyin": "guā",
+    "meaning": "常用汉字「瓜」",
+    "sentence": "我喜欢瓜。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像藤上结的大「瓜」，圆滚滚！",
+    "evolutionType": "象形",
+    "evolutionHint": "像藤上结的大「瓜」！"
+  },
+  {
+    "id": "l1_0053_8c46",
+    "character": "豆",
+    "pinyin": "dòu",
+    "meaning": "常用汉字「豆」",
+    "sentence": "我喜欢豆。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "口",
+      "丷"
+    ],
+    "decomposeHint": "像盛豆子的器皿——里面装的是「豆」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像盛豆子的器皿——「豆」！"
+  },
+  {
+    "id": "l1_0054_83dc",
+    "character": "菜",
+    "pinyin": "cài",
+    "meaning": "常用汉字「菜」",
+    "sentence": "我喜欢菜。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "艹",
+      "采"
+    ],
+    "decomposeHint": "草字头加「采」——采来能吃的「菜」！",
+    "evolutionType": "形声",
+    "evolutionHint": "草字头加「采」——采来能吃的「菜」！"
+  },
+  {
+    "id": "l1_0055_996d",
+    "character": "饭",
+    "pinyin": "fàn",
+    "meaning": "常用汉字「饭」",
+    "sentence": "我喜欢饭。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "饣",
+      "反"
+    ],
+    "decomposeHint": "食字旁加「反」——用米做的香香「饭」！",
+    "evolutionType": "形声",
+    "evolutionHint": "食字旁加「反」——用米做的香香「饭」！"
+  },
+  {
+    "id": "l1_0056_8f66",
+    "character": "车",
+    "pinyin": "chē",
+    "meaning": "常用汉字「车」",
+    "sentence": "爸爸开车送我上学。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "七",
+      "十"
+    ],
+    "decomposeHint": "像有轮子的「车」，嘟嘟开过来！",
+    "evolutionType": "象形",
+    "evolutionHint": "像有轮子的「车」——象形字！"
+  },
+  {
+    "id": "l1_0057_95e8",
+    "character": "门",
+    "pinyin": "mén",
+    "meaning": "常用汉字「门」",
+    "sentence": "我喜欢门。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丶"
+    ],
+    "decomposeHint": "像两扇「门」，推开就能进出！",
+    "evolutionType": "象形",
+    "evolutionHint": "像两扇「门」——推开就能进出！"
+  },
+  {
+    "id": "l1_0058_7a97",
+    "character": "窗",
+    "pinyin": "chuāng",
+    "meaning": "常用汉字「窗」",
+    "sentence": "我喜欢窗。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "穴",
+      "囱"
+    ],
+    "decomposeHint": "穴字头加「囱」——墙上透光的小「窗」！",
+    "evolutionType": "形声",
+    "evolutionHint": "穴字头加「囱」——墙上透光的小「窗」！"
+  },
+  {
+    "id": "l1_0059_5e8a",
+    "character": "床",
+    "pinyin": "chuáng",
+    "meaning": "常用汉字「床」",
+    "sentence": "我喜欢床。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "广",
+      "木"
+    ],
+    "decomposeHint": "广字头加木——木头做的「床」，躺上去睡觉！",
+    "evolutionType": "会意",
+    "evolutionHint": "广字头加木——木头做的「床」！"
+  },
+  {
+    "id": "l1_0060_8863",
+    "character": "衣",
+    "pinyin": "yī",
+    "meaning": "常用汉字「衣」",
+    "sentence": "我喜欢衣。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像一件挂着的「衣」服！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一件挂着的「衣」服！"
+  },
+  {
+    "id": "l1_0061_7b14",
+    "character": "笔",
+    "pinyin": "bǐ",
+    "meaning": "常用汉字「笔」",
+    "sentence": "我用铅笔写字。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "⺮",
+      "毛"
+    ],
+    "decomposeHint": "竹字头加「毛」——竹管加毛，就是写字的「笔」！",
+    "evolutionType": "会意",
+    "evolutionHint": "竹字头加「毛」——竹管加毛，是写字的「笔」！"
+  },
+  {
+    "id": "l1_0062_7eb8",
+    "character": "纸",
+    "pinyin": "zhǐ",
+    "meaning": "常用汉字「纸」",
+    "sentence": "我喜欢纸。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "氏"
+    ],
+    "decomposeHint": "纟旁加「氏」——用纤维做的「纸」！",
+    "evolutionType": "形声",
+    "evolutionHint": "纟旁加「氏」——用纤维做的「纸」！"
+  },
+  {
+    "id": "l1_0063_4e66",
+    "character": "书",
+    "pinyin": "shū",
+    "meaning": "常用汉字「书」",
+    "sentence": "我喜欢看故事书。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像笔在写——把字记在一起就是「书」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像笔在写——把字记在一起就是「书」！"
+  },
+  {
+    "id": "l1_0064_5305",
+    "character": "包",
+    "pinyin": "bāo",
+    "meaning": "常用汉字「包」",
+    "sentence": "我喜欢包。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "勹",
+      "巳"
+    ],
+    "decomposeHint": "外面像包起来——把东西「包」住！",
+    "evolutionType": "会意",
+    "evolutionHint": "外面像包起来——把东西「包」住！"
+  },
+  {
+    "id": "l1_0065_684c",
+    "character": "桌",
+    "pinyin": "zhuō",
+    "meaning": "常用汉字「桌」",
+    "sentence": "我喜欢桌。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "卓",
+      "木"
+    ],
+    "decomposeHint": "「卓」加木——木头做的「桌」子！",
+    "evolutionType": "形声",
+    "evolutionHint": "「卓」加木——木头做的「桌」子！"
+  },
+  {
+    "id": "l1_0066_6905",
+    "character": "椅",
+    "pinyin": "yǐ",
+    "meaning": "常用汉字「椅」",
+    "sentence": "我喜欢椅。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "木",
+      "奇"
+    ],
+    "decomposeHint": "木加「奇」——有靠背可以坐的「椅」！",
+    "evolutionType": "形声",
+    "evolutionHint": "木加「奇」——有靠背可以坐的「椅」！"
+  },
+  {
+    "id": "l1_0067_706f",
+    "character": "灯",
+    "pinyin": "dēng",
+    "meaning": "常用汉字「灯」",
+    "sentence": "我喜欢灯。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "火",
+      "丁"
+    ],
+    "decomposeHint": "火加「丁」——火亮起来，就是「灯」！",
+    "evolutionType": "形声",
+    "evolutionHint": "火加「丁」——火亮起来就是「灯」！"
+  },
+  {
+    "id": "l1_0068_5e74",
+    "character": "年",
+    "pinyin": "nián",
+    "meaning": "常用汉字「年」",
+    "sentence": "我喜欢年。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "千"
+    ],
+    "decomposeHint": "禾加千——庄稼一年一熟，就是「年」！",
+    "evolutionType": "形声",
+    "evolutionHint": "禾加千——庄稼一年一熟，是「年」！"
+  },
+  {
+    "id": "l1_0069_660e",
+    "character": "明",
+    "pinyin": "míng",
+    "meaning": "常用汉字「明」",
+    "sentence": "我喜欢明。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "月"
+    ],
+    "decomposeHint": "太阳和月亮都亮亮的，它俩挨在一起——就是「明」，亮堂堂！",
+    "evolutionType": "会意",
+    "evolutionHint": "「日」和「月」都亮——合在一起是「明」！"
+  },
+  {
+    "id": "l1_0070_6628",
+    "character": "昨",
+    "pinyin": "zuó",
+    "meaning": "常用汉字「昨」",
+    "sentence": "我喜欢昨。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "乍"
+    ],
+    "decomposeHint": "日字旁加「乍」——刚过去的那一天，是「昨」天！",
+    "evolutionType": "形声",
+    "evolutionHint": "日字旁加「乍」——刚过去的那一天是「昨」天！"
+  },
+  {
+    "id": "l1_0071_65e9",
+    "character": "早",
+    "pinyin": "zǎo",
+    "meaning": "常用汉字「早」",
+    "sentence": "我喜欢早。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "十"
+    ],
+    "decomposeHint": "日加十——太阳刚升起来，就是「早」！",
+    "evolutionType": "会意",
+    "evolutionHint": "「日」加「十」——太阳刚升起来是「早」！"
+  },
+  {
+    "id": "l1_0072_665a",
+    "character": "晚",
+    "pinyin": "wǎn",
+    "meaning": "常用汉字「晚」",
+    "sentence": "我喜欢晚。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "日",
+      "免"
+    ],
+    "decomposeHint": "日加「免」——太阳下山了，是「晚」上！",
+    "evolutionType": "会意",
+    "evolutionHint": "「日」加「免」——太阳下山是「晚」上！"
+  },
+  {
+    "id": "l1_0073_6625",
+    "character": "春",
+    "pinyin": "chūn",
+    "meaning": "常用汉字「春」",
+    "sentence": "春天花开了。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "三",
+      "日"
+    ],
+    "decomposeHint": "三人在日下——阳光照，万物醒，是「春」天！",
+    "evolutionType": "形声",
+    "evolutionHint": "「日」照万物——阳光一照，春天「春」来了！"
+  },
+  {
+    "id": "l1_0074_590f",
+    "character": "夏",
+    "pinyin": "xià",
+    "meaning": "常用汉字「夏」",
+    "sentence": "夏天我们去游泳。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "自",
+      "夂"
+    ],
+    "decomposeHint": "像一个人顶着日头——热辣辣的是「夏」天！",
+    "evolutionType": "会意",
+    "evolutionHint": "像人顶着日头——热辣辣的是「夏」天！"
+  },
+  {
+    "id": "l1_0075_79cb",
+    "character": "秋",
+    "pinyin": "qiū",
+    "meaning": "常用汉字「秋」",
+    "sentence": "秋天树叶变黄了。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "禾",
+      "火"
+    ],
+    "decomposeHint": "禾加火——庄稼熟了像火一样金，是「秋」天！",
+    "evolutionType": "会意",
+    "evolutionHint": "禾加火——庄稼熟了像火一样金，是「秋」天！"
+  },
+  {
+    "id": "l1_0076_4e1c",
+    "character": "东",
+    "pinyin": "dōng",
+    "meaning": "常用汉字「东」",
+    "sentence": "我喜欢东。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "七",
+      "小"
+    ],
+    "decomposeHint": "像太阳升起的方向——「东」边！",
+    "evolutionType": "象形",
+    "evolutionHint": "像太阳从树后升起——「东」边！"
+  },
+  {
+    "id": "l1_0077_5357",
+    "character": "南",
+    "pinyin": "nán",
+    "meaning": "常用汉字「南」",
+    "sentence": "我喜欢南。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "十",
+      "冂"
+    ],
+    "decomposeHint": "像入门的方向——「南」边！",
+    "evolutionType": "象形",
+    "evolutionHint": "像入门方向——「南」边！"
+  },
+  {
+    "id": "l1_0078_897f",
+    "character": "西",
+    "pinyin": "xī",
+    "meaning": "常用汉字「西」",
+    "sentence": "我喜欢西。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "兀",
+      "囗"
+    ],
+    "decomposeHint": "像太阳落下的方向——「西」边！",
+    "evolutionType": "象形",
+    "evolutionHint": "像太阳落下——「西」边！"
+  },
+  {
+    "id": "l1_0079_5317",
+    "character": "北",
+    "pinyin": "běi",
+    "meaning": "常用汉字「北」",
+    "sentence": "我喜欢北。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "匕",
+      "匕"
+    ],
+    "decomposeHint": "两个人背对背——后来用来指「北」方！",
+    "evolutionType": "形声",
+    "evolutionHint": "两个人背对背——后来指「北」方！"
+  },
+  {
+    "id": "l1_0080_4e0a",
+    "character": "上",
+    "pinyin": "shàng",
+    "meaning": "常用汉字「上」",
+    "sentence": "我喜欢上。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "一横在上面——往上就是「上」！",
+    "evolutionType": "象形",
+    "evolutionHint": "一横在上面——往上就是「上」！"
+  },
+  {
+    "id": "l1_0081_4e0b",
+    "character": "下",
+    "pinyin": "xià",
+    "meaning": "常用汉字「下」",
+    "sentence": "我喜欢下。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "卜"
+    ],
+    "decomposeHint": "一横在下面——往下就是「下」！",
+    "evolutionType": "会意",
+    "evolutionHint": "一横在下面——往下就是「下」！"
+  },
+  {
+    "id": "l1_0082_5de6",
+    "character": "左",
+    "pinyin": "zuǒ",
+    "meaning": "常用汉字「左」",
+    "sentence": "我喜欢左。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "工",
+      "口"
+    ],
+    "decomposeHint": "工加口——左手边是「左」！",
+    "evolutionType": "形声",
+    "evolutionHint": "工加口——左手边是「左」！"
+  },
+  {
+    "id": "l1_0083_53f3",
+    "character": "右",
+    "pinyin": "yòu",
+    "meaning": "常用汉字「右」",
+    "sentence": "我喜欢右。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "口",
+      "口"
+    ],
+    "decomposeHint": "手加口——右手边是「右」！",
+    "evolutionType": "形声",
+    "evolutionHint": "手加口——右手边是「右」！"
+  },
+  {
+    "id": "l1_0084_91cc",
+    "character": "里",
+    "pinyin": "lǐ",
+    "meaning": "常用汉字「里」",
+    "sentence": "我喜欢里。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "田",
+      "土"
+    ],
+    "decomposeHint": "田加土——有田有土的地方，是「里」面！",
+    "evolutionType": "会意",
+    "evolutionHint": "田加土——有田有土的地方是「里」面！"
+  },
+  {
+    "id": "l1_0085_524d",
+    "character": "前",
+    "pinyin": "qián",
+    "meaning": "常用汉字「前」",
+    "sentence": "我喜欢前。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丷",
+      "刖"
+    ],
+    "decomposeHint": "像刀剪开——走在最「前」面！",
+    "evolutionType": "形声",
+    "evolutionHint": "像刀剪开——走在最「前」面！"
+  },
+  {
+    "id": "l1_0086_9ad8",
+    "character": "高",
+    "pinyin": "gāo",
+    "meaning": "常用汉字「高」",
+    "sentence": "我喜欢高。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亠",
+      "口",
+      "冋"
+    ],
+    "decomposeHint": "上面像塔顶——站得「高」高的！",
+    "evolutionType": "象形",
+    "evolutionHint": "上面像塔顶——站得「高」高的！"
+  },
+  {
+    "id": "l1_0087_4f4e",
+    "character": "低",
+    "pinyin": "dī",
+    "meaning": "常用汉字「低」",
+    "sentence": "我喜欢低。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亻",
+      "氐"
+    ],
+    "decomposeHint": "人加「氐」——身子往下弯，就是「低」！",
+    "evolutionType": "形声",
+    "evolutionHint": "人加「氐」——身子往下弯是「低」！"
+  },
+  {
+    "id": "l1_0088_957f",
+    "character": "长",
+    "pinyin": "zhǎng",
+    "meaning": "常用汉字「长」",
+    "sentence": "我喜欢长。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像长发飘飘——形容「长」长的！",
+    "evolutionType": "象形",
+    "evolutionHint": "像长发飘飘——形容「长」长的！"
+  },
+  {
+    "id": "l1_0089_77ed",
+    "character": "短",
+    "pinyin": "duǎn",
+    "meaning": "常用汉字「短」",
+    "sentence": "我喜欢短。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "矢",
+      "豆"
+    ],
+    "decomposeHint": "矢加豆——不够长就是「短」！",
+    "evolutionType": "形声",
+    "evolutionHint": "矢加豆——不够长就是「短」！"
+  },
+  {
+    "id": "l1_0090_7ea2",
+    "character": "红",
+    "pinyin": "hóng",
+    "meaning": "常用汉字「红」",
+    "sentence": "我喜欢红。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "纟",
+      "工"
+    ],
+    "decomposeHint": "纟旁加「工」——像丝线一样「红」！",
+    "evolutionType": "形声",
+    "evolutionHint": "纟旁加「工」——像丝线一样「红」！"
+  },
+  {
+    "id": "l1_0091_9ed1",
+    "character": "黑",
+    "pinyin": "hēi",
+    "meaning": "常用汉字「黑」",
+    "sentence": "我喜欢黑。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "里",
+      "灬"
+    ],
+    "decomposeHint": "里加四点——像烟熏火燎，是「黑」的！",
+    "evolutionType": "形声",
+    "evolutionHint": "里加四点——像烟熏火燎，是「黑」的！"
+  },
+  {
+    "id": "l1_0092_767d",
+    "character": "白",
+    "pinyin": "bái",
+    "meaning": "常用汉字「白」",
+    "sentence": "我喜欢白。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "decomposeHint": "像一盏亮灯——干干净净是「白」！",
+    "evolutionType": "象形",
+    "evolutionHint": "像一盏亮灯——干干净净是「白」！"
+  },
+  {
+    "id": "l1_0093_597d",
+    "character": "好",
+    "pinyin": "hǎo",
+    "meaning": "常用汉字「好」",
+    "sentence": "今天天气真好。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "女",
+      "子"
+    ],
+    "decomposeHint": "女加子——妈妈抱着孩子，就是好「好」！",
+    "evolutionType": "会意",
+    "evolutionHint": "女加子——妈妈抱着孩子，就是好「好」！"
+  },
+  {
+    "id": "l1_0094_574f",
+    "character": "坏",
+    "pinyin": "huài",
+    "meaning": "常用汉字「坏」",
+    "sentence": "我喜欢坏。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "土",
+      "不"
+    ],
+    "decomposeHint": "土加「不」——东西弄「坏」啦！",
+    "evolutionType": "形声",
+    "evolutionHint": "土加「不」——东西弄「坏」啦！"
+  },
+  {
+    "id": "l1_0095_65b0",
+    "character": "新",
+    "pinyin": "xīn",
+    "meaning": "常用汉字「新」",
+    "sentence": "我喜欢新。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "亲",
+      "斤"
+    ],
+    "decomposeHint": "亲加斤——刚砍下的，是「新」的！",
+    "evolutionType": "会意",
+    "evolutionHint": "亲加斤——刚砍下的，是「新」的！"
+  },
+  {
+    "id": "l1_0096_65e7",
+    "character": "旧",
+    "pinyin": "jiù",
+    "meaning": "常用汉字「旧」",
+    "sentence": "我喜欢旧。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "丨",
+      "日"
+    ],
+    "decomposeHint": "竖加日——太阳旧旧的，是「旧」的！",
+    "evolutionType": "会意",
+    "evolutionHint": "竖加日——太阳旧旧的，是「旧」的！"
+  },
+  {
+    "id": "l1_0097_5feb",
+    "character": "快",
+    "pinyin": "kuài",
+    "meaning": "常用汉字「快」",
+    "sentence": "我喜欢快。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "忄",
+      "夬"
+    ],
+    "decomposeHint": "竖心旁加「夬」——心里嗖嗖的，是「快」！",
+    "evolutionType": "会意",
+    "evolutionHint": "竖心旁加「夬」——心里嗖嗖的，是「快」！"
+  },
+  {
+    "id": "l1_0098_6162",
+    "character": "慢",
+    "pinyin": "màn",
+    "meaning": "常用汉字「慢」",
+    "sentence": "我喜欢慢。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "忄",
+      "曼"
+    ],
+    "decomposeHint": "竖心旁加「曼」——心里不着急，是「慢」！",
+    "evolutionType": "形声",
+    "evolutionHint": "竖心旁加「曼」——心里不着急，是「慢」！"
+  },
+  {
+    "id": "l1_0099_5f00",
+    "character": "开",
+    "pinyin": "kāi",
+    "meaning": "常用汉字「开」",
+    "sentence": "我喜欢开。",
+    "level": 1,
+    "audio": null,
+    "strokeAnimation": null,
+    "components": [
+      "一",
+      "廾"
+    ],
+    "decomposeHint": "一像门闩打开——「开」门啦！",
+    "evolutionType": "会意",
+    "evolutionHint": "像门闩打开——「开」门啦！"
+  }
+]
