@@ -77,11 +77,17 @@
     <scroll-view wx:if="{{parentTab === 1}}" scroll-y class="tab-content">
       <view class="settings-card">
         <text class="settings-title">语音朗读</text>
-        <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读</text>
-        <text wx:else class="settings-desc warn">朗读插件未授权。登录 mp.weixin.qq.com → 设置 → 第三方设置 → 插件管理 → 添加「微信同声传译」，并在 app.json 中声明插件后重新发布。</text>
+        <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读（翻译君sdk）</text>
+        <text wx:else class="settings-desc warn">朗读插件未授权。请登录 mp.weixin.qq.com → 设置 → 插件管理 → 添加「翻译君sdk」后重新编译。</text>
         <view class="switch-row">
           <text>启用朗读</text>
           <switch checked="{{speechEnabled}}" disabled="{{!speechAvailable}}" bindchange="onToggleSpeech" color="#4CAF50" />
+        </view>
+        <view class="lang-row" wx:if="{{speechAvailable}}">
+          <text>朗读语言</text>
+          <picker mode="selector" range="{{speechLangOptions}}" range-key="label" value="{{speechLangIndex}}" bindchange="onSpeechLangChange">
+            <view class="lang-picker">{{speechLangOptions[speechLangIndex].label}} ›</view>
+          </picker>
         </view>
         <button class="preview-btn" bindtap="onPreviewVoice" disabled="{{!speechAvailable}}">🔊 试听</button>
       </view>

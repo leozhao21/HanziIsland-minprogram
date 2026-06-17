@@ -47,6 +47,7 @@ Page({
 
   onStartLearn() {
     const store = getStore()
+    getSpeechService().unlockFromUserGesture()
     const session = store.makeDailyLearnSession()
     if (!session) {
       wx.showToast({ title: '今日任务已完成', icon: 'none' })
@@ -59,6 +60,7 @@ Page({
 
   onRetryWrong() {
     const store = getStore()
+    getSpeechService().unlockFromUserGesture()
     const session = store.makeIntensiveReviewSession()
     if (!session) return
     getSpeechService().stop()

@@ -1,14 +1,16 @@
 import { HanziCharacter } from '../domain/models'
 import { getStorage, setStorage } from '../data/storage'
+import {
+  FANYI_JUN_PLUGIN,
+  getFanyiJunLoadError,
+  isFanyiJunLoaded,
+  SPEECH_LANG_OPTIONS,
+  splitTextForTTS,
+  textToSpeech,
+} from './fanyiJunPlugin'
 
 const VOICE_KEY = 'speechVoiceLang'
-
-/** 微信同声传译插件 provider，需在公众平台授权后才可在 app.json 中声明 */
-export const WECHAT_SI_PLUGIN = {
-  name: 'WechatSI',
-  version: '0.3.5',
-  provider: 'wx069ba97219f66d99',
-} as const
+const ENABLED_KEY = 'speechEnabled'
 
 interface QueuedItem {
   text: string
@@ -19,68 +21,89 @@ class SpeechService {
   private queue: QueuedItem[] = []
   private audio: WechatMiniprogram.InnerAudioContext | null = null
   private enabled = true
-  private pluginReady = false
-  private wechatSI: Record<string, unknown> | null = null
-  private pluginChecked = false
+  private sessionId = 0
+  private pendingPause = 0
 
   constructor() {
-    this.audio = wx.createInnerAudioContext()
-    this.audio.onEnded(() => this.onUtteranceDone())
-    this.audio.onError(() => this.onUtteranceDone())
+    this.enabled = getStorage(ENABLED_KEY, true)
+    this.initAudio()
+    if (wx.setInnerAudioOption) {
+      wx.setInnerAudioOption({ obeyMuteSwitch: false })
+    }
   }
 
-  /** 是否已授权并加载同声传译插件（未在 app.json 声明时恒为 false） */
+  private initAudio(): void {
+    if (this.audio) {
+      this.audio.destroy()
+    }
+    this.audio = wx.createInnerAudioContext()
+    this.audio.obeyMuteSwitch = false
+    this.audio.onEnded(() => this.onAudioEnded())
+    this.audio.onError(() => this.onAudioEnded())
+  }
+
+  unlockFromUserGesture(): void {
+    this.initAudio()
+  }
+
   get isAvailable(): boolean {
-    this.ensurePlugin()
-    return this.pluginReady
+    return isFanyiJunLoaded()
+  }
+
+  get loadErrorMessage(): string {
+    return getFanyiJunLoadError() || '请在公众平台添加「翻译君sdk」插件'
   }
 
   get selectedVoiceLang(): string {
     return getStorage(VOICE_KEY, 'zh_CN')
   }
 
+  get langOptions(): typeof SPEECH_LANG_OPTIONS {
+    return SPEECH_LANG_OPTIONS
+  }
+
   setVoiceLang(lang: string): void {
     setStorage(VOICE_KEY, lang)
   }
 
+  isEnabled(): boolean {
+    return this.enabled
+  }
+
   setEnabled(enabled: boolean): void {
     this.enabled = enabled
+    setStorage(ENABLED_KEY, enabled)
     if (!enabled) this.stop()
   }
 
   stop(): void {
+    this.sessionId += 1
     this.queue = []
-    if (this.audio) this.audio.stop()
+    this.pendingPause = 0
+    if (this.audio) {
+      this.audio.stop()
+    }
   }
 
   speak(text: string): void {
-    const trimmed = text.trim()
-    if (!trimmed || !this.enabled) return
-    if (!this.ensurePlugin()) return
-    this.startSession([{ text: trimmed, pauseAfter: 0 }])
+    this.startSession(this.textToItems(text))
   }
 
   speakLearnCharacterAuto(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
     this.startSession(this.characterTwice(character.character))
   }
 
   speakCharacterWithPinyin(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
     const items = this.characterTwice(character.character, 100)
-    items.push({ text: character.sentence, pauseAfter: 0 })
+    items.push.apply(items, this.textToItems(character.sentence))
     this.startSession(items)
   }
 
   speakSentence(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
-    const sentence = character.sentence.trim()
-    if (!sentence) return
-    this.startSession([{ text: sentence, pauseAfter: 0 }])
+    this.startSession(this.textToItems(character.sentence))
   }
 
   speakComposition(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
     const hint = character.decomposeHint ? character.decomposeHint.trim() : ''
     const components = character.components || []
     if (!hint && components.length === 0) return
@@ -88,46 +111,46 @@ class SpeechService {
     const items: QueuedItem[] = []
     if (components.length >= 2) {
       components.forEach((part, index) => {
-        items.push({ text: part, pauseAfter: index < components.length - 1 ? 180 : 220 })
+        items.push.apply(items, this.textToItems(part, index < components.length - 1 ? 180 : 220))
       })
-      const partsText = components.map((p) => `「${p}」`).join('和')
-      items.push({
-        text: `组成${partsText}，就是「${character.character}」。`,
-        pauseAfter: hint ? 120 : 0,
-      })
+      const partsText = components.map((p) => '「' + p + '」').join('和')
+      items.push.apply(items, this.textToItems(
+        '组成' + partsText + '，就是「' + character.character + '」。',
+        hint ? 120 : 0,
+      ))
     } else if (components[0]) {
-      items.push({ text: components[0], pauseAfter: 120 })
+      items.push.apply(items, this.textToItems(components[0], 120))
     }
-    if (hint) items.push({ text: hint, pauseAfter: 0 })
+    if (hint) {
+      items.push.apply(items, this.textToItems(hint))
+    }
     this.startSession(items)
   }
 
   speakEvolution(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
     const hint = character.evolutionHint ? character.evolutionHint.trim() : ''
     if (!hint) return
+
     const items: QueuedItem[] = []
     if (character.evolutionType) {
-      items.push({
-        text: `「${character.character}」是${character.evolutionType}字。`,
-        pauseAfter: 120,
-      })
+      items.push.apply(items, this.textToItems(
+        '「' + character.character + '」是' + character.evolutionType + '字。',
+        120,
+      ))
     } else {
-      items.push({
-        text: `一起来听「${character.character}」的演变故事。`,
-        pauseAfter: 120,
-      })
+      items.push.apply(items, this.textToItems(
+        '一起来听「' + character.character + '」的演变故事。',
+        120,
+      ))
     }
-    items.push({ text: hint, pauseAfter: 0 })
+    items.push.apply(items, this.textToItems(hint))
     this.startSession(items)
   }
 
   speakQuizListenChallenge(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
-    const items: QueuedItem[] = [
-      { text: '听一听，选出你听到的字。', pauseAfter: 350 },
-      ...this.characterTwice(character.character),
-    ]
+    const items: QueuedItem[] = []
+    items.push.apply(items, this.textToItems('听一听，选出你听到的字。', 350))
+    items.push.apply(items, this.characterTwice(character.character))
     this.startSession(items)
   }
 
@@ -136,16 +159,15 @@ class SpeechService {
   }
 
   speakCharacter(character: HanziCharacter): void {
-    if (!this.ensurePlugin()) return
     this.startSession(this.characterTwice(character.character))
   }
 
   previewVoice(): boolean {
-    if (!this.ensurePlugin()) {
+    if (!isFanyiJunLoaded()) {
       wx.showToast({
-        title: '朗读插件未授权，暂不可用',
+        title: this.loadErrorMessage,
         icon: 'none',
-        duration: 2500,
+        duration: 2800,
       })
       return false
     }
@@ -153,17 +175,12 @@ class SpeechService {
     return true
   }
 
-  private ensurePlugin(): boolean {
-    if (this.pluginChecked) return this.pluginReady
-    this.pluginChecked = true
-    try {
-      this.wechatSI = requirePlugin(WECHAT_SI_PLUGIN.name)
-      this.pluginReady = !!this.wechatSI && typeof (this.wechatSI as { textToSpeech?: unknown }).textToSpeech === 'function'
-    } catch {
-      this.pluginReady = false
-      this.wechatSI = null
-    }
-    return this.pluginReady
+  private textToItems(text: string, pauseAfter = 0): QueuedItem[] {
+    const parts = splitTextForTTS(text)
+    return parts.map((part, index) => ({
+      text: part,
+      pauseAfter: index === parts.length - 1 ? pauseAfter : 120,
+    }))
   }
 
   private characterTwice(glyph: string, pauseBeforeNext = 0): QueuedItem[] {
@@ -174,54 +191,53 @@ class SpeechService {
   }
 
   private startSession(utterances: QueuedItem[]): void {
+    if (!this.enabled) return
+    if (!isFanyiJunLoaded()) return
+
     const valid = utterances.filter((u) => u.text.trim().length > 0)
-    if (valid.length === 0 || !this.enabled || !this.pluginReady) return
+    if (valid.length === 0) return
+
     this.stop()
     this.queue = valid
-    this.speakNext()
+    this.runSession(this.sessionId)
   }
 
-  private speakNext(): void {
+  private runSession(sessionId: number): void {
+    if (sessionId !== this.sessionId) return
     if (this.queue.length === 0) return
 
-    const item = this.queue.shift()!
-    if (!this.wechatSI) {
-      this.onUtteranceDone(item.pauseAfter)
-      return
-    }
+    const item = this.queue.shift()
+    if (!item) return
 
-    const si = this.wechatSI as {
-      textToSpeech: (opts: {
-        lang: string
-        content: string
-        success?: (res: { filename: string }) => void
-        fail?: () => void
-      }) => void
-    }
-    si.textToSpeech({
-      lang: this.selectedVoiceLang,
-      content: item.text,
-      success: (res) => {
+    textToSpeech(this.selectedVoiceLang, item.text)
+      .then((filename) => {
+        if (sessionId !== this.sessionId) return
         if (!this.audio) return
-        this.audio.src = res.filename
-        this.audio.play()
         this.pendingPause = item.pauseAfter
-      },
-      fail: () => {
-        this.onUtteranceDone(item.pauseAfter)
-      },
-    })
+        this.audio.src = filename
+        this.audio.play()
+      })
+      .catch(() => {
+        if (sessionId !== this.sessionId) return
+        this.advanceAfterPause(sessionId, item.pauseAfter)
+      })
   }
 
-  private pendingPause = 0
-
-  private onUtteranceDone(fallbackPause = 0): void {
-    const pause = this.pendingPause || fallbackPause
+  private onAudioEnded(): void {
+    const sessionId = this.sessionId
+    const pause = this.pendingPause
     this.pendingPause = 0
+    this.advanceAfterPause(sessionId, pause)
+  }
+
+  private advanceAfterPause(sessionId: number, pause: number): void {
+    if (sessionId !== this.sessionId) return
     if (pause > 0) {
-      setTimeout(() => this.speakNext(), pause)
+      setTimeout(() => {
+        if (sessionId === this.sessionId) this.runSession(sessionId)
+      }, pause)
     } else {
-      this.speakNext()
+      this.runSession(sessionId)
     }
   }
 }
@@ -232,3 +248,5 @@ export function getSpeechService(): SpeechService {
   if (!speechInstance) speechInstance = new SpeechService()
   return speechInstance
 }
+
+export { FANYI_JUN_PLUGIN }

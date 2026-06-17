@@ -24,6 +24,7 @@ Page({
   session: null as LearnSession | null,
 
   onLoad() {
+    getSpeechService().unlockFromUserGesture()
     const store = getStore()
     const session = store.consumePendingSession()
     if (!session) {

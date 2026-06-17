@@ -3,5 +3,6 @@
 interface IAppOption {
   globalData: {
     storeReady?: boolean
+    speechReady?: boolean
   }
 }

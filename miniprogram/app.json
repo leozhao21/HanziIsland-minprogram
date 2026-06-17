@@ -41,6 +41,12 @@
       }
     ]
   },
+  "plugins": {
+    "FanyiJunSDK": {
+      "version": "0.1.0",
+      "provider": "wxb1070eabc6f9107e"
+    }
+  },
   "style": "v2",
   "componentFramework": "glass-easel",
   "lazyCodeLoading": "requiredComponents"

@@ -42,6 +42,11 @@ Page({
     intensiveList: [] as Array<{ character: string; sentence: string; rate: string }>,
     trendData: [] as Array<{ label: string; questions: number; studied: number; mastered: number; forgetting: number }>,
     speechLang: 'zh_CN',
+    speechLangIndex: 0,
+    speechLangOptions: [
+      { id: 'zh_CN', label: '普通话' },
+      { id: 'en_US', label: '英语' },
+    ],
     speechEnabled: true,
     speechAvailable: false,
   },
@@ -114,7 +119,9 @@ Page({
       intensiveList: intensive,
       trendData: trend,
       speechLang: getSpeechService().selectedVoiceLang,
+      speechLangIndex: getSpeechService().selectedVoiceLang === 'en_US' ? 1 : 0,
       speechAvailable: getSpeechService().isAvailable,
+      speechEnabled: getSpeechService().isEnabled(),
     })
   },
 
@@ -173,11 +180,21 @@ Page({
   },
 
   onPreviewVoice() {
+    getSpeechService().unlockFromUserGesture()
     getSpeechService().previewVoice()
   },
 
   onToggleSpeech(e: WechatMiniprogram.SwitchChange) {
     getSpeechService().setEnabled(e.detail.value)
     this.setData({ speechEnabled: e.detail.value })
+  },
+
+  onSpeechLangChange(e: WechatMiniprogram.PickerChange) {
+    const index = parseInt(e.detail.value as string, 10)
+    const lang = index === 1 ? 'en_US' : 'zh_CN'
+    getSpeechService().setVoiceLang(lang)
+    this.setData({ speechLang: lang, speechLangIndex: index })
+    getSpeechService().unlockFromUserGesture()
+    getSpeechService().previewVoice()
   },
 })

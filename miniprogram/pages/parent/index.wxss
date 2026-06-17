@@ -108,6 +108,14 @@
 .settings-title { font-weight: 700; font-size: 30rpx; display: block; }
 .settings-desc { font-size: 24rpx; color: #666; display: block; margin: 8rpx 0 16rpx; line-height: 1.5; }
 .settings-desc.warn { color: #E65100; }
+.lang-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rpx 0;
+  font-size: 28rpx;
+}
+.lang-picker { color: #4CAF50; font-weight: 700; }
 .preview-btn { margin-top: 16rpx; background: rgba(76,175,80,0.15); color: #4CAF50; font-size: 28rpx; }
 
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16rpx; margin-bottom: 24rpx; }
