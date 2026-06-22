@@ -1,14 +1,14 @@
 /**
- * 腾讯「翻译君sdk」小程序插件
- * 文档: https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxb1070eabc6f9107e
+ * 微信「同声传译」小程序插件
+ * 文档: https://developers.weixin.qq.com/miniprogram/dev/platform-capabilities/extended/translator.html
  *
- * 须在公众平台 → 设置 → 插件管理 中添加「翻译君sdk」
+ * 须在公众平台 → 设置 → 插件管理 中添加「微信同声传译」
  */
-export const FANYI_JUN_PLUGIN = {
+export const WECHAT_SI_PLUGIN = {
   /** app.json plugins 中的自定义引用名 */
-  name: 'FanyiJunSDK',
-  version: '0.1.0',
-  provider: 'wxb1070eabc6f9107e',
+  name: 'WechatSI',
+  version: '0.3.5',
+  provider: 'wx069ba97219f66d99',
 } as const
 
 /** 官方限制：单次合成约 50 汉字，保守取 45 */
@@ -20,65 +20,58 @@ export const SPEECH_LANG_OPTIONS = [
 ] as const
 
 interface TtsResponse {
+  retcode?: number
   filename?: string
   tempFilePath?: string
   filePath?: string
   url?: string
-  retcode?: number
+  msg?: string
 }
 
-type PluginLike = Record<string, unknown>
+type PluginLike = {
+  textToSpeech?: (opts: Record<string, unknown>) => void
+}
 
 let cachedPlugin: PluginLike | null = null
 let loadAttempted = false
 let loadError: string | null = null
-let ttsMode: 'textToSpeech' | 'translate' | null = null
 
 function extractAudioUrl(res: TtsResponse): string | null {
   return res.filename || res.tempFilePath || res.filePath || res.url || null
 }
 
-export function isFanyiJunLoaded(): boolean {
-  return getFanyiJunPlugin() !== null
+export function isWechatSiLoaded(): boolean {
+  return getWechatSiPlugin() !== null
 }
 
-export function getFanyiJunLoadError(): string | null {
-  if (!loadAttempted) getFanyiJunPlugin()
+export function getWechatSiLoadError(): string | null {
+  if (!loadAttempted) getWechatSiPlugin()
   return loadError
 }
 
-function detectTtsMode(plugin: PluginLike): 'textToSpeech' | 'translate' | null {
-  if (typeof plugin.textToSpeech === 'function') return 'textToSpeech'
-  if (typeof plugin.translate === 'function') return 'translate'
-  return null
-}
-
-export function getFanyiJunPlugin(): PluginLike | null {
+export function getWechatSiPlugin(): PluginLike | null {
   if (loadAttempted) return cachedPlugin
   loadAttempted = true
 
-  const candidates = [FANYI_JUN_PLUGIN.name, FANYI_JUN_PLUGIN.provider]
+  const candidates = [WECHAT_SI_PLUGIN.name, WECHAT_SI_PLUGIN.provider]
   for (let i = 0; i < candidates.length; i++) {
     try {
       const plugin = requirePlugin(candidates[i]) as PluginLike
-      const mode = detectTtsMode(plugin)
-      if (mode) {
+      if (typeof plugin.textToSpeech === 'function') {
         cachedPlugin = plugin
-        ttsMode = mode
         loadError = null
         return cachedPlugin
       }
     } catch (e) {
       if (i === candidates.length - 1 && !loadError) {
-        loadError = e instanceof Error ? e.message : '翻译君sdk 插件未加载'
+        loadError = e instanceof Error ? e.message : '微信同声传译插件未加载'
       }
     }
   }
 
   cachedPlugin = null
-  ttsMode = null
   if (!loadError) {
-    loadError = '翻译君sdk 未提供 textToSpeech / translate 接口'
+    loadError = '微信同声传译未提供 textToSpeech 接口'
   }
   return null
 }
@@ -113,12 +106,15 @@ export function splitTextForTTS(text: string, maxLen = TTS_MAX_CHARS): string[] 
 
 function callTextToSpeech(plugin: PluginLike, lang: string, content: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    const fn = plugin.textToSpeech as (opts: Record<string, unknown>) => void
-    fn({
+    plugin.textToSpeech!({
       lang,
       tts: true,
       content,
       success: (res: TtsResponse) => {
+        if (res.retcode !== undefined && res.retcode !== 0) {
+          reject(new Error(res.msg || '语音合成失败'))
+          return
+        }
         const url = extractAudioUrl(res)
         if (url) resolve(url)
         else reject(new Error('语音合成未返回音频地址'))
@@ -130,31 +126,10 @@ function callTextToSpeech(plugin: PluginLike, lang: string, content: string): Pr
   })
 }
 
-/** translate + tts，lfrom/lto 相同则仅做语音合成 */
-function callTranslateTts(plugin: PluginLike, lang: string, content: string): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const fn = plugin.translate as (opts: Record<string, unknown>) => void
-    fn({
-      lfrom: lang,
-      lto: lang,
-      content,
-      tts: true,
-      success: (res: TtsResponse & { result?: string }) => {
-        const url = extractAudioUrl(res)
-        if (url) resolve(url)
-        else reject(new Error('translate 未返回音频地址'))
-      },
-      fail: (err: Record<string, unknown>) => {
-        reject(err || new Error('translate 失败'))
-      },
-    })
-  })
-}
-
 export function textToSpeech(lang: string, content: string): Promise<string> {
-  const plugin = getFanyiJunPlugin()
-  if (!plugin || !ttsMode) {
-    return Promise.reject(new Error(loadError || '翻译君sdk 插件未授权'))
+  const plugin = getWechatSiPlugin()
+  if (!plugin) {
+    return Promise.reject(new Error(loadError || '微信同声传译插件未授权'))
   }
 
   const piece = content.trim()
@@ -163,8 +138,5 @@ export function textToSpeech(lang: string, content: string): Promise<string> {
     return Promise.reject(new Error('单段文本超过插件长度限制'))
   }
 
-  if (ttsMode === 'textToSpeech') {
-    return callTextToSpeech(plugin, lang, piece)
-  }
-  return callTranslateTts(plugin, lang, piece)
+  return callTextToSpeech(plugin, lang, piece)
 }

@@ -1,13 +1,12 @@
 import { HanziCharacter } from '../domain/models'
 import { getStorage, setStorage } from '../data/storage'
 import {
-  FANYI_JUN_PLUGIN,
-  getFanyiJunLoadError,
-  isFanyiJunLoaded,
+  getWechatSiLoadError,
+  isWechatSiLoaded,
   SPEECH_LANG_OPTIONS,
   splitTextForTTS,
   textToSpeech,
-} from './fanyiJunPlugin'
+} from './wechatSiPlugin'
 
 const VOICE_KEY = 'speechVoiceLang'
 const ENABLED_KEY = 'speechEnabled'
@@ -18,14 +17,18 @@ interface QueuedItem {
 }
 
 class SpeechService {
-  private queue: QueuedItem[] = []
-  private audio: WechatMiniprogram.InnerAudioContext | null = null
-  private enabled = true
-  private sessionId = 0
-  private pendingPause = 0
+  private queue: QueuedItem[]
+  private audio: WechatMiniprogram.InnerAudioContext | null
+  private enabled: boolean
+  private sessionId: number
+  private pendingPause: number
 
   constructor() {
+    this.queue = []
+    this.audio = null
     this.enabled = getStorage(ENABLED_KEY, true)
+    this.sessionId = 0
+    this.pendingPause = 0
     this.initAudio()
     if (wx.setInnerAudioOption) {
       wx.setInnerAudioOption({ obeyMuteSwitch: false })
@@ -47,11 +50,11 @@ class SpeechService {
   }
 
   get isAvailable(): boolean {
-    return isFanyiJunLoaded()
+    return isWechatSiLoaded()
   }
 
   get loadErrorMessage(): string {
-    return getFanyiJunLoadError() || '请在公众平台添加「翻译君sdk」插件'
+    return getWechatSiLoadError() || '请在公众平台添加「微信同声传译」插件'
   }
 
   get selectedVoiceLang(): string {
@@ -163,7 +166,7 @@ class SpeechService {
   }
 
   previewVoice(): boolean {
-    if (!isFanyiJunLoaded()) {
+    if (!isWechatSiLoaded()) {
       wx.showToast({
         title: this.loadErrorMessage,
         icon: 'none',
@@ -192,7 +195,7 @@ class SpeechService {
 
   private startSession(utterances: QueuedItem[]): void {
     if (!this.enabled) return
-    if (!isFanyiJunLoaded()) return
+    if (!isWechatSiLoaded()) return
 
     const valid = utterances.filter((u) => u.text.trim().length > 0)
     if (valid.length === 0) return
@@ -249,4 +252,4 @@ export function getSpeechService(): SpeechService {
   return speechInstance
 }
 
-export { FANYI_JUN_PLUGIN }
+export { WECHAT_SI_PLUGIN } from './wechatSiPlugin'

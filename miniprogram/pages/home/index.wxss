@@ -51,10 +51,11 @@
 }
 
 .progress-card {
-  background: #f5f5f5;
+  background: #fff;
   border-radius: 32rpx;
   padding: 40rpx;
   margin-bottom: 48rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.06);
 }
 
 .progress-title {
@@ -65,42 +66,92 @@
 }
 
 .start-btn {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #388E3C 0%, #4CAF50 45%, #66BB6A 100%);
+  border-radius: 56rpx;
+  margin-bottom: 32rpx;
+  box-shadow: 0 16rpx 40rpx rgba(76, 175, 80, 0.32);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.start-btn--pressed {
+  transform: scale(0.98);
+  box-shadow: 0 8rpx 20rpx rgba(76, 175, 80, 0.24);
+}
+
+.start-btn.is-disabled {
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+.start-btn-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #4CAF50, #66BB6A);
-  color: #fff;
-  border-radius: 48rpx;
-  padding: 48rpx 32rpx;
-  margin-bottom: 32rpx;
-  box-shadow: 0 12rpx 24rpx rgba(76, 175, 80, 0.35);
+  padding: 44rpx 48rpx;
+  gap: 20rpx;
 }
 
-.start-btn[disabled] {
-  opacity: 0.5;
+.btn-icon-wrap {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  flex-shrink: 0;
 }
 
-.btn-emoji {
-  font-size: 56rpx;
-  margin-right: 16rpx;
+.start-icon {
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .btn-text {
-  font-size: 48rpx;
+  font-size: 44rpx;
   font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 2rpx;
+  line-height: 1.2;
 }
 
 .retry-btn {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 3rpx solid rgba(255, 152, 0, 0.35);
+  border-radius: 48rpx;
+  box-shadow: 0 8rpx 20rpx rgba(255, 152, 0, 0.12);
+  transition: transform 0.15s ease;
+}
+
+.retry-btn--pressed {
+  transform: scale(0.98);
+  background: rgba(255, 152, 0, 0.06);
+}
+
+.retry-btn-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 152, 0, 0.15);
-  border-radius: 40rpx;
-  padding: 32rpx;
+  padding: 32rpx 40rpx;
+  gap: 16rpx;
+}
+
+.retry-icon {
+  background: rgba(255, 152, 0, 0.12);
+  font-size: 36rpx;
+  width: 64rpx;
+  height: 64rpx;
 }
 
 .retry-text {
   font-size: 32rpx;
   font-weight: 700;
-  color: #FF9800;
+  color: #F57C00;
+  white-space: nowrap;
+  line-height: 1.2;
 }

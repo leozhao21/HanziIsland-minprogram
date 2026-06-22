@@ -77,8 +77,8 @@
     <scroll-view wx:if="{{parentTab === 1}}" scroll-y class="tab-content">
       <view class="settings-card">
         <text class="settings-title">语音朗读</text>
-        <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读（翻译君sdk）</text>
-        <text wx:else class="settings-desc warn">朗读插件未授权。请登录 mp.weixin.qq.com → 设置 → 插件管理 → 添加「翻译君sdk」后重新编译。</text>
+        <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读（微信同声传译）</text>
+        <text wx:else class="settings-desc warn">朗读插件未授权。请登录 mp.weixin.qq.com → 设置 → 插件管理 → 添加「微信同声传译」后重新编译。</text>
         <view class="switch-row">
           <text>启用朗读</text>
           <switch checked="{{speechEnabled}}" disabled="{{!speechAvailable}}" bindchange="onToggleSpeech" color="#4CAF50" />

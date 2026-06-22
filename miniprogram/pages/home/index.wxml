@@ -16,13 +16,28 @@
     <progress percent="{{progressPercent}}" activeColor="#4CAF50" backgroundColor="#eee" stroke-width="12" border-radius="8" />
   </view>
 
-  <button class="start-btn" bindtap="onStartLearn" disabled="{{!canStart}}">
-    <text class="btn-emoji">🚀</text>
-    <text class="btn-text">开始学汉字</text>
-  </button>
+  <view
+    class="start-btn {{canStart ? '' : 'is-disabled'}}"
+    hover-class="{{canStart ? 'start-btn--pressed' : ''}}"
+    hover-stay-time="100"
+    bindtap="onStartLearn"
+  >
+    <view class="start-btn-inner">
+      <view class="btn-icon-wrap start-icon">🚀</view>
+      <text class="btn-text">开始学汉字</text>
+    </view>
+  </view>
 
-  <button wx:if="{{hasIntensiveReview}}" class="retry-btn" bindtap="onRetryWrong">
-    <text class="btn-emoji">💪</text>
-    <text class="retry-text">再练一遍错题</text>
-  </button>
+  <view
+    wx:if="{{hasIntensiveReview}}"
+    class="retry-btn"
+    hover-class="retry-btn--pressed"
+    hover-stay-time="100"
+    bindtap="onRetryWrong"
+  >
+    <view class="retry-btn-inner">
+      <view class="btn-icon-wrap retry-icon">💪</view>
+      <text class="retry-text">再练一遍错题</text>
+    </view>
+  </view>
 </view>

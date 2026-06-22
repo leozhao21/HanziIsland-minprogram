@@ -46,6 +46,7 @@ Page({
   },
 
   onStartLearn() {
+    if (!this.data.canStart) return
     const store = getStore()
     getSpeechService().unlockFromUserGesture()
     const session = store.makeDailyLearnSession()

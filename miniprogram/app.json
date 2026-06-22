@@ -16,10 +16,10 @@
     "backgroundColor": "#f8f8f8"
   },
   "tabBar": {
-    "color": "#999999",
+    "color": "#B0B0B0",
     "selectedColor": "#4CAF50",
     "backgroundColor": "#ffffff",
-    "borderStyle": "black",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/home/index",
@@ -42,9 +42,9 @@
     ]
   },
   "plugins": {
-    "FanyiJunSDK": {
-      "version": "0.1.0",
-      "provider": "wxb1070eabc6f9107e"
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
     }
   },
   "style": "v2",

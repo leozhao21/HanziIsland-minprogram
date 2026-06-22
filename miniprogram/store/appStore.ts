@@ -45,32 +45,50 @@ import {
 type Listener = () => void
 
 class AppStore {
-  catalog: HanziCharacter[] = []
-  private catalogById: Record<string, HanziCharacter> = {}
-  progressMap: Record<string, HanziWithProgress> = {}
-  dailyPlan: DailyTaskPlan | null = null
-  studyMode: StudyMode = StudyMode.Standard
-  dailyLearningGoal: DailyLearningGoal = {
-    targetCount: recommendedDailyGoal(StudyMode.Standard),
-    followStudyMode: true,
-  }
-  todayProgress: TodayLearningProgress = {
-    goal: 20,
-    charactersStudied: 0,
-    questionsAnswered: 0,
-    correctCount: 0,
-    newMasteredCount: 0,
-  }
-  starCount = 0
-  unlockedIslands: string[] = []
-  isLoaded = false
-  loadError: string | null = null
-  loadStatus = '正在启动…'
-  studyTrend: StudyTrendChartData = { dailyVolume: [], masteredGrowth: [], forgettingTrend: [] }
-  pendingSession: LearnSession | null = null
+  catalog: HanziCharacter[]
+  private catalogById: Record<string, HanziCharacter>
+  progressMap: Record<string, HanziWithProgress>
+  dailyPlan: DailyTaskPlan | null
+  studyMode: StudyMode
+  dailyLearningGoal: DailyLearningGoal
+  todayProgress: TodayLearningProgress
+  starCount: number
+  unlockedIslands: string[]
+  isLoaded: boolean
+  loadError: string | null
+  loadStatus: string
+  studyTrend: StudyTrendChartData
+  pendingSession: LearnSession | null
+  private sessionStudiedCharacterIds: Set<string>
+  private listeners: Set<Listener>
 
-  private sessionStudiedCharacterIds = new Set<string>()
-  private listeners = new Set<Listener>()
+  constructor() {
+    this.catalog = []
+    this.catalogById = {}
+    this.progressMap = {}
+    this.dailyPlan = null
+    this.studyMode = StudyMode.Standard
+    this.dailyLearningGoal = {
+      targetCount: recommendedDailyGoal(StudyMode.Standard),
+      followStudyMode: true,
+    }
+    this.todayProgress = {
+      goal: 20,
+      charactersStudied: 0,
+      questionsAnswered: 0,
+      correctCount: 0,
+      newMasteredCount: 0,
+    }
+    this.starCount = 0
+    this.unlockedIslands = []
+    this.isLoaded = false
+    this.loadError = null
+    this.loadStatus = '正在启动…'
+    this.studyTrend = { dailyVolume: [], masteredGrowth: [], forgettingTrend: [] }
+    this.pendingSession = null
+    this.sessionStudiedCharacterIds = new Set<string>()
+    this.listeners = new Set<Listener>()
+  }
 
   subscribe(listener: Listener): () => void {
     this.listeners.add(listener)
