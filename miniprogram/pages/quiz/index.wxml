@@ -1,8 +1,15 @@
 <view class="quiz-page">
-  <view class="toolbar" wx:if="{{phase !== 'done'}}">
-    <view class="home-btn" bindtap="onExitTap">🏠</view>
-    <text class="phase-title">{{phaseTitle}}</text>
+  <view
+    wx:if="{{phase !== 'done'}}"
+    class="nav-bar"
+    style="height: {{navBarHeight}}px; padding-top: {{statusBarHeight}}px;"
+  >
+    <view class="nav-inner" style="height: {{navContentHeight}}px;">
+      <view class="home-btn" bindtap="onExitTap">🏠</view>
+      <text class="phase-title">{{phaseTitle}}</text>
+    </view>
   </view>
+  <view wx:else class="safe-top" style="height: {{statusBarHeight}}px;"></view>
 
   <!-- 认识新字 -->
   <view wx:if="{{phase === 'learn' && currentLearnChar}}" class="learn-phase">
@@ -16,13 +23,30 @@
         <text class="sentence">{{currentLearnChar.sentence}}</text>
         <view class="audio-btn small" bindtap="onReplaySentence">🔊</view>
       </view>
-      <view wx:if="{{currentLearnChar.components && currentLearnChar.components.length}}" class="section orange">
-        <view class="section-title">🧩 这个字怎么组成？</view>
-        <view class="audio-btn" bindtap="onSpeakComposition">🔊 听组成</view>
+      <view wx:if="{{(currentLearnChar.components && currentLearnChar.components.length) || currentLearnChar.decomposeHint}}" class="section orange">
+        <view class="section-header">
+          <view class="section-title">🧩 这个字怎么组成？</view>
+          <view class="audio-btn compact" bindtap="onSpeakComposition">🔊 听组成</view>
+        </view>
+        <view wx:if="{{currentLearnChar.components && currentLearnChar.components.length}}" class="components">
+          <block wx:for="{{currentLearnChar.components}}" wx:key="*this">
+            <text wx:if="{{index > 0}}" class="plus">+</text>
+            <text class="comp">{{item}}</text>
+          </block>
+          <text wx:if="{{currentLearnChar.components.length >= 2}}" class="plus">=</text>
+          <text wx:if="{{currentLearnChar.components.length >= 2}}" class="comp highlight">{{currentLearnChar.character}}</text>
+        </view>
+        <text wx:if="{{currentLearnChar.decomposeHint}}" class="section-desc">{{currentLearnChar.decomposeHint}}</text>
       </view>
       <view wx:if="{{currentLearnChar.evolutionHint}}" class="section purple">
-        <view class="section-title">📜 汉字演变故事</view>
-        <view class="audio-btn" bindtap="onSpeakEvolution">🔊 听故事</view>
+        <view class="section-header">
+          <view class="section-title">
+            📜 汉字演变故事
+            <text wx:if="{{currentLearnChar.evolutionType}}" class="tag">{{currentLearnChar.evolutionType}}</text>
+          </view>
+          <view class="audio-btn compact" bindtap="onSpeakEvolution">🔊 听故事</view>
+        </view>
+        <text class="section-desc">{{currentLearnChar.evolutionHint}}</text>
       </view>
     </scroll-view>
     <button class="learn-done-btn" bindtap="onLearnDone">👍 我学会啦！</button>

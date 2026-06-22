@@ -1,6 +1,7 @@
 import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
 import { todayProgressPercent } from '../../utils/storeView'
+import { setTabBarIndex } from '../../utils/pageHelper'
 
 let unsubscribe: (() => void) | null = null
 
@@ -22,6 +23,7 @@ Page({
   },
 
   onShow() {
+    setTabBarIndex(this, 0)
     getStore().reloadTodayProgress()
     this.refresh()
     getSpeechService().speak('你好！欢迎来到识字岛。点下面的大按钮，开始学汉字吧！')

@@ -1,9 +1,13 @@
 import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
 import { HanziCharacter, LearnSession, QuizQuestion, QuizType } from '../../domain/models'
+import { getNavBarLayout } from '../../utils/navBar'
 
 Page({
   data: {
+    statusBarHeight: 20,
+    navContentHeight: 44,
+    navBarHeight: 64,
     phase: 'learn' as 'learn' | 'quiz' | 'done',
     learnCharacters: [] as HanziCharacter[],
     currentLearnIndex: 0,
@@ -25,6 +29,7 @@ Page({
 
   onLoad() {
     getSpeechService().unlockFromUserGesture()
+    this.setData(getNavBarLayout())
     const store = getStore()
     const session = store.consumePendingSession()
     if (!session) {

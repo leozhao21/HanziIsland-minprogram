@@ -1,6 +1,7 @@
 import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
 import { ISLAND_CATALOG } from '../../domain/models'
+import { setTabBarIndex } from '../../utils/pageHelper'
 
 let unsubscribe: (() => void) | null = null
 
@@ -24,6 +25,7 @@ Page({
   },
 
   onShow() {
+    setTabBarIndex(this, 2)
     this.refresh()
     getSpeechService().speak('这里是星星岛！攒够星星就能解锁新岛屿。')
   },

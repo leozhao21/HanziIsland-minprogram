@@ -13,6 +13,16 @@ export function withStore<T extends Record<string, unknown>>(
   return { ...data, storeSnapshot: {} }
 }
 
+export function setTabBarIndex(
+  page: WechatMiniprogram.Page.Instance<Record<string, unknown>, Record<string, unknown>>,
+  index: number,
+): void {
+  if (typeof page.getTabBar === 'function') {
+    const tabBar = page.getTabBar()
+    if (tabBar) tabBar.setData({ selected: index })
+  }
+}
+
 export function syncFromStore(page: WechatMiniprogram.Page.Instance<Record<string, unknown>, Record<string, unknown>>): void {
   const store = getStore()
   page.setData({

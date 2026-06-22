@@ -1,6 +1,6 @@
 .home-page {
   min-height: 100vh;
-  padding: 32rpx 48rpx 80rpx;
+  padding: 32rpx 48rpx calc(120rpx + env(safe-area-inset-bottom));
   background: linear-gradient(180deg, rgba(76, 175, 80, 0.25) 0%, rgba(255, 152, 0, 0.12) 40%, #fff 100%);
   box-sizing: border-box;
   position: relative;

@@ -1,6 +1,6 @@
 .island-page {
   min-height: 100vh;
-  padding: 32rpx;
+  padding: 32rpx 32rpx calc(120rpx + env(safe-area-inset-bottom));
   background: linear-gradient(180deg, rgba(255, 152, 0, 0.1) 0%, #fff 100%);
   box-sizing: border-box;
 }

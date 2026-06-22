@@ -2,6 +2,7 @@ import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
 import { LearnedListFilter } from '../../domain/models'
 import { learnedItemToView } from '../../utils/storeView'
+import { setTabBarIndex } from '../../utils/pageHelper'
 
 let unsubscribe: (() => void) | null = null
 
@@ -26,6 +27,7 @@ Page({
   },
 
   onShow() {
+    setTabBarIndex(this, 1)
     this.refresh()
     getSpeechService().speak('这里是你学过的字，看看你学会了多少吧。')
   },
