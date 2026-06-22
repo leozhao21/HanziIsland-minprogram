@@ -84,6 +84,11 @@ export enum StudyMode {
   Advanced = 'advanced',
 }
 
+export enum PinyinAgeMode {
+  Young = 'young',
+  Advanced = 'advanced',
+}
+
 export const STUDY_MODE_NAMES: Record<StudyMode, string> = {
   [StudyMode.Simple]: '简单模式',
   [StudyMode.Standard]: '标准模式',
@@ -280,6 +285,9 @@ export interface UserProfileEntity {
   lastDailyTaskDate?: number | null
   dailyLearningGoal: number
   followStudyModeGoal: boolean
+  pinyinBreakdownEnabled?: boolean
+  pinyinAgeModeRaw?: string
+  homeWelcomeSpeechEnabled?: boolean
 }
 
 export function hasDecomposition(char: HanziCharacter): boolean {

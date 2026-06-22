@@ -1,5 +1,6 @@
 import {
   DailyLearningGoal,
+  PinyinAgeMode,
   recommendedDailyGoal,
   StudyMode,
   UserProfileEntity,
@@ -13,6 +14,9 @@ const DEFAULT_PROFILE: UserProfileEntity = {
   weeklyMasteredIds: [],
   dailyLearningGoal: recommendedDailyGoal(StudyMode.Standard),
   followStudyModeGoal: true,
+  pinyinBreakdownEnabled: true,
+  pinyinAgeModeRaw: PinyinAgeMode.Young,
+  homeWelcomeSpeechEnabled: true,
 }
 
 export function fetchOrCreateProfile(): UserProfileEntity {

@@ -1,6 +1,7 @@
 import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
-import { HanziCharacter, MASTERY_TITLES, MasteryLevel } from '../../domain/models'
+import { HanziCharacter, MASTERY_TITLES, MasteryLevel, PinyinAgeMode } from '../../domain/models'
+import { parsePinyinBreakdown, PinyinBreakdown } from '../../utils/pinyinBreakdown'
 
 let unsubscribe: (() => void) | null = null
 
@@ -14,6 +15,11 @@ Page({
     wrongCount: 0,
     nextReviewText: '',
     inIntensiveReview: false,
+    pinyinBreakdownEnabled: true,
+    pinyinAgeMode: PinyinAgeMode.Young,
+    pinyinBreakdown: null as PinyinBreakdown | null,
+    compositionExpanded: false,
+    evolutionExpanded: false,
   },
 
   onLoad(query: Record<string, string | undefined>) {
@@ -39,6 +45,11 @@ Page({
       wrongCount: item.memory.wrongCount,
       nextReviewText: item.nextReviewAt ? this.formatRelative(item.nextReviewAt) : '',
       inIntensiveReview: item.inIntensiveReview,
+      pinyinBreakdownEnabled: store.pinyinBreakdownEnabled,
+      pinyinAgeMode: store.pinyinAgeMode,
+      pinyinBreakdown: store.pinyinBreakdownEnabled
+        ? parsePinyinBreakdown(item.character.pinyin)
+        : null,
     })
   },
 
@@ -71,13 +82,23 @@ Page({
     if (char) getSpeechService().speakSentence(char)
   },
 
+  onSpeakPinyin() {
+    const char = this.data.character
+    if (!char) return
+    getSpeechService().speakPinyinBreakdown(char, this.data.pinyinAgeMode as PinyinAgeMode)
+  },
+
   onSpeakComposition() {
     const char = this.data.character
-    if (char) getSpeechService().speakComposition(char)
+    if (!char) return
+    this.setData({ compositionExpanded: true })
+    getSpeechService().speakComposition(char)
   },
 
   onSpeakEvolution() {
     const char = this.data.character
-    if (char) getSpeechService().speakEvolution(char)
+    if (!char) return
+    this.setData({ evolutionExpanded: true })
+    getSpeechService().speakEvolution(char)
   },
 })

@@ -71,9 +71,11 @@ export function generateMixedSession(
   count: number,
   types: QuizType[],
   requiredCharacters: HanziCharacter[] = [],
+  distractorPool?: HanziCharacter[],
 ): QuizQuestion[] {
   if (types.length === 0 || characters.length === 0) return []
 
+  const pool = distractorPool && distractorPool.length >= 4 ? distractorPool : characters
   const questions: QuizQuestion[] = []
   const usedIds = new Set<string>()
   let typeIndex = 0
@@ -82,7 +84,7 @@ export function generateMixedSession(
     if (!characters.some((c) => c.id === char.id)) continue
     const type = types[typeIndex % types.length]
     typeIndex++
-    const q = generateQuestion(type, char, characters)
+    const q = generateQuestion(type, char, pool)
     if (q) {
       questions.push(q)
       usedIds.add(char.id)
@@ -95,7 +97,7 @@ export function generateMixedSession(
     for (const char of extras.slice(0, remaining)) {
       const type = types[typeIndex % types.length]
       typeIndex++
-      const q = generateQuestion(type, char, characters)
+      const q = generateQuestion(type, char, pool)
       if (q) questions.push(q)
     }
   }

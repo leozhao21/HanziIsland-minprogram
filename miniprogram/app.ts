@@ -5,6 +5,7 @@ App<IAppOption>({
   globalData: {
     storeReady: false,
     speechReady: false,
+    homeWelcomeSpeechPlayed: false,
   },
 
   onLaunch() {

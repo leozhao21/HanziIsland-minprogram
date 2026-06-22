@@ -5,27 +5,64 @@
       <view class="audio-btn" bindtap="onSpeakCharacter">🔊 听字</view>
     </view>
     <text class="pinyin">{{character.pinyin}}</text>
+
+    <view wx:if="{{pinyinBreakdownEnabled && pinyinBreakdown}}" class="section blue">
+      <view class="section-header">
+        <view class="section-title">🎵 拼一拼</view>
+        <view class="audio-btn compact" bindtap="onSpeakPinyin">🔊 听拼音</view>
+      </view>
+      <view wx:if="{{pinyinBreakdown.canBreakdown}}" class="pinyin-formula">
+        <block wx:for="{{pinyinBreakdown.parts}}" wx:key="kind">
+          <text wx:if="{{index > 0}}" class="plus blue">+</text>
+          <text class="py-part {{item.kind}}">{{item.display}}</text>
+        </block>
+        <text class="plus blue">→</text>
+        <text class="py-part full">{{pinyinBreakdown.full}}</text>
+      </view>
+      <view wx:else class="pinyin-whole">
+        <text class="py-part full">{{pinyinBreakdown.full}}</text>
+        <text wx:if="{{pinyinBreakdown.wholeSyllableNote}}" class="section-desc">{{pinyinBreakdown.wholeSyllableNote}}</text>
+      </view>
+      <view wx:if="{{pinyinAgeMode === 'advanced'}}" class="tone-info">
+        <text class="tone-label">{{pinyinBreakdown.toneLabel}}</text>
+        <text class="section-desc">{{pinyinBreakdown.toneHint}}</text>
+      </view>
+    </view>
+
     <view class="sentence-row">
       <text class="sentence">{{character.sentence}}</text>
       <view class="audio-btn small" bindtap="onSpeakSentence">🔊</view>
     </view>
 
-    <view wx:if="{{character.components && character.components.length}}" class="section orange">
-      <view class="section-title">🧩 这个字怎么组成？</view>
-      <view class="components">
-        <block wx:for="{{character.components}}" wx:key="*this">
-          <text wx:if="{{index > 0}}" class="plus">+</text>
-          <text class="comp">{{item}}</text>
-        </block>
-        <text wx:if="{{character.components.length >= 2}}" class="plus">=</text>
-        <text wx:if="{{character.components.length >= 2}}" class="comp highlight">{{character.character}}</text>
+    <view wx:if="{{(character.components && character.components.length) || character.decomposeHint}}" class="section orange">
+      <view class="section-header">
+        <view class="section-title">🧩 这个字怎么组成？</view>
+        <view class="audio-btn compact" bindtap="onSpeakComposition">🔊 听组成</view>
       </view>
-      <view class="audio-btn" bindtap="onSpeakComposition">🔊 听组成</view>
+      <view wx:if="{{compositionExpanded}}">
+        <view wx:if="{{character.components && character.components.length}}" class="components">
+          <block wx:for="{{character.components}}" wx:key="*this">
+            <text wx:if="{{index > 0}}" class="plus">+</text>
+            <text class="comp">{{item}}</text>
+          </block>
+          <text wx:if="{{character.components.length >= 2}}" class="plus">=</text>
+          <text wx:if="{{character.components.length >= 2}}" class="comp highlight">{{character.character}}</text>
+        </view>
+        <text wx:if="{{character.decomposeHint}}" class="section-desc">{{character.decomposeHint}}</text>
+      </view>
     </view>
 
     <view wx:if="{{character.evolutionHint}}" class="section purple">
-      <view class="section-title">📜 汉字演变故事 <text wx:if="{{character.evolutionType}}" class="tag">{{character.evolutionType}}</text></view>
-      <view class="audio-btn" bindtap="onSpeakEvolution">🔊 听故事</view>
+      <view class="section-header">
+        <view class="section-title">
+          📜 汉字演变故事
+          <text wx:if="{{character.evolutionType}}" class="tag">{{character.evolutionType}}</text>
+        </view>
+        <view class="audio-btn compact" bindtap="onSpeakEvolution">🔊 听故事</view>
+      </view>
+      <view wx:if="{{evolutionExpanded}}">
+        <text class="section-desc">{{character.evolutionHint}}</text>
+      </view>
     </view>
   </view>
 

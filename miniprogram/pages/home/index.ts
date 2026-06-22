@@ -3,7 +3,23 @@ import { getSpeechService } from '../../services/speechService'
 import { todayProgressPercent } from '../../utils/storeView'
 import { setTabBarIndex } from '../../utils/pageHelper'
 
+const HOME_WELCOME_TEXT = '你好！欢迎来到识字岛。点下面的大按钮，开始学汉字吧！'
+
 let unsubscribe: (() => void) | null = null
+
+function maybePlayHomeWelcomeSpeech(): void {
+  const app = getApp<IAppOption>()
+  if (app.globalData.homeWelcomeSpeechPlayed) return
+
+  const store = getStore()
+  if (!store.homeWelcomeSpeechEnabled) return
+
+  const speech = getSpeechService()
+  if (!speech.isEnabled()) return
+
+  app.globalData.homeWelcomeSpeechPlayed = true
+  speech.speak(HOME_WELCOME_TEXT)
+}
 
 Page({
   data: {
@@ -13,7 +29,6 @@ Page({
     isGoalMet: false,
     hasIntensiveReview: false,
     canStart: false,
-    speechEnabled: true,
   },
 
   onLoad() {
@@ -26,7 +41,7 @@ Page({
     setTabBarIndex(this, 0)
     getStore().reloadTodayProgress()
     this.refresh()
-    getSpeechService().speak('你好！欢迎来到识字岛。点下面的大按钮，开始学汉字吧！')
+    maybePlayHomeWelcomeSpeech()
   },
 
   onUnload() {
@@ -65,7 +80,10 @@ Page({
     const store = getStore()
     getSpeechService().unlockFromUserGesture()
     const session = store.makeIntensiveReviewSession()
-    if (!session) return
+    if (!session) {
+      wx.showToast({ title: '暂时无法生成练习题', icon: 'none' })
+      return
+    }
     getSpeechService().stop()
     store.setPendingSession(session)
     wx.navigateTo({ url: '/pages/quiz/index' })

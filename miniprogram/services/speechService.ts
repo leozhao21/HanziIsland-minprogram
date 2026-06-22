@@ -1,4 +1,6 @@
-import { HanziCharacter } from '../domain/models'
+import { HanziCharacter, PinyinAgeMode } from '../domain/models'
+import { parsePinyinBreakdown } from '../utils/pinyinBreakdown'
+import { buildPinyinBreakdownSpeech } from '../utils/pinyinSpeech'
 import { getStorage, setStorage } from '../data/storage'
 import {
   getWechatSiLoadError,
@@ -104,6 +106,19 @@ class SpeechService {
 
   speakSentence(character: HanziCharacter): void {
     this.startSession(this.textToItems(character.sentence))
+  }
+
+  speakPinyinBreakdown(character: HanziCharacter, ageMode: PinyinAgeMode): void {
+    const breakdown = parsePinyinBreakdown(character.pinyin)
+    if (!breakdown) return
+
+    const mode = ageMode === PinyinAgeMode.Advanced ? 'advanced' : 'young'
+    const lines = buildPinyinBreakdownSpeech(character, breakdown, mode)
+    const items: QueuedItem[] = []
+    lines.forEach((line, index) => {
+      items.push.apply(items, this.textToItems(line, index < lines.length - 1 ? 220 : 0))
+    })
+    this.startSession(items)
   }
 
   speakComposition(character: HanziCharacter): void {

@@ -83,6 +83,11 @@
           <text>启用朗读</text>
           <switch checked="{{speechEnabled}}" disabled="{{!speechAvailable}}" bindchange="onToggleSpeech" color="#4CAF50" />
         </view>
+        <view class="switch-row">
+          <text>首页欢迎语音</text>
+          <switch checked="{{homeWelcomeSpeechEnabled}}" disabled="{{!speechAvailable || !speechEnabled}}" bindchange="onToggleHomeWelcomeSpeech" color="#4CAF50" />
+        </view>
+        <text wx:if="{{speechAvailable}}" class="settings-desc">进入小程序时播放一次欢迎语，从其他页面返回首页不再播放</text>
         <view class="lang-row" wx:if="{{speechAvailable}}">
           <text>朗读语言</text>
           <picker mode="selector" range="{{speechLangOptions}}" range-key="label" value="{{speechLangIndex}}" bindchange="onSpeechLangChange">
@@ -90,6 +95,23 @@
           </picker>
         </view>
         <button class="preview-btn" bindtap="onPreviewVoice" disabled="{{!speechAvailable}}">🔊 试听</button>
+      </view>
+
+      <view class="settings-card">
+        <text class="settings-title">拼音拼读</text>
+        <text class="settings-desc">学习页展示「拼一拼」，帮助了解拼音如何组成</text>
+        <view class="switch-row">
+          <text>启用拼读拆解</text>
+          <switch checked="{{pinyinBreakdownEnabled}}" bindchange="onTogglePinyinBreakdown" color="#4CAF50" />
+        </view>
+        <view wx:if="{{pinyinBreakdownEnabled}}" class="lang-row">
+          <text>适合年龄</text>
+          <picker mode="selector" range="{{pinyinAgeOptions}}" range-key="label" value="{{pinyinAgeIndex}}" bindchange="onPinyinAgeChange">
+            <view class="lang-picker">{{pinyinAgeOptions[pinyinAgeIndex].label}} ›</view>
+          </picker>
+        </view>
+        <text wx:if="{{pinyinBreakdownEnabled && pinyinAgeIndex === 0}}" class="settings-desc">4–6 岁：b + à → bà，用颜色区分声母和韵母</text>
+        <text wx:if="{{pinyinBreakdownEnabled && pinyinAgeIndex === 1}}" class="settings-desc">7–10 岁：额外展示声调名称与读法说明</text>
       </view>
     </scroll-view>
 

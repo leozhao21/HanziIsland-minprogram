@@ -19,7 +19,8 @@ export function applyAnswerRecord(
   let inIntensiveReview = progress.inIntensiveReview
   if (!correct) {
     inIntensiveReview = true
-  } else if (mastery >= MasteryLevel.Good) {
+  } else if (inIntensiveReview) {
+    // 错题库里的字练对一次即可移出，避免「练完了还在」
     inIntensiveReview = false
   }
 

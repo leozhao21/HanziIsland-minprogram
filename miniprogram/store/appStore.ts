@@ -33,6 +33,7 @@ import {
   MASTERY_BADGES,
   MasteryLevel,
   ParentDashboardStats,
+  PinyinAgeMode,
   planTotalCount,
   QuizQuestion,
   quizTypesForMode,
@@ -59,6 +60,9 @@ class AppStore {
   loadStatus: string
   studyTrend: StudyTrendChartData
   pendingSession: LearnSession | null
+  pinyinBreakdownEnabled: boolean
+  pinyinAgeMode: PinyinAgeMode
+  homeWelcomeSpeechEnabled: boolean
   private sessionStudiedCharacterIds: Set<string>
   private listeners: Set<Listener>
 
@@ -86,6 +90,9 @@ class AppStore {
     this.loadStatus = '正在启动…'
     this.studyTrend = { dailyVolume: [], masteredGrowth: [], forgettingTrend: [] }
     this.pendingSession = null
+    this.pinyinBreakdownEnabled = true
+    this.pinyinAgeMode = PinyinAgeMode.Young
+    this.homeWelcomeSpeechEnabled = true
     this.sessionStudiedCharacterIds = new Set<string>()
     this.listeners = new Set<Listener>()
   }
@@ -118,6 +125,9 @@ class AppStore {
       this.dailyLearningGoal = profileToDailyGoal(profile)
       this.starCount = profile.starCount
       this.unlockedIslands = profile.unlockedIslandIds
+      this.pinyinBreakdownEnabled = profile.pinyinBreakdownEnabled !== false
+      this.pinyinAgeMode = (profile.pinyinAgeModeRaw as PinyinAgeMode) || PinyinAgeMode.Young
+      this.homeWelcomeSpeechEnabled = profile.homeWelcomeSpeechEnabled !== false
 
       this.refreshDailyPlan()
       this.reloadTodayProgress()
@@ -247,6 +257,30 @@ class AppStore {
     this.notify()
   }
 
+  setPinyinBreakdownEnabled(enabled: boolean): void {
+    this.pinyinBreakdownEnabled = enabled
+    const profile = fetchOrCreateProfile()
+    profile.pinyinBreakdownEnabled = enabled
+    saveProfile(profile)
+    this.notify()
+  }
+
+  setPinyinAgeMode(mode: PinyinAgeMode): void {
+    this.pinyinAgeMode = mode
+    const profile = fetchOrCreateProfile()
+    profile.pinyinAgeModeRaw = mode
+    saveProfile(profile)
+    this.notify()
+  }
+
+  setHomeWelcomeSpeechEnabled(enabled: boolean): void {
+    this.homeWelcomeSpeechEnabled = enabled
+    const profile = fetchOrCreateProfile()
+    profile.homeWelcomeSpeechEnabled = enabled
+    saveProfile(profile)
+    this.notify()
+  }
+
   makeQuizSession(
     characters: HanziCharacter[],
     count: number,
@@ -257,6 +291,7 @@ class AppStore {
       count,
       quizTypesForMode(this.studyMode),
       requiredCharacters,
+      this.catalog,
     )
   }
 
@@ -292,6 +327,7 @@ class AppStore {
     const chars = this.intensiveReviewCharacters
     if (chars.length === 0) return null
     const questions = this.makeQuizSession(chars, Math.min(chars.length, 10))
+    if (questions.length === 0) return null
     this.beginStudySession(chars.map((c) => c.id))
     return {
       id: `${Date.now()}`,

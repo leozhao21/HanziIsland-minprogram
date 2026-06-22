@@ -3,9 +3,11 @@ import { getSpeechService } from '../../services/speechService'
 import {
   DAILY_GOAL_PRESETS,
   DailyTaskPlan,
+  PinyinAgeMode,
   StudyMode,
 } from '../../domain/models'
 import { todayProgressPercent } from '../../utils/storeView'
+import { PINYIN_AGE_MODE_OPTIONS } from '../../utils/pinyinBreakdown'
 
 let unsubscribe: (() => void) | null = null
 
@@ -49,6 +51,11 @@ Page({
     ],
     speechEnabled: true,
     speechAvailable: false,
+    homeWelcomeSpeechEnabled: true,
+    pinyinBreakdownEnabled: true,
+    pinyinAgeMode: PinyinAgeMode.Young,
+    pinyinAgeIndex: 0,
+    pinyinAgeOptions: PINYIN_AGE_MODE_OPTIONS,
   },
 
   onLoad() {
@@ -122,6 +129,10 @@ Page({
       speechLangIndex: getSpeechService().selectedVoiceLang === 'en_US' ? 1 : 0,
       speechAvailable: getSpeechService().isAvailable,
       speechEnabled: getSpeechService().isEnabled(),
+      homeWelcomeSpeechEnabled: store.homeWelcomeSpeechEnabled,
+      pinyinBreakdownEnabled: store.pinyinBreakdownEnabled,
+      pinyinAgeMode: store.pinyinAgeMode,
+      pinyinAgeIndex: store.pinyinAgeMode === PinyinAgeMode.Advanced ? 1 : 0,
     })
   },
 
@@ -189,6 +200,11 @@ Page({
     this.setData({ speechEnabled: e.detail.value })
   },
 
+  onToggleHomeWelcomeSpeech(e: WechatMiniprogram.SwitchChange) {
+    getStore().setHomeWelcomeSpeechEnabled(e.detail.value)
+    this.refresh()
+  },
+
   onSpeechLangChange(e: WechatMiniprogram.PickerChange) {
     const index = parseInt(e.detail.value as string, 10)
     const lang = index === 1 ? 'en_US' : 'zh_CN'
@@ -196,5 +212,17 @@ Page({
     this.setData({ speechLang: lang, speechLangIndex: index })
     getSpeechService().unlockFromUserGesture()
     getSpeechService().previewVoice()
+  },
+
+  onTogglePinyinBreakdown(e: WechatMiniprogram.SwitchChange) {
+    getStore().setPinyinBreakdownEnabled(e.detail.value)
+    this.refresh()
+  },
+
+  onPinyinAgeChange(e: WechatMiniprogram.PickerChange) {
+    const index = parseInt(e.detail.value as string, 10)
+    const mode = index === 1 ? PinyinAgeMode.Advanced : PinyinAgeMode.Young
+    getStore().setPinyinAgeMode(mode)
+    this.refresh()
   },
 })

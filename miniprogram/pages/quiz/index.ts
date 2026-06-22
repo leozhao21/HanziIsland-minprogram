@@ -1,7 +1,21 @@
 import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
-import { HanziCharacter, LearnSession, QuizQuestion, QuizType } from '../../domain/models'
+import { HanziCharacter, LearnSession, PinyinAgeMode, QuizQuestion, QuizType } from '../../domain/models'
 import { getNavBarLayout } from '../../utils/navBar'
+import { parsePinyinBreakdown, PinyinBreakdown } from '../../utils/pinyinBreakdown'
+
+function learnCardPatch(char: HanziCharacter | null) {
+  const store = getStore()
+  return {
+    pinyinBreakdownEnabled: store.pinyinBreakdownEnabled,
+    pinyinAgeMode: store.pinyinAgeMode,
+    pinyinBreakdown: store.pinyinBreakdownEnabled && char
+      ? parsePinyinBreakdown(char.pinyin)
+      : null as PinyinBreakdown | null,
+    compositionExpanded: false,
+    evolutionExpanded: false,
+  }
+}
 
 Page({
   data: {
@@ -12,6 +26,11 @@ Page({
     learnCharacters: [] as HanziCharacter[],
     currentLearnIndex: 0,
     currentLearnChar: null as HanziCharacter | null,
+    pinyinBreakdownEnabled: true,
+    pinyinAgeMode: PinyinAgeMode.Young,
+    pinyinBreakdown: null as PinyinBreakdown | null,
+    compositionExpanded: false,
+    evolutionExpanded: false,
     questions: [] as QuizQuestion[],
     questionIndex: 0,
     currentQuestion: null as QuizQuestion | null,
@@ -46,9 +65,16 @@ Page({
       questions: session.questions,
       starReward: session.questions.length,
       phaseTitle: phase === 'learn' ? '认识新字' : `第 1 / ${session.questions.length} 题`,
+      ...learnCardPatch(session.learnCharacters[session.currentLearnIndex] || null),
     })
-    if (phase === 'quiz') this.showQuestion(0)
-    else if (this.data.currentLearnChar) {
+    if (phase === 'quiz') {
+      if (session.questions.length === 0) {
+        wx.showToast({ title: '暂无练习题', icon: 'none' })
+        wx.navigateBack()
+        return
+      }
+      this.showQuestion(0)
+    } else if (this.data.currentLearnChar) {
       getSpeechService().speakLearnCharacterAuto(this.data.currentLearnChar)
     }
   },
@@ -96,6 +122,7 @@ Page({
       this.setData({
         currentLearnIndex: nextIndex,
         currentLearnChar: nextChar,
+        ...learnCardPatch(nextChar),
       })
       getSpeechService().speakLearnCharacterAuto(nextChar)
     } else {
@@ -145,14 +172,24 @@ Page({
     if (char) getSpeechService().speakCharacterWithPinyin(char)
   },
 
+  onSpeakPinyin() {
+    const char = this.data.currentLearnChar
+    if (!char) return
+    getSpeechService().speakPinyinBreakdown(char, this.data.pinyinAgeMode as PinyinAgeMode)
+  },
+
   onSpeakComposition() {
     const char = this.data.currentLearnChar
-    if (char) getSpeechService().speakComposition(char)
+    if (!char) return
+    this.setData({ compositionExpanded: true })
+    getSpeechService().speakComposition(char)
   },
 
   onSpeakEvolution() {
     const char = this.data.currentLearnChar
-    if (char) getSpeechService().speakEvolution(char)
+    if (!char) return
+    this.setData({ evolutionExpanded: true })
+    getSpeechService().speakEvolution(char)
   },
 
   onAutoLearnChar() {
