@@ -3,7 +3,7 @@
 
   <view class="header">
     <text class="island-emoji">🏝️</text>
-    <text class="app-title">识字岛</text>
+    <text class="app-title">汉字奇遇岛</text>
     <view class="star-row">
       <text class="star-emoji">⭐</text>
       <text class="star-count">{{starCount}}</text>

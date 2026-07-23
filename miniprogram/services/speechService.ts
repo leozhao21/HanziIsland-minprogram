@@ -189,7 +189,7 @@ class SpeechService {
       })
       return false
     }
-    this.speak('你好，我是识字岛，一起来学汉字吧！')
+    this.speak('你好，我是汉字奇遇岛，一起来学汉字吧！')
     return true
   }
 

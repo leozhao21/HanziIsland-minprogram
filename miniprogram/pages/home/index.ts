@@ -3,7 +3,7 @@ import { getSpeechService } from '../../services/speechService'
 import { todayProgressPercent } from '../../utils/storeView'
 import { setTabBarIndex } from '../../utils/pageHelper'
 
-const HOME_WELCOME_TEXT = '你好！欢迎来到识字岛。点下面的大按钮，开始学汉字吧！'
+const HOME_WELCOME_TEXT = '你好！欢迎来到汉字奇遇岛。点下面的大按钮，开始学汉字吧！'
 
 let unsubscribe: (() => void) | null = null
 
