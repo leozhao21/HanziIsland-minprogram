@@ -5,7 +5,7 @@ import {
   StudyMode,
   UserProfileEntity,
 } from '../domain/models'
-import { getStorage, setStorage, STORAGE_KEYS } from './storage'
+import { bumpLocalSyncUpdatedAt, getStorage, setStorage, STORAGE_KEYS } from './storage'
 
 const DEFAULT_PROFILE: UserProfileEntity = {
   starCount: 0,
@@ -31,6 +31,7 @@ export function fetchOrCreateProfile(): UserProfileEntity {
 
 export function saveProfile(profile: UserProfileEntity): void {
   setStorage(STORAGE_KEYS.profile, profile)
+  bumpLocalSyncUpdatedAt()
 }
 
 export function addStars(count: number): UserProfileEntity {

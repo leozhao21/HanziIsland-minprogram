@@ -1,5 +1,5 @@
 import { loadCatalog, getCatalogById } from '../data/characterCatalogRepository'
-import { fetchAllProgress, saveProgress, defaultProgress } from '../data/progressRepository'
+import { fetchAllProgress, saveProgress, defaultProgress, buildProgressMapFromEntities } from '../data/progressRepository'
 import {
   addStars,
   applyDailyGoalToProfile,
@@ -14,12 +14,21 @@ import {
   recordAnswerSnapshot,
   recordCharactersStudied,
 } from '../data/studyTrendRepository'
+import { forcePullFromCloud, reconcileCloudSync, uploadLocalProgress } from '../data/cloudSyncRepository'
+import {
+  clearSession,
+  getSavedSession,
+  isLoggedIn,
+  loginWithWeChat,
+  type CloudUserSession,
+} from '../services/authService'
 import { buildDailyPlan } from '../domain/services/dailyTaskService'
 import { generateMixedSession } from '../domain/services/quizGeneratorService'
 import { applyAnswerRecord } from '../domain/useCases/recordAnswerUseCase'
 import { computeParentStats } from '../domain/useCases/parentStatsUseCase'
 import {
   clampDailyGoal,
+  CharacterProgressEntity,
   DailyLearningGoal,
   DailyTaskPlan,
   HanziCharacter,
@@ -41,6 +50,7 @@ import {
   StudyMode,
   StudyTrendChartData,
   TodayLearningProgress,
+  UserProfileEntity,
 } from '../domain/models'
 
 type Listener = () => void
@@ -63,8 +73,12 @@ class AppStore {
   pinyinBreakdownEnabled: boolean
   pinyinAgeMode: PinyinAgeMode
   homeWelcomeSpeechEnabled: boolean
+  cloudUser: CloudUserSession | null
+  cloudSyncStatus: string
+  lastCloudSyncAt: number | null
   private sessionStudiedCharacterIds: Set<string>
   private listeners: Set<Listener>
+  private cloudSyncTimer: number | null
 
   constructor() {
     this.catalog = []
@@ -93,8 +107,12 @@ class AppStore {
     this.pinyinBreakdownEnabled = true
     this.pinyinAgeMode = PinyinAgeMode.Young
     this.homeWelcomeSpeechEnabled = true
+    this.cloudUser = getSavedSession()
+    this.cloudSyncStatus = this.cloudUser ? '同步已开启，将自动备份' : '未开启'
+    this.lastCloudSyncAt = null
     this.sessionStudiedCharacterIds = new Set<string>()
     this.listeners = new Set<Listener>()
+    this.cloudSyncTimer = null
   }
 
   subscribe(listener: Listener): () => void {
@@ -140,11 +158,185 @@ class AppStore {
         this.reloadStudyTrend()
         this.notify()
       }, 0)
+
+      if (isLoggedIn()) {
+        // 等待对账完成，避免页面先读到空进度
+        await this.syncWithCloud().catch(() => {
+          /* 启动同步失败不阻断本地使用 */
+        })
+      }
     } catch (e) {
       this.loadError = e instanceof Error ? e.message : '加载失败'
       this.loadStatus = '加载失败'
       this.isLoaded = false
       this.notify()
+    }
+  }
+
+  private reloadFromLocalStorage(): void {
+    if (!this.catalog.length) {
+      this.catalog = loadCatalog()
+      this.catalogById = getCatalogById()
+    }
+    this.progressMap = fetchAllProgress(this.catalogById)
+    const profile = fetchOrCreateProfile()
+    this.studyMode = profile.studyModeRaw as StudyMode
+    this.dailyLearningGoal = profileToDailyGoal(profile)
+    this.starCount = profile.starCount
+    this.unlockedIslands = profile.unlockedIslandIds
+    this.pinyinBreakdownEnabled = profile.pinyinBreakdownEnabled !== false
+    this.pinyinAgeMode = (profile.pinyinAgeModeRaw as PinyinAgeMode) || PinyinAgeMode.Young
+    this.homeWelcomeSpeechEnabled = profile.homeWelcomeSpeechEnabled !== false
+    this.refreshDailyPlan()
+    this.reloadTodayProgress()
+    this.reloadStudyTrend()
+  }
+
+  /** 用云端 payload 直接灌入内存，避免仅依赖 storage 回读失败 */
+  private applyCloudPayloadToStore(payload: {
+    progress: CharacterProgressEntity[]
+    profile: UserProfileEntity
+  }): number {
+    if (!this.catalog.length) {
+      this.catalog = loadCatalog()
+      this.catalogById = getCatalogById()
+    }
+    this.progressMap = buildProgressMapFromEntities(payload.progress || [], this.catalogById)
+    const profile = payload.profile
+    if (profile) {
+      this.studyMode = profile.studyModeRaw as StudyMode
+      this.dailyLearningGoal = profileToDailyGoal(profile)
+      this.starCount = profile.starCount
+      this.unlockedIslands = profile.unlockedIslandIds || []
+      this.pinyinBreakdownEnabled = profile.pinyinBreakdownEnabled !== false
+      this.pinyinAgeMode = (profile.pinyinAgeModeRaw as PinyinAgeMode) || PinyinAgeMode.Young
+      this.homeWelcomeSpeechEnabled = profile.homeWelcomeSpeechEnabled !== false
+    }
+    this.refreshDailyPlan()
+    this.reloadTodayProgress()
+    this.reloadStudyTrend()
+    return Object.keys(this.progressMap).length
+  }
+
+  scheduleCloudUpload(): void {
+    if (!isLoggedIn()) return
+    if (this.cloudSyncTimer) clearTimeout(this.cloudSyncTimer)
+    this.cloudSyncTimer = setTimeout(() => {
+      this.cloudSyncTimer = null
+      this.uploadProgressToCloud().catch(() => {
+        this.cloudSyncStatus = '自动同步失败'
+        this.notify()
+      })
+    }, 2500) as unknown as number
+  }
+
+  /** 是否已开启云端同步（已登录即视为开启，之后本地变更自动上传） */
+  get isCloudSyncEnabled(): boolean {
+    return isLoggedIn() && !!this.cloudUser
+  }
+
+  async loginAndSync(): Promise<CloudUserSession> {
+    this.cloudSyncStatus = '正在授权登录…'
+    this.notify()
+    const session = await loginWithWeChat()
+    this.cloudUser = session
+    this.cloudSyncStatus = '登录成功，正在同步…'
+    this.notify()
+    await this.syncWithCloud()
+    this.cloudSyncStatus = '同步已开启，将自动备份'
+    this.notify()
+    return session
+  }
+
+  logoutCloud(): void {
+    if (this.cloudSyncTimer) {
+      clearTimeout(this.cloudSyncTimer)
+      this.cloudSyncTimer = null
+    }
+    clearSession()
+    this.cloudUser = null
+    this.cloudSyncStatus = '未开启'
+    this.lastCloudSyncAt = null
+    this.notify()
+  }
+
+  async syncWithCloud(): Promise<'pulled' | 'pushed' | 'noop'> {
+    if (!isLoggedIn()) {
+      this.cloudSyncStatus = '未开启'
+      this.notify()
+      throw new Error('未开启同步')
+    }
+    this.cloudSyncStatus = '正在同步…'
+    this.notify()
+    try {
+      const result = await reconcileCloudSync()
+      if (result.action === 'pulled') {
+        const mapped = this.applyCloudPayloadToStore(result.payload)
+        this.cloudSyncStatus = mapped > 0
+          ? `已从云端恢复 ${mapped} 字，自动同步已开启`
+          : '已从云端恢复，自动同步已开启'
+      } else if (result.action === 'pushed') {
+        this.cloudSyncStatus = '已上传到云端，自动同步已开启'
+      } else {
+        this.cloudSyncStatus = '已是最新，自动同步已开启'
+      }
+      this.lastCloudSyncAt = Date.now()
+      this.cloudUser = getSavedSession()
+      this.notify()
+      return result.action
+    } catch (e) {
+      this.cloudSyncStatus = e instanceof Error ? e.message : '同步失败'
+      this.notify()
+      throw e
+    }
+  }
+
+  /** 强制从云端覆盖本地 */
+  async restoreFromCloud(): Promise<{ progressCount: number }> {
+    if (!isLoggedIn()) {
+      this.cloudSyncStatus = '未开启'
+      this.notify()
+      throw new Error('未开启同步')
+    }
+    this.cloudSyncStatus = '正在从云端恢复…'
+    this.notify()
+    try {
+      // 恢复前取消待上传任务，避免空本地随后盖回云端
+      if (this.cloudSyncTimer) {
+        clearTimeout(this.cloudSyncTimer)
+        this.cloudSyncTimer = null
+      }
+      const payload = await forcePullFromCloud()
+      const mapped = this.applyCloudPayloadToStore(payload)
+      const count = payload.progressCount || mapped
+      if (mapped === 0 && count > 0) {
+        throw new Error(`已写入${count}条，但字库未匹配到汉字，请检查字库资源`)
+      }
+      this.cloudSyncStatus = count > 0 ? `已恢复 ${count} 个汉字进度` : '云端暂无汉字学习记录'
+      this.lastCloudSyncAt = Date.now()
+      this.cloudUser = getSavedSession()
+      this.notify()
+      return { progressCount: count }
+    } catch (e) {
+      this.cloudSyncStatus = e instanceof Error ? e.message : '恢复失败'
+      this.notify()
+      throw e
+    }
+  }
+
+  async uploadProgressToCloud(force = false): Promise<void> {
+    if (!isLoggedIn()) return
+    this.cloudSyncStatus = '正在上传…'
+    this.notify()
+    try {
+      await uploadLocalProgress(force)
+      this.cloudSyncStatus = '已上传到云端'
+      this.lastCloudSyncAt = Date.now()
+      this.notify()
+    } catch (e) {
+      this.cloudSyncStatus = e instanceof Error ? e.message : '上传失败'
+      this.notify()
+      throw e
     }
   }
 
@@ -209,6 +401,7 @@ class AppStore {
     applyDailyGoalToProfile(profile, clamped)
     this.reloadTodayProgress()
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   beginStudySession(characterIds: string[]): void {
@@ -222,6 +415,7 @@ class AppStore {
     this.reloadStudyTrend()
     this.reloadTodayProgress()
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   private get averageForgettingRate(): number {
@@ -255,6 +449,7 @@ class AppStore {
     this.refreshDailyPlan()
     this.reloadTodayProgress()
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   setPinyinBreakdownEnabled(enabled: boolean): void {
@@ -263,6 +458,7 @@ class AppStore {
     profile.pinyinBreakdownEnabled = enabled
     saveProfile(profile)
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   setPinyinAgeMode(mode: PinyinAgeMode): void {
@@ -271,6 +467,7 @@ class AppStore {
     profile.pinyinAgeModeRaw = mode
     saveProfile(profile)
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   setHomeWelcomeSpeechEnabled(enabled: boolean): void {
@@ -279,6 +476,7 @@ class AppStore {
     profile.homeWelcomeSpeechEnabled = enabled
     saveProfile(profile)
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   makeQuizSession(
@@ -321,6 +519,7 @@ class AppStore {
     saveProgress(updated)
     this.refreshDailyPlan()
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   makeIntensiveReviewSession(): LearnSession | null {
@@ -380,6 +579,7 @@ class AppStore {
     this.reloadTodayProgress()
     this.refreshDailyPlan()
     this.notify()
+    this.scheduleCloudUpload()
   }
 
   unlockIsland(theme: IslandTheme): boolean {
@@ -392,6 +592,7 @@ class AppStore {
     this.starCount = profile.starCount
     this.unlockedIslands = profile.unlockedIslandIds
     this.notify()
+    this.scheduleCloudUpload()
     return true
   }
 

@@ -40,4 +40,19 @@
       <text class="retry-text">再练一遍错题</text>
     </view>
   </view>
+
+  <view wx:if="{{showSyncGuide}}" class="sync-guide-mask" catchtouchmove="preventMove">
+    <view class="sync-guide-card">
+      <text class="sync-guide-emoji">☁️</text>
+      <text class="sync-guide-title">保护学习进度</text>
+      <text class="sync-guide-desc">今天的目标完成啦！建议开启云同步。删除小程序后，本地进度会丢失，开启后可用微信账号找回。</text>
+
+      <button class="sync-guide-primary" bindtap="onEnableSyncFromGuide" loading="{{syncGuideBusy}}">
+        授权开启同步
+      </button>
+      <button class="sync-guide-secondary" bindtap="onDismissSyncGuide" disabled="{{syncGuideBusy}}">
+        稍后再说
+      </button>
+    </view>
+  </view>
 </view>

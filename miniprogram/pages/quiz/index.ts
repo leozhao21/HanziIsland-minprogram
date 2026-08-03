@@ -3,6 +3,7 @@ import { getSpeechService } from '../../services/speechService'
 import { HanziCharacter, LearnSession, PinyinAgeMode, QuizQuestion, QuizType } from '../../domain/models'
 import { getNavBarLayout } from '../../utils/navBar'
 import { parsePinyinBreakdown, PinyinBreakdown } from '../../utils/pinyinBreakdown'
+import { markSyncGuidePrompted, shouldPromptSyncGuide } from '../../services/syncGuideService'
 
 function learnCardPatch(char: HanziCharacter | null) {
   const store = getStore()
@@ -42,6 +43,8 @@ Page({
     optionFontSize: 44,
     starReward: 0,
     showExitModal: false,
+    showSyncGuide: false,
+    syncGuideBusy: false,
   },
 
   session: null as LearnSession | null,
@@ -199,7 +202,43 @@ Page({
 
   onFinish() {
     getStore().endStudySession()
+    const store = getStore()
+    const tp = store.todayProgress
+    if (shouldPromptSyncGuide({
+      isLoaded: store.isLoaded,
+      charactersStudied: tp.charactersStudied,
+      goal: tp.goal,
+    })) {
+      markSyncGuidePrompted()
+      this.setData({ showSyncGuide: true })
+      return
+    }
     wx.navigateBack()
+  },
+
+  onDismissSyncGuide() {
+    this.setData({ showSyncGuide: false })
+    wx.navigateBack()
+  },
+
+  preventMove() {},
+
+  async onEnableSyncFromGuide() {
+    if (this.data.syncGuideBusy) return
+    this.setData({ syncGuideBusy: true })
+    try {
+      await getStore().loginAndSync()
+      this.setData({ showSyncGuide: false })
+      wx.showToast({ title: '同步已开启', icon: 'success' })
+      setTimeout(() => wx.navigateBack(), 400)
+    } catch (err) {
+      wx.showToast({
+        title: err instanceof Error ? err.message : '开启失败',
+        icon: 'none',
+      })
+    } finally {
+      this.setData({ syncGuideBusy: false })
+    }
   },
 
   onExitTap() {

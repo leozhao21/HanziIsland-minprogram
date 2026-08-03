@@ -2,6 +2,7 @@ import { getStore } from '../../store/appStore'
 import { getSpeechService } from '../../services/speechService'
 import { todayProgressPercent } from '../../utils/storeView'
 import { setTabBarIndex } from '../../utils/pageHelper'
+import { markSyncGuidePrompted, shouldPromptSyncGuide } from '../../services/syncGuideService'
 
 const HOME_WELCOME_TEXT = '你好！欢迎来到汉字奇遇岛。点下面的大按钮，开始学汉字吧！'
 
@@ -29,6 +30,8 @@ Page({
     isGoalMet: false,
     hasIntensiveReview: false,
     canStart: false,
+    showSyncGuide: false,
+    syncGuideBusy: false,
   },
 
   onLoad() {
@@ -42,6 +45,7 @@ Page({
     getStore().reloadTodayProgress()
     this.refresh()
     maybePlayHomeWelcomeSpeech()
+    this.maybeShowSyncGuide()
   },
 
   onUnload() {
@@ -60,6 +64,21 @@ Page({
       hasIntensiveReview: store.intensiveReviewCharacters.length > 0,
       canStart: !!(store.dailyPlan && store.dailyPlan.newCharacters.length + store.dailyPlan.reviewCharacters.length + store.dailyPlan.randomCheckCharacters.length > 0),
     })
+  },
+
+  maybeShowSyncGuide() {
+    if (this.data.showSyncGuide) return
+    const store = getStore()
+    const tp = store.todayProgress
+    if (!shouldPromptSyncGuide({
+      isLoaded: store.isLoaded,
+      charactersStudied: tp.charactersStudied,
+      goal: tp.goal,
+    })) {
+      return
+    }
+    markSyncGuidePrompted()
+    this.setData({ showSyncGuide: true })
   },
 
   onStartLearn() {
@@ -91,5 +110,29 @@ Page({
 
   onOpenParent() {
     wx.navigateTo({ url: '/pages/parent/index' })
+  },
+
+  onDismissSyncGuide() {
+    this.setData({ showSyncGuide: false })
+  },
+
+  preventMove() {},
+
+  async onEnableSyncFromGuide() {
+    if (this.data.syncGuideBusy) return
+    this.setData({ syncGuideBusy: true })
+    try {
+      await getStore().loginAndSync()
+      this.setData({ showSyncGuide: false })
+      wx.showToast({ title: '同步已开启', icon: 'success' })
+      this.refresh()
+    } catch (err) {
+      wx.showToast({
+        title: err instanceof Error ? err.message : '开启失败',
+        icon: 'none',
+      })
+    } finally {
+      this.setData({ syncGuideBusy: false })
+    }
   },
 })

@@ -76,6 +76,28 @@
     <!-- 设置 Tab -->
     <scroll-view wx:if="{{parentTab === 1}}" scroll-y class="tab-content">
       <view class="settings-card">
+        <text class="settings-title">学习进度云同步</text>
+        <text class="settings-desc">开启后学习进度会自动备份到云端。删除小程序后，用同一微信登录即可恢复。</text>
+
+        <view wx:if="{{cloudLoggedIn}}" class="cloud-user">
+          <text class="cloud-name">已开启同步</text>
+          <text class="cloud-openid">账号：{{cloudOpenIdShort}}</text>
+        </view>
+
+        <text class="settings-desc">同步状态：{{cloudSyncStatus}}</text>
+        <text wx:if="{{lastCloudSyncText}}" class="settings-desc">上次同步：{{lastCloudSyncText}}</text>
+
+        <button wx:if="{{!cloudLoggedIn}}" class="cloud-btn primary" bindtap="onCloudLogin" loading="{{cloudBusy}}">
+          授权开启自动同步
+        </button>
+        <view wx:else class="cloud-actions">
+          <button class="cloud-btn primary" bindtap="onCloudSync" loading="{{cloudBusy}}">立即同步</button>
+          <button class="cloud-btn" bindtap="onCloudRestore" loading="{{cloudBusy}}">从云端恢复</button>
+          <button class="cloud-btn" bindtap="onCloudLogout" disabled="{{cloudBusy}}">关闭同步</button>
+        </view>
+      </view>
+
+      <view class="settings-card">
         <text class="settings-title">语音朗读</text>
         <text wx:if="{{speechAvailable}}" class="settings-desc">学字与答题时的自动朗读（微信同声传译）</text>
         <text wx:else class="settings-desc warn">朗读插件未授权。请登录 mp.weixin.qq.com → 设置 → 插件管理 → 添加「微信同声传译」后重新编译。</text>

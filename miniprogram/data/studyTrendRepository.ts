@@ -1,5 +1,5 @@
 import { DailyStudySnapshot } from '../domain/models'
-import { getStorage, isSameDay, setStorage, startOfDay, STORAGE_KEYS } from './storage'
+import { bumpLocalSyncUpdatedAt, getStorage, isSameDay, setStorage, startOfDay, STORAGE_KEYS } from './storage'
 
 interface SnapshotEntity {
   dayStart: number
@@ -37,6 +37,7 @@ function loadSnapshots(): SnapshotEntity[] {
 
 function saveSnapshots(snapshots: SnapshotEntity[]): void {
   setStorage(STORAGE_KEYS.snapshots, snapshots)
+  bumpLocalSyncUpdatedAt()
 }
 
 function fetchOrCreateToday(): SnapshotEntity {

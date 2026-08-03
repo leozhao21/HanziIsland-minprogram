@@ -56,6 +56,11 @@ Page({
     pinyinAgeMode: PinyinAgeMode.Young,
     pinyinAgeIndex: 0,
     pinyinAgeOptions: PINYIN_AGE_MODE_OPTIONS,
+    cloudLoggedIn: false,
+    cloudOpenIdShort: '',
+    cloudSyncStatus: '未开启',
+    lastCloudSyncText: '',
+    cloudBusy: false,
   },
 
   onLoad() {
@@ -76,6 +81,13 @@ Page({
       gateAnswer: '',
       gateWrong: false,
     })
+  },
+
+  formatSyncTime(ms: number | null): string {
+    if (!ms) return ''
+    const d = new Date(ms)
+    const pad = (n: number) => (n < 10 ? `0${n}` : `${n}`)
+    return `${d.getMonth() + 1}/${d.getDate()} ${pad(d.getHours())}:${pad(d.getMinutes())}`
   },
 
   refresh() {
@@ -106,6 +118,9 @@ Page({
         rate: `${Math.round((p.memory.wrongCount / Math.max(1, p.memory.correctCount + p.memory.wrongCount)) * 100)}%`,
       }))
 
+    const cloudUser = store.cloudUser
+    const openid = cloudUser?.openid || ''
+
     this.setData({
       studyMode: store.studyMode,
       studyModeIndex: store.studyMode === StudyMode.Simple ? 0 : store.studyMode === StudyMode.Standard ? 1 : 2,
@@ -133,7 +148,78 @@ Page({
       pinyinBreakdownEnabled: store.pinyinBreakdownEnabled,
       pinyinAgeMode: store.pinyinAgeMode,
       pinyinAgeIndex: store.pinyinAgeMode === PinyinAgeMode.Advanced ? 1 : 0,
+      cloudLoggedIn: !!cloudUser,
+      cloudOpenIdShort: openid ? `${openid.slice(0, 6)}…${openid.slice(-4)}` : '',
+      cloudSyncStatus: store.cloudSyncStatus,
+      lastCloudSyncText: this.formatSyncTime(store.lastCloudSyncAt),
     })
+  },
+
+  async onCloudLogin() {
+    if (this.data.cloudBusy) return
+    this.setData({ cloudBusy: true })
+    try {
+      await getStore().loginAndSync()
+      wx.showToast({ title: '同步已开启', icon: 'success' })
+      this.refresh()
+    } catch (err) {
+      wx.showToast({
+        title: err instanceof Error ? err.message : '开启失败',
+        icon: 'none',
+      })
+      this.refresh()
+    } finally {
+      this.setData({ cloudBusy: false })
+    }
+  },
+
+  async onCloudSync() {
+    if (this.data.cloudBusy) return
+    this.setData({ cloudBusy: true })
+    try {
+      await getStore().syncWithCloud()
+      wx.showToast({ title: '同步完成', icon: 'success' })
+      this.refresh()
+    } catch (err) {
+      wx.showToast({
+        title: err instanceof Error ? err.message : '同步失败',
+        icon: 'none',
+      })
+      this.refresh()
+    } finally {
+      this.setData({ cloudBusy: false })
+    }
+  },
+
+  async onCloudRestore() {
+    if (this.data.cloudBusy) return
+    this.setData({ cloudBusy: true })
+    try {
+      const result = await getStore().restoreFromCloud()
+      wx.showToast({
+        title: result.progressCount > 0 ? `已恢复${result.progressCount}字` : '云端暂无学习记录',
+        icon: result.progressCount > 0 ? 'success' : 'none',
+      })
+      if (result.progressCount > 0) {
+        this.setData({ parentTab: 2 })
+        getStore().reloadStudyTrend()
+      }
+      this.refresh()
+    } catch (err) {
+      wx.showToast({
+        title: err instanceof Error ? err.message : '恢复失败',
+        icon: 'none',
+      })
+      this.refresh()
+    } finally {
+      this.setData({ cloudBusy: false })
+    }
+  },
+
+  onCloudLogout() {
+    getStore().logoutCloud()
+    this.refresh()
+    wx.showToast({ title: '已关闭同步', icon: 'none' })
   },
 
   onGateInput(e: WechatMiniprogram.Input) {

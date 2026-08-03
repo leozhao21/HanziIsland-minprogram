@@ -2,6 +2,7 @@ const STORAGE_KEYS = {
   progress: 'hanzi_progress',
   profile: 'hanzi_profile',
   snapshots: 'hanzi_snapshots',
+  syncUpdatedAt: 'hanzi_sync_updated_at',
 } as const
 
 export function getStorage<T>(key: string, fallback: T): T {
@@ -16,6 +17,15 @@ export function getStorage<T>(key: string, fallback: T): T {
 
 export function setStorage<T>(key: string, value: T): void {
   wx.setStorageSync(key, value)
+}
+
+export function bumpLocalSyncUpdatedAt(at: number = Date.now()): number {
+  setStorage(STORAGE_KEYS.syncUpdatedAt, at)
+  return at
+}
+
+export function getLocalSyncUpdatedAt(): number {
+  return getStorage<number>(STORAGE_KEYS.syncUpdatedAt, 0)
 }
 
 export function startOfDay(ms: number = Date.now()): number {

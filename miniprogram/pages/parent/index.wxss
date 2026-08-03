@@ -104,10 +104,32 @@
 .task-title { font-weight: 700; display: block; margin-bottom: 8rpx; }
 .task-chars { font-size: 32rpx; line-height: 1.6; }
 
-.settings-card { background: #fff; border-radius: 16rpx; padding: 24rpx; }
+.settings-card { background: #fff; border-radius: 16rpx; padding: 24rpx; margin-bottom: 16rpx; }
 .settings-title { font-weight: 700; font-size: 30rpx; display: block; }
 .settings-desc { font-size: 24rpx; color: #666; display: block; margin: 8rpx 0 16rpx; line-height: 1.5; }
 .settings-desc.warn { color: #E65100; }
+
+.cloud-user, .cloud-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  margin-bottom: 16rpx;
+}
+.cloud-name { font-size: 30rpx; font-weight: 700; }
+.cloud-openid { font-size: 22rpx; color: #999; }
+.cloud-actions { display: flex; flex-direction: column; gap: 12rpx; }
+.cloud-btn {
+  margin-top: 8rpx;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 28rpx;
+  border-radius: 16rpx;
+}
+.cloud-btn.primary {
+  background: #4CAF50;
+  color: #fff;
+}
+
 .lang-row {
   display: flex;
   justify-content: space-between;
