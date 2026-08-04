@@ -37,8 +37,10 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT || 22 }}
-          source: ".deploy/server"
-          target: ${{ env.DEPLOY_ROOT }}
+          # 去掉 .deploy/server 两层前缀，内容落到 DEPLOY_ROOT/server/
+          source: ".deploy/server/*"
+          target: ${{ env.DEPLOY_ROOT }}/server
+          strip_components: 2
           overwrite: true
 
       - name: Install deps & reload PM2
@@ -54,6 +56,12 @@ jobs:
 
             if [ ! -f .env ]; then
               echo "缺少 .env：请先在服务器 ${{ env.DEPLOY_ROOT }}/server/.env 放好生产配置"
+              exit 1
+            fi
+
+            if [ ! -f package-lock.json ]; then
+              echo "缺少 package-lock.json，当前目录文件："
+              ls -la
               exit 1
             fi
 
