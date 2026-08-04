@@ -1,0 +1,76 @@
+name: Deploy Server
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "server/**"
+      - ".github/workflows/deploy-server.yml"
+  workflow_dispatch:
+
+env:
+  # 服务器部署根目录（其下会有 server/）
+  DEPLOY_ROOT: /usr/local/nodeapp/hanzi-island
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare deploy package
+        run: |
+          mkdir -p .deploy/server
+          rsync -a \
+            --exclude node_modules \
+            --exclude .env \
+            --exclude logs \
+            --exclude '*.log' \
+            --exclude .DS_Store \
+            server/ .deploy/server/
+
+      - name: Upload server files
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          source: ".deploy/server"
+          target: ${{ env.DEPLOY_ROOT }}
+          overwrite: true
+
+      - name: Install deps & reload PM2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -euo pipefail
+            cd "${{ env.DEPLOY_ROOT }}/server"
+
+            if [ ! -f .env ]; then
+              echo "缺少 .env：请先在服务器 ${{ env.DEPLOY_ROOT }}/server/.env 放好生产配置"
+              exit 1
+            fi
+
+            npm ci --omit=dev
+            mkdir -p logs
+
+            if npx pm2 describe hanzi-island-server >/dev/null 2>&1; then
+              npm run pm2:reload
+            else
+              npm run pm2:start
+            fi
+
+            npx pm2 save
+
+            # 从 .env 读取 PORT，默认 3000
+            APP_PORT="$(grep -E '^PORT=' .env | cut -d= -f2- | tr -d '[:space:]' || true)"
+            APP_PORT="${APP_PORT:-3000}"
+            curl -fsS "http://127.0.0.1:${APP_PORT}/health"
+            echo
+            echo "Deploy OK"

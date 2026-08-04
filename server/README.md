@@ -45,6 +45,38 @@ npm run pm2:save      # 保存当前进程列表
 
 配置见 `ecosystem.config.js`，日志写入 `server/logs/`。
 
+## CI/CD 自动发布（GitHub Actions）
+
+推送 `main` 且改动了 `server/**` 时，会通过 SCP + SSH 密码把代码同步到云服务器（**服务器无需 git clone**），再执行 `npm ci` 与 PM2 reload。
+
+### 1. 服务器一次性准备
+
+```bash
+# 需已安装 Node.js >= 18
+mkdir -p /opt/hanzi-island/server
+# 手动放好生产环境变量（不会被 CI 覆盖）
+nano /opt/hanzi-island/server/.env
+```
+
+### 2. GitHub Secrets
+
+仓库 → Settings → Secrets and variables → Actions：
+
+| Secret | 说明 |
+|--------|------|
+| `SSH_HOST` | 服务器 IP / 域名 |
+| `SSH_USER` | SSH 用户名 |
+| `SSH_PASSWORD` | SSH 密码 |
+| `SSH_PORT` | 可选，默认 `22` |
+
+### 3. 触发方式
+
+- 自动：`main` 上改动 `server/**` 并 push
+- 手动：Actions → **Deploy Server** → Run workflow
+
+工作流文件：`.github/workflows/deploy-server.yml`  
+默认部署目录：`/opt/hanzi-island/server`（可在 workflow 的 `DEPLOY_ROOT` 修改）
+
 ## 环境变量
 
 见 `.env.example`。生产环境务必：
