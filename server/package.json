@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
+    "dev": "node src/index.js",
     "init-db": "node src/initDb.js",
     "pm2:start": "mkdir -p logs && pm2 start ecosystem.config.js --env production",
     "pm2:stop": "pm2 stop hanzi-island-server",
@@ -18,7 +18,7 @@
     "pm2:startup": "pm2 startup"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=16"
   },
   "dependencies": {
     "cors": "^2.8.5",

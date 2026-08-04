@@ -54,6 +54,9 @@ jobs:
             set -euo pipefail
             cd "${{ env.DEPLOY_ROOT }}/server"
 
+            # 非交互 SSH 可能缺 PATH，补上常见 node 路径与本地 bin
+            export PATH="./node_modules/.bin:/usr/local/bin:$HOME/.nvm/versions/node/$(ls "$HOME/.nvm/versions/node" 2>/dev/null | tail -1)/bin:$PATH"
+
             if [ ! -f .env ]; then
               echo "缺少 .env：请先在服务器 ${{ env.DEPLOY_ROOT }}/server/.env 放好生产配置"
               exit 1
@@ -65,16 +68,19 @@ jobs:
               exit 1
             fi
 
+            echo "Node: $(node -v)  npm: $(npm -v)"
+
             npm ci --omit=dev
             mkdir -p logs
 
-            if npx pm2 describe hanzi-island-server >/dev/null 2>&1; then
+            PM2="./node_modules/.bin/pm2"
+            if "$PM2" describe hanzi-island-server >/dev/null 2>&1; then
               npm run pm2:reload
             else
               npm run pm2:start
             fi
 
-            npx pm2 save
+            npm run pm2:save
 
             # 从 .env 读取 PORT，默认 3000
             APP_PORT="$(grep -E '^PORT=' .env | cut -d= -f2- | tr -d '[:space:]' || true)"
