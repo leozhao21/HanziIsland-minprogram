@@ -20,6 +20,31 @@ npm run dev
 
 健康检查：`GET http://127.0.0.1:3000/health`
 
+## 生产部署（PM2）
+
+```bash
+cd server
+npm install
+npm run init-db   # 首次部署
+
+npm run pm2:start     # 启动（production）
+npm run pm2:status    # 查看状态
+npm run pm2:logs      # 查看日志
+npm run pm2:restart   # 重启
+npm run pm2:reload    # 零停机重载
+npm run pm2:stop      # 停止
+npm run pm2:delete    # 从 PM2 列表移除
+```
+
+开机自启（首次在服务器上执行一次）：
+
+```bash
+npm run pm2:startup   # 按提示执行生成的命令
+npm run pm2:save      # 保存当前进程列表
+```
+
+配置见 `ecosystem.config.js`，日志写入 `server/logs/`。
+
 ## 环境变量
 
 见 `.env.example`。生产环境务必：

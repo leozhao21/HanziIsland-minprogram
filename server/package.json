@@ -6,7 +6,16 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "init-db": "node src/initDb.js"
+    "init-db": "node src/initDb.js",
+    "pm2:start": "mkdir -p logs && pm2 start ecosystem.config.js --env production",
+    "pm2:stop": "pm2 stop hanzi-island-server",
+    "pm2:restart": "pm2 restart hanzi-island-server",
+    "pm2:reload": "pm2 reload hanzi-island-server",
+    "pm2:delete": "pm2 delete hanzi-island-server",
+    "pm2:logs": "pm2 logs hanzi-island-server",
+    "pm2:status": "pm2 status",
+    "pm2:save": "pm2 save",
+    "pm2:startup": "pm2 startup"
   },
   "engines": {
     "node": ">=18"
@@ -16,6 +25,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.12.0"
+    "mysql2": "^3.12.0",
+    "pm2": "^5.4.3"
   }
 }
