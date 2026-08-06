@@ -3,6 +3,7 @@ import { getSpeechService } from '../../services/speechService'
 import { todayProgressPercent } from '../../utils/storeView'
 import { setTabBarIndex } from '../../utils/pageHelper'
 import { markSyncGuidePrompted, shouldPromptSyncGuide } from '../../services/syncGuideService'
+import { getAddToFavorites, getShareAppMessage, getShareTimeline } from '../../utils/share'
 
 const HOME_WELCOME_TEXT = '你好！欢迎来到汉字奇遇岛。点下面的大按钮，开始学汉字吧！'
 
@@ -46,11 +47,30 @@ Page({
     this.refresh()
     maybePlayHomeWelcomeSpeech()
     this.maybeShowSyncGuide()
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline'],
+    })
   },
 
   onUnload() {
     if (unsubscribe) unsubscribe()
     getSpeechService().stop()
+  },
+
+  /** 转发给朋友 */
+  onShareAppMessage() {
+    return getShareAppMessage()
+  },
+
+  /** 分享到朋友圈 */
+  onShareTimeline() {
+    return getShareTimeline()
+  },
+
+  /** 收藏到「我」- 小程序 */
+  onAddToFavorites() {
+    return getAddToFavorites()
   },
 
   refresh() {
